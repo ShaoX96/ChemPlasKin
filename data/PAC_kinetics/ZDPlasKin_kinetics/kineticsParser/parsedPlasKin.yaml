@@ -1,0 +1,517 @@
+# /------------------ Plasma Kinetics Reactions ---------------------
+- equation: E + H2O => E + H2O                      # R(1)
+  duplicate: true
+  type: Boltzmann
+  process: H2O -> H2O(ROT)
+- equation: E + O2 => E + O2                        # R(2)
+  duplicate: true
+  type: Boltzmann
+  process: O2 -> O2(v1)
+- equation: E + O2 => E + O2                        # R(3)
+  duplicate: true
+  type: Boltzmann
+  process: O2 -> O2(v2)
+- equation: E + O2 => E + O2                        # R(4)
+  duplicate: true
+  type: Boltzmann
+  process: O2 -> O2(v3)
+- equation: E + O2 => E + O2                        # R(5)
+  duplicate: true
+  type: Boltzmann
+  process: O2 -> O2(v4)
+- equation: E + H2 => E + H2                        # R(6)
+  duplicate: true
+  type: Boltzmann
+  process: H2 -> H2(v1)
+- equation: E + H2 => E + H2                        # R(7)
+  duplicate: true
+  type: Boltzmann
+  process: H2 -> H2(v2)
+- equation: E + H2 => E + H2                        # R(8)
+  duplicate: true
+  type: Boltzmann
+  process: H2 -> H2(v3)
+- equation: E + H2O => E + H2O                      # R(9)
+  duplicate: true
+  type: Boltzmann
+  process: H2O -> H2O(010)
+- equation: E + H2O => E + H2O                      # R(10)
+  duplicate: true
+  type: Boltzmann
+  process: H2O -> H2O(101)
+- equation: E + O => E + O(1D)                      # R(11)
+  type: Boltzmann
+  process: O -> O(1D)
+- equation: E + O => E + O(1S)                      # R(12)
+  type: Boltzmann
+  process: O -> O(1S)
+- equation: E + O => E + O                          # R(13)
+  duplicate: true
+  type: Boltzmann
+  process: O -> O(4S0)
+- equation: E + O => E + O                          # R(14)
+  duplicate: true
+  type: Boltzmann
+  process: O -> O(2D0)
+- equation: E + O => E + O                          # R(15)
+  duplicate: true
+  type: Boltzmann
+  process: O -> O(2P0)
+- equation: E + O => E + O                          # R(16)
+  duplicate: true
+  type: Boltzmann
+  process: O -> O(3P0)
+- equation: E + O2 => O + O + E                     # R(17)
+  type: Boltzmann
+  process: O2 -> O + O
+- equation: E + O2 => O + O(1D) + E                 # R(18)
+  type: Boltzmann
+  process: O2 -> O + O(1D)
+- equation: E + O2 => O + O(1S) + E                 # R(19)
+  duplicate: true
+  type: Boltzmann
+  process: O2 -> O2(9.97eV)
+- equation: E + O2 => O + O(1S) + E                 # R(20)
+  duplicate: true
+  type: Boltzmann
+  process: O2 -> O2(14.7eV)
+- equation: E + O2 => E + O2(a1)                    # R(21)
+  type: Boltzmann
+  process: O2 -> O2(a1)
+- equation: E + O2 => E + O2(b1)                    # R(22)
+  type: Boltzmann
+  process: O2 -> O2(b1)
+- equation: E + O2 => E + O2(c)                     # R(23)
+  type: Boltzmann
+  process: O2 -> O2(4.5eV)
+- equation: E + O2(a1) => O2(b1) + E                # R(24)
+  type: Boltzmann
+  process: O2(a1) -> O2(1.63)
+- equation: E + O2(a1) => O2(c) + E                 # R(25)
+  type: Boltzmann
+  process: O2(a1) -> O2(4.5)
+- equation: E + O2(b1) => O2(c) + E                 # R(26)
+  type: Boltzmann
+  process: O2(b1) -> O2(4.5)
+- equation: E + O2(a1) => O + O + E                 # R(27)
+  type: Boltzmann
+  process: O2(a1) -> O + O + E
+- equation: E + O2(b1) => O + O + E                 # R(28)
+  type: Boltzmann
+  process: O2(b1) -> O + O + E
+- equation: E + O2(a1) => O + O(1D) + E             # R(29)
+  type: Boltzmann
+  process: O2(a1) -> O + O(1D)
+- equation: E + O2(b1) => O + O(1D) + E             # R(30)
+  type: Boltzmann
+  process: O2(b1) -> O + O(1D)
+- equation: E + O3 => O2(a1) + O + E                # R(31)
+  type: Boltzmann
+  process: O2 -> O + O
+- equation: E + O3 => O2(a1) + O(1D) + E            # R(32)
+  type: Boltzmann
+  process: O2 -> O + O(1D)
+- equation: E + O3 => O2(a1) + O(1S) + E            # R(33)
+  duplicate: true
+  type: Boltzmann
+  process: O2 -> O2(9.97eV)
+- equation: E + O3 => O2(a1) + O(1S) + E            # R(34)
+  duplicate: true
+  type: Boltzmann
+  process: O2 -> O2(14.7eV)
+- equation: E + H2 => E + H2                        # R(35)
+  duplicate: true
+  type: Boltzmann
+  process: H2 -> H2(B1Su)
+- equation: E + H2 => E + H + H                     # R(36)
+  duplicate: true
+  type: Boltzmann
+  process: H2 -> H2(b3Su)
+- equation: E + H2 => E + H + H                     # R(37)
+  duplicate: true
+  type: Boltzmann
+  process: H2 -> H2(c3Pu)
+- equation: E + H2 => E + H + H                     # R(38)
+  duplicate: true
+  type: Boltzmann
+  process: H2 -> H2(a3Sg)
+- equation: E + H2 => E + H2                        # R(39)
+  duplicate: true
+  type: Boltzmann
+  process: H2 -> H2(C1Pu)
+- equation: E + H2 => E + H2                        # R(40)
+  duplicate: true
+  type: Boltzmann
+  process: H2 -> H2(E1Sg,F1Sg)
+- equation: E + H2 => E + H + H                     # R(41)
+  duplicate: true
+  type: Boltzmann
+  process: H2 -> H2(e3Su)
+- equation: E + H2 => E + H2                        # R(42)
+  duplicate: true
+  type: Boltzmann
+  process: H2 -> H2(B'1Su)
+- equation: E + H2 => E + H2                        # R(43)
+  duplicate: true
+  type: Boltzmann
+  process: H2 -> H2(D1Pu)
+- equation: E + H2 => E + H2                        # R(44)
+  duplicate: true
+  type: Boltzmann
+  process: H2 -> H2(B''1Su)
+- equation: E + H2 => E + H2                        # R(45)
+  duplicate: true
+  type: Boltzmann
+  process: H2 -> H2(D'1Pu)
+- equation: E + H2 => E + H + H                     # R(46)
+  duplicate: true
+  type: Boltzmann
+  process: H2 -> H(1s)+H(2p)
+- equation: E + H2 => E + H + H                     # R(47)
+  duplicate: true
+  type: Boltzmann
+  process: H2 -> H(1s)+H(2s)
+- equation: E + H2 => E + H + H                     # R(48)
+  duplicate: true
+  type: Boltzmann
+  process: H2 -> H(1s)+H(3)
+- equation: E + H2 => E + H + H                     # R(49)
+  duplicate: true
+  type: Boltzmann
+  process: H2 -> H(1s)+H(4)
+- equation: E + H2 => E + H + H                     # R(50)
+  duplicate: true
+  type: Boltzmann
+  process: H2 -> H(1s)+H(5)
+- equation: E + H => E + H                          # R(51)
+  duplicate: true
+  type: Boltzmann
+  process: H -> H(1p)
+- equation: E + H => E + H                          # R(52)
+  duplicate: true
+  type: Boltzmann
+  process: H -> H(2s)
+- equation: E + H => E + H                          # R(53)
+  duplicate: true
+  type: Boltzmann
+  process: H -> H(3)
+- equation: E + H => E + H                          # R(54)
+  duplicate: true
+  type: Boltzmann
+  process: H -> H(4)
+- equation: E + H => E + H                          # R(55)
+  duplicate: true
+  type: Boltzmann
+  process: H -> H(5)
+- equation: E + H2O => E + OH + H                   # R(56)
+  type: Boltzmann
+  process: H2O -> H + OH
+- equation: E + H2O => E + O(1D) + H2               # R(57)
+  type: Boltzmann
+  process: H2O -> O*+H2(13eV)
+- equation: E + O => O^+ + E + E                    # R(58)
+  type: Boltzmann
+  process: O -> O^+
+- equation: E + O2 => O2^+ + E + E                  # R(59)
+  type: Boltzmann
+  process: O2 -> O2^+
+- equation: E + O2 => O + O^+ + E + E               # R(60)
+  type: Boltzmann
+  process: O2 -> O^+
+- equation: E + O2(a1) => O2^+ + E + E              # R(61)
+  type: Boltzmann
+  process: O2(a1) -> O2^+ + E
+- equation: E + O2(b1) => O2^+ + E + E              # R(62)
+  type: Boltzmann
+  process: O2(b1) -> O2^+ + E
+- equation: E + O2(a1) => O + O^+ + E + E           # R(63)
+  type: Boltzmann
+  process: O2(a1) -> O + O^+
+- equation: E + O2(b1) => O + O^+ + E + E           # R(64)
+  type: Boltzmann
+  process: O2(b1) -> O + O^+
+- equation: E + H2 => H2^+ + E + E                  # R(65)
+  type: Boltzmann
+  process: H2 -> H2^+
+- equation: E + H => H^+ + E + E                    # R(66)
+  type: Boltzmann
+  process: H -> H^+
+- equation: E + H2O => H2O^+ + E + E                # R(67)
+  type: Boltzmann
+  process: H2O -> H2O^+
+- equation: E + O^+ + M => O + M                    # R(68)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^6/molec^2/s, Expr: 3.11769145362398e-23*(1/Te)^1.5}
+  efficiencies: {E: 0., O^+: 0., O2^+: 0., H^+: 0., H2^+: 0., H2O^+: 0.}
+- equation: E + O^+ + E => O + E                    # R(69)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^6/molec^2/s, Expr: 9.82072807891554e-9*(1/Te)^4.5}
+- equation: E + O2^+ + M => O2 + M                  # R(70)
+  rate-constant: {A: 1e-26 cm^6/molec^2/s, b: 0.0, Ea: 0.0}
+  efficiencies: {E: 0., O^+: 0., O2^+: 0., H^+: 0., H2^+: 0., H2O^+: 0.}
+- equation: E + O2^+ => O + O                       # R(71)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 8.04843297925904e-6*(1/Te)^0.7}
+- equation: E + O2^+ => O + O(1D)                   # R(72)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 5.85340580309748e-6*(1/Te)^0.7}
+- equation: E + O2^+ => O + O(1S)                   # R(73)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 7.31675725387185e-7*(1/Te)^0.7}
+- equation: E + H^+ => H                            # R(74)
+  rate-constant: {A: 3.52e-13 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: E + E + H^+ => E + H                    # R(75)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^6/molec^2/s, Expr: 1.7191018989123e-8/Te^4.5}
+- equation: E + H2^+ => H + H                       # R(76)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 5.21886077138401e-7*(1/Tgas)^0.4}
+- equation: E + E + H2^+ => E + H2                  # R(77)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^6/molec^2/s, Expr: 1.2346058156351e-15*(1/Tgas)^4.5}
+- equation: E + H2O^+ => OH + H                     # R(78)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 1.49e-6/Te^0.5}
+- equation: E + H2O^+ => O + H2                     # R(79)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 4.75e-7/Te^0.5}
+- equation: E + H2O^+ => O + H + H                  # R(80)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 5.28e-6/Te^0.5}
+- equation: E + E + H2O^+ => E + H2O                # R(81)
+  rate-constant: {A: 7.92e-29 cm^6/molec^2/s, b: 0.0, Ea: 0.0}
+- equation: O2(a1) => O2                            # R(82)
+  rate-constant: {A: 0.00026 1/s, b: 0.0, Ea: 0.0}
+- equation: O2(b1) => O2(a1)                        # R(83)
+  rate-constant: {A: 0.0015 1/s, b: 0.0, Ea: 0.0}
+- equation: O2(b1) => O2                            # R(84)
+  rate-constant: {A: 0.085 1/s, b: 0.0, Ea: 0.0}
+- equation: O2(c) => O2                             # R(85)
+  rate-constant: {A: 11.0 1/s, b: 0.0, Ea: 0.0}
+- equation: O(1D) => O                              # R(86)
+  rate-constant: {A: 0.005 1/s, b: 0.0, Ea: 0.0}
+- equation: O(1S) => O(1D)                          # R(87)
+  rate-constant: {A: 1.34 1/s, b: 0.0, Ea: 0.0}
+- equation: O2(a1) + O => O2 + O                    # R(88)
+  rate-constant: {A: 7e-16 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(a1) + O2 => O2 + O2                  # R(89)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 3.8e-18*exp(-205.0/Tgas)}
+- equation: O2(a1) + O3 => O2 + O2 + O(1D)          # R(90)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 5.2e-11*exp(-2840.0/Tgas)}
+- equation: O2(a1) + O2(a1) => O2 + O2(b1)          # R(91)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 7.0e-28*Tgas^3.8*exp(700.0/Tgas)}
+- equation: O2(a1) + H2O => O2 + H2O                # R(92)
+  rate-constant: {A: 5e-18 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(a1) + H2 => OH + OH                  # R(93)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 2.8e-9*exp(-17906.0/Tgas)}
+- equation: O2(a1) + H2 => O2 + H2                  # R(94)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 2.59807621135332e-19*Tgas^0.5}
+- equation: O2(a1) + H => OH + O                    # R(95)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 6.8e-16*Tgas^1.51*exp(-3040.0/Tgas)}
+- equation: O2(a1) + H => HO2                       # R(96)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 4.84370200172307e-26*Tgas^1.51/(3.0e-11*Tgas^0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas^1.34*exp(2726.0/Tgas))}
+- equation: O2(a1) + H => O2 + H                    # R(97)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: (9.0e-22*Tgas^0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas^1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas^1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas^2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas^0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas^1.34*exp(8492.0/Tgas))}
+- equation: O2(a1) + H2 => H + HO2                  # R(98)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 1.84e-16*Tgas^1.88*exp(-17070.0/Tgas)}
+- equation: O2(a1) + H2O => OH + HO2                # R(99)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 3.4e-9*exp(-24990.0/Tgas)}
+- equation: O2(a1) + H2 => H2O + O(1D)              # R(100)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 5.81e-11*exp(-20000.0/Tgas)}
+- equation: O2(a1) + OH => H + O3                   # R(101)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 7.31e-17*Tgas^1.44*exp(-27225.0/Tgas)}
+- equation: O2(a1) + OH => O + HO2                  # R(102)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 2.16e-11*exp(-17000.0/Tgas)}
+- equation: O2(a1) + OH => O2 + OH                  # R(103)
+  rate-constant: {A: 5.65e-18 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(a1) + H2O2 => O2 + H2O2              # R(104)
+  rate-constant: {A: 5.65e-18 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(a1) + HO2 => O2 + HO2                # R(105)
+  rate-constant: {A: 5.65e-18 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(a1) + O2 => O3 + O                   # R(106)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 1.7031832941094e-22*Tgas^0.5}
+- equation: O2(a1) + O2(a1) => O2 + O2              # R(107)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 9.0e-17*exp(-560.0/Tgas)}
+- equation: O + O2(a1) + O2 => O + O2 + O2          # R(108)
+  rate-constant: {A: 1e-32 cm^6/molec^2/s, b: 0.0, Ea: 0.0}
+- equation: O2(a1) + H2 => O2(b1) + H2              # R(109)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 8.3e-13*exp(-7660.0/Tgas)}
+- equation: O2(a1) + H2O => O + H2O2                # R(110)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 2.05e-12*Tgas^0.5*exp(-35100.0/Tgas)}
+- equation: O2(b1) + O => O2(a1) + O                # R(111)
+  rate-constant: {A: 8.1e-14 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(b1) + O => O2 + O(1D)                # R(112)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 6.01438246961305e-11*(1/Tgas)^0.1*exp(-4200.0/Tgas)}
+- equation: O2(b1) + O2 => O2(a1) + O2              # R(113)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 4.3e-22*Tgas^2.4*exp(-281.0/Tgas)}
+- equation: O2(b1) + O3 => O2 + O2 + O              # R(114)
+  rate-constant: {A: 2.2e-11 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(b1) + O => O2 + O                    # R(115)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 4.61880215351701e-16*Tgas^0.5}
+- equation: O2(b1) + H => O2(a1) + H                # R(116)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 4.15692193816531e-15*Tgas^0.5}
+- equation: O2(b1) + H => O2 + H                    # R(117)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 4.61880215351701e-16*Tgas^0.5}
+- equation: O2(b1) + O2(b1) => O2(a1) + O2          # R(118)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 2.07846096908265e-18*Tgas^0.5}
+- equation: O2(b1) + H2 => O2 + H2                  # R(119)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 4.9e-15*exp(-253.0/Tgas)}
+- equation: O2(b1) + H2O => O2 + H2O                # R(120)
+  rate-constant: {A: 2.3e-12 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(b1) + O3 => O2(a1) + O2 + O          # R(121)
+  rate-constant: {A: 1e-14 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(b1) + O3 => O2 + O3                  # R(122)
+  rate-constant: {A: 2.2e-11 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(b1) + O3 => O2(a1) + O3              # R(123)
+  rate-constant: {A: 2.2e-11 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(b1) + H2 => H + HO2                  # R(124)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 3.49e-11*exp(-20500.0/Tgas)}
+- equation: O2(b1) + H => OH + O(1D)                # R(125)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 4.38e-10*exp(-16210.0/Tgas)/Tgas^0.03}
+- equation: O2(b1) + H2O => OH + HO2                # R(126)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 3.4e-9*exp(-27380.0/Tgas)}
+- equation: O2(b1) + H2 => O2(a1) + H2              # R(127)
+  rate-constant: {A: 1e-12 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(b1) + O2 => O2 + O2                  # R(128)
+  rate-constant: {A: 4.1e-17 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(b1) + H2O => O2(a1) + H2O            # R(129)
+  rate-constant: {A: 4.6e-12 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(b1) + H2O => O + H2O2                # R(130)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 1.025e-12*Tgas*exp(-27480.0/Tgas)}
+- equation: O2(b1) + HO2 => O2 + HO2                # R(131)
+  rate-constant: {A: 5.65e-18 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(b1) + H2O2 => O2 + H2O2              # R(132)
+  rate-constant: {A: 5.65e-18 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(b1) + OH => O + HO2                  # R(133)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 2.16e-11*exp(-10111.0/Tgas)}
+- equation: O2(c) + O => O2 + O(1S)                 # R(134)
+  rate-constant: {A: 9e-12 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(c) + O2 => O2(b1) + O2(b1)           # R(135)
+  rate-constant: {A: 3e-13 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(c) + O => O2 + O                     # R(136)
+  rate-constant: {A: 4.95e-12 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(c) + O => O2(a1) + O(1D)             # R(137)
+  rate-constant: {A: 2.7e-12 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(c) + O => O2(b1) + O(1D)             # R(138)
+  rate-constant: {A: 1.35e-12 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(c) + O2 => O2(a1) + O2               # R(139)
+  rate-constant: {A: 1.86e-13 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(c) + O2 => O2(b1) + O2               # R(140)
+  rate-constant: {A: 2.1e-14 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(c) + O2 => O2 + O2                   # R(141)
+  rate-constant: {A: 2.3e-14 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(c) + H2 => H2 + O2                   # R(142)
+  rate-constant: {A: 7.9e-13 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(c) + H2 => H2 + O2(a1)               # R(143)
+  rate-constant: {A: 8.3e-13 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(c) + H2O => H2O + O2                 # R(144)
+  rate-constant: {A: 4e-12 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(c) + HO2 => HO2 + O2                 # R(145)
+  rate-constant: {A: 5.65e-18 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O2(c) + H2O2 => H2O2 + O2               # R(146)
+  rate-constant: {A: 5.65e-18 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O(1D) + O => O + O                      # R(147)
+  rate-constant: {A: 8e-12 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O(1D) + O2 => O + O2                    # R(148)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 6.4e-12*exp(67.0/Tgas)}
+- equation: O(1D) + O2 => O + O2(a1)                # R(149)
+  rate-constant: {A: 1e-12 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O(1D) + O2 => O + O2(b1)                # R(150)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 2.6e-11*exp(67.0/Tgas)}
+- equation: O(1D) + O3 => O2 + O + O                # R(151)
+  rate-constant: {A: 1.2e-10 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O(1D) + O3 => O2 + O2                   # R(152)
+  rate-constant: {A: 1.2e-10 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O(1D) + O3 => O + O3                    # R(153)
+  rate-constant: {A: 1.2e-10 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O(1D) + H2O2 => HO2 + OH                # R(154)
+  rate-constant: {A: 5.2e-10 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O(1D) + H2O => OH + OH                  # R(155)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 1.683e-10*exp(36.0/Tgas)}
+- equation: O(1D) + H2O => O + H2O                  # R(156)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 1.7e-12*exp(36.0/Tgas)}
+- equation: O(1D) + H2 => OH + H                    # R(157)
+  rate-constant: {A: 1.34055e-10 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O(1D) + H2 => O + H2                    # R(158)
+  rate-constant: {A: 9.450000000000001e-13 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O(1D) + OH => H + O2                    # R(159)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 6.0e-11*exp(-154.0/Tgas)/Tgas^0.186}
+- equation: O(1D) + HO2 => OH + O2                  # R(160)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 2.9e-11*exp(200.0/Tgas)}
+- equation: O(1S) + O => O(1D) + O                  # R(161)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 5.0e-11*exp(-301.0/Tgas)}
+- equation: O(1S) + O2 => O(1D) + O2                # R(162)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 1.3e-12*exp(-850.0/Tgas)}
+- equation: O(1S) + O2 => O + O + O                 # R(163)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 3.0e-12*exp(-850.0/Tgas)}
+- equation: O(1S) + O2(a1) => O + O2(c)             # R(164)
+  rate-constant: {A: 1.1e-10 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O(1S) + O2(a1) => O(1D) + O2(b1)        # R(165)
+  rate-constant: {A: 2.9e-11 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O(1S) + O2(a1) => O + O + O             # R(166)
+  rate-constant: {A: 3.2e-11 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O(1S) + O3 => O2 + O2                   # R(167)
+  rate-constant: {A: 2.9e-10 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O(1S) + O3 => O2 + O + O(1D)            # R(168)
+  rate-constant: {A: 2.9e-10 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O(1S) + O => O + O                      # R(169)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 3.33e-11*exp(-300.0/Tgas)}
+- equation: O(1S) + O2 => O + O2                    # R(170)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 1.6e-12*exp(-850.0/Tgas)}
+- equation: O(1S) + H2 => H + OH                    # R(171)
+  rate-constant: {A: 2.6e-16 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O(1S) + OH => H + O2                    # R(172)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 6.0e-11*exp(-154.0/Tgas)/Tgas^0.186}
+- equation: O(1S) + HO2 => OH + O2                  # R(173)
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.0 cm^3/molec/s, Expr: 2.9e-11*exp(200.0/Tgas)}
+- equation: O(1S) + H2O => O(1D) + H2O              # R(174)
+  rate-constant: {A: 1.5e-10 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O(1S) + H2O => O + H2O                  # R(175)
+  rate-constant: {A: 4.5e-11 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O(1S) + H2O => OH + OH                  # R(176)
+  rate-constant: {A: 3e-10 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: O(1S) + H2O => H2 + O2                  # R(177)
+  rate-constant: {A: 2.2e-12 cm^3/molec/s, b: 0.0, Ea: 0.0}
+# -------------------------- END ---------------------------------/

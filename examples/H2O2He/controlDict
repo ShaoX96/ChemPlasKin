@@ -1,0 +1,48 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+|     ____ _                    ____  _           _  ___                      |
+|    / ___| |__   ___ _ __ ___ |  _ \| | __ _ ___| |/ (_)_ __                 |
+|   | |   | '_ \ / _ \ '_ ` _ \| |_) | |/ _` / __| ' /| | '_ \                |
+|   | |___| | | |  __/ | | | | |  __/| | (_| \__ \ . \| | | | |               |
+|    \____|_| |_|\___|_| |_| |_|_|   |_|\__,_|___/_|\_\_|_| |_|               |
+|                                                                             |
+|   A Freeware for Unified Gas-Plasma Kinetics Simulation                     |
+|   Version:      0.1.0 (February 2024)                                       |
+|   License:      GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1              |
+|   Author:       Xiao Shao                                                   |
+|   Organization: King Abdullah University of Science and Technology (KAUST)  |
+|   Contact:      xiao.shao@kaust.edu.sa                                      |
+\*---------------------------------------------------------------------------*/
+
+// ================ Time Control Parameters ================
+// Simulation ends at max(endTime, nPulse*pulsePeriod)
+
+startTime      0.0;    // Simulation start time [s]
+endTime        0.0;    // Simulation end time [s]
+nPulses        10;     // Total number of pulses
+
+// ================ Time Step Parameters ================
+
+dt1            1e-11;   // Time step during the discharge pulse [s]
+dt_max         1e-7;    // Maximum time step allowed [s]
+
+// Adaptive timestep for main time loop 
+pulseExten     1e-5;    // Fast relaxation or pulse influence stage [s]
+NstepInPulse   400;     // Number of time steps in a pulse discharge
+NstepAfPulse   200;     // Number of time steps during pulseExten
+
+dT_max         10.0;    // Maximum temperature increase per step allowed, [K]
+
+// CVODE solver tolerance
+odes
+{
+      reltol      1e-5;   // Relative tolerance
+      abstol      1e-10;  // Absolute tolerance
+}
+
+// ================ Output Log ================
+
+outputFile       "<case>/output_H2O2HE.csv";
+//writeSpecies   all; // Write ALL species
+writeSpecies     E, H2, O2, H, O, OH, O2(A1); // Write selected species
+
+// ************************************************************************* //

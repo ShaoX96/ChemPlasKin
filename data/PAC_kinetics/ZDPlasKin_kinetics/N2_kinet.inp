@@ -1,0 +1,76 @@
+#
+# DBD0D TEST CASE
+# INPUT DATA FILE
+# ZDPLASKIN
+#
+
+ELEMENTS
+e N
+END
+
+BOLSIG
+N2
+set dbfile ./data/bolsigdbN2.dat
+END
+
+SPECIES
+e N N2 N2(A) N2(B) N2(a') N2(C) N^+ N2^+ N3^+ N4^+
+END
+
+REACTIONS
+
+# effective ion-neutral collisional temperature
+$ double precision :: Teff
+$ Teff = Tgas + 0.12d0 * EN**2
+
+e + N2 => e + N2(A)                !   BOLSIG N2 -> N2(A3,v0-4)
+e + N2 => e + N2(A)                !   BOLSIG N2 -> N2(A3,v5-9)
+e + N2 => e + N2(A)                !   BOLSIG N2 -> N2(A3,v10-)
+e + N2 => e + N2(B)                !   BOLSIG N2 -> N2(B3)
+e + N2 => e + N2(a')               !   BOLSIG N2 -> N2(a'1)
+e + N2 => e + N2(C)                !   BOLSIG N2 -> N2(C3)
+e + N2 => e + N2^+ + e             !   BOLSIG N2 -> N2^+
+
+N2(A)  + N2(a') => N4^+ + e        !   4.0d-12
+N2(a') + N2(a') => N4^+ + e        !   4.0d-11
+
+N^+  + e + N2 => N + N2            !   6.0d-27 * (300./Te)**1.5
+N2^+ + e      => N + N             !   1.8d-07 * (300./Te)**0.39
+N3^+ + e      => N2 + N            !   2.0d-07 * (300./Te)**0.5
+N4^+ + e      => N2 + N2           !   2.3d-06 * (300./Te)**0.53
+
+N^+  + N  + N2 => N2^+ + N2        !   1.0d-29
+N^+  + N2 + N2 => N3^+ + N2        !   1.7d-29 * (300./Teff)**2.1
+N2^+ + N       => N^+  + N2        !   7.2d-13 * (Teff/300.)
+
+N2^+ + N2(A)   => N3^+ + N         !   3.0d-10
+N2^+ + N2 + N  => N3^+ + N2        !   9.0d-30 * exp(400./Teff)
+N2^+ + N2 + N2 => N4^+ + N2        !   5.2d-29 * (300./Teff)**2.2
+N3^+ + N       => N2^+ + N2        !   6.6d-11
+N4^+ + N       => N^+  + N2 + N2   !   1.0d-11
+N4^+ + N2      => N2^+ + N2 + N2   !   2.1d-16 * exp(Teff/121.)
+
+N2(A)  => N2                       !   5.0d-01
+N2(B)  => N2(A)                    !   1.3d+05
+N2(a') => N2                       !   1.0d+02
+N2(C)  => N2(B)                    !   2.5d+07
+
+N2(A)  + N     => N2 + N           !   2.0d-12
+N2(A)  + N2    => N2 + N2          !   3.0d-16
+N2(A)  + N2(A) => N2 + N2(B)       !   3.0d-10
+N2(A)  + N2(A) => N2 + N2(C)       !   1.5d-10
+N2(B)  + N2    => N2 + N2          !   2.0d-12
+N2(B)  + N2    => N2(A) + N2       !   3.0d-11
+N2(a') + N2    => N2 + N2(B)       !   1.9d-13
+N2(C)  + N2    => N2 + N2(a')      !   1.0d-11
+
+#N + N  + N2 => N2(A) + N2          !   1.7d-33
+#N + N  + N2 => N2(B) + N2          !   2.4d-33
+
+N + N  + N2 => @A + N2          !   @B
+  @A = N2(A) N2(B)  N2(K)
+  @B = 1.7d-33  2.4d-33  2.3d5
+
+N + N +ANY_NEUTRAL => N2 + ANY_NEUTRAL  ! 1.0
+
+END

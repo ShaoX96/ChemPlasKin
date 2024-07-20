@@ -1,0 +1,71 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+|     ____ _                    ____  _           _  ___                      |
+|    / ___| |__   ___ _ __ ___ |  _ \| | __ _ ___| |/ (_)_ __                 |
+|   | |   | '_ \ / _ \ '_ ` _ \| |_) | |/ _` / __| ' /| | '_ \                |
+|   | |___| | | |  __/ | | | | |  __/| | (_| \__ \ . \| | | | |               |
+|    \____|_| |_|\___|_| |_| |_|_|   |_|\__,_|___/_|\_\_|_| |_|               |
+|                                                                             |
+|   A Freeware for Unified Gas-Plasma Kinetics Simulation                     |
+|   Version:      0.1.0 (February 2024)                                       |
+|   License:      GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1              |
+|   Author:       Xiao Shao                                                   |
+|   Organization: King Abdullah University of Science and Technology (KAUST)  |
+|   Contact:      xiao.shao@kaust.edu.sa                                      |
+\*---------------------------------------------------------------------------*/
+
+// ================ Initial Conditions ================
+
+Temperature      400;      // Initial gas temperature [K]
+Pressure         101325;   // Initial pressure [Pa]
+CP_or_CV         CP;       // Constant pressure (CP) or constant volume (CV)
+nonThermal       no;       // No thermal effect, hold temperature as constant
+plasmaHeatModel  Flitti;   // 'default' or 'Flitti' (Flitti A, Pancheshnyi S 2009 model)
+heatLoss         no;       // Include heatLoss model or not
+C0               1.975e7;  // = 1.0/r_dis^2, r_dis: discharge radius; 1.0 is C0 in Eq.(13)
+
+// Initial mixture composition (in mole fraction）
+Mixture 
+{
+     H2     0.1667;
+     O2     0.0833;
+     HE     0.75;
+}
+fuelName         H2;
+electronDens     1e4; // Initial electron number density [#/cm^3]
+inertSpecies     HE;  
+
+
+// ================ Plasma Parameters ================
+// Species configured by CppBOLOS
+BoltzmannSpecies   H2, O2, HE, HE*, H, O, H2O, O3; 
+gridType         QuadraticGrid;  // Grid type: 'LinearGrid', 'QuadraticGrid' or 'LogGrid'
+gridSize
+{
+     start     0;    // Start value [eV]
+     end       100;  // End value   [eV]
+     points    100;  // Number of points [#]
+}
+
+E/N(NRP)         100; // Reduced electric field for the NRP discharges [Td]
+E/N(DC)          20;  // E/N for DC discharges [Td]
+stayDC           no;  // Whether to maintain DC discharge after NRP
+
+f_NRP            30e3; // NRP frequency [Hz]
+
+pulseEnergy      0.1;  // Input energy per pulse [mJ*cm^-3]
+
+pulseWidth       2.e-8; // Pulse width limit [s]
+
+// Criteria of updating electron Boltzmann solver
+TGAS_TOLERANCE   0.5; // Absolute tolerance of gas temperature change [K]
+EN_TOLERANCE     0.5; // Absolute tolerance of E/N change [Td]
+
+
+// ================ Data Files ================
+
+csDataFile       "<case>/../../data/LXCat/bolsigdb_H2O2HE.dat";
+mechFile         "<case>/../../data/PAC_kinetics/ZDPlasKin_kinetics/Mao-H2O2He/H2O2HE_Mao.yaml";
+
+
+
+// ************************************************************************* //

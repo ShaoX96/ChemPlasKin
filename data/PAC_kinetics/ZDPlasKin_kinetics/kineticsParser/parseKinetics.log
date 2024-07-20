@@ -1,0 +1,4522 @@
+
+>>>>>>>> Reading REACTION section ... <<<<<<<<
+Expanding 'E + @A => O + O + E                                ! BOLSIG+ O2 -> O + O' :
+E + O2 => O + O + E                                ! BOLSIG+ O2 -> O + O
+Expanding 'E + @A => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)' :
+E + O2 => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)
+Expanding 'E + @A => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)' :
+E + O2 => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)
+Expanding 'E + @A => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)' :
+E + O2 => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)
+Expanding 'E + @A => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)' :
+E + O2 => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)
+Expanding 'E + @A => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+' :
+E + O2 => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+
+Expanding 'E + @A => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+' :
+E + O2 => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+
+Expanding 'E + @A + ANY_NEUTRAL => @B + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5' :
+E + O^+ + ANY_NEUTRAL => O + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5
+Expanding 'E + @A + E => @B + E                               ! 7.0d-20 * (300.0d0/Te)**4.5' :
+E + O^+ + E => O + E                               ! 7.0d-20 * (300.0d0/Te)**4.5
+Expanding 'E + O2^+ => O + @B                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * @R' :
+E + O2^+ => O + O                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.55d0
+E + O2^+ => O + O(1D)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.40d0
+E + O2^+ => O + O(1S)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.05d0
+
+Variable list defined inline (preprocessed):
+M: 7.33894242685314e+21/Tgas
+ktot: 3.0e-11*Tgas**0.17*exp(-2726.0/Tgas)
+k0: 2.2e-37*Tgas**2.34*exp(-1350.0/Tgas)
+kR1: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+kR2: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+kR3: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+>>>>>>>> Processing reactions ... <<<<<<<<
+Rephrasing 'kR1' to: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+Rephrasing 'kR2' to: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+Rephrasing 'kR3' to: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+Reactions sucessfully parsed! 
+
+R(1): E + O => O + E
+R(2): E + O2 => O2 + E
+R(3): E + O2(a1) => O2(a1) + E
+R(4): E + O2(b1) => O2(b1) + E
+R(5): E + O3 => O3 + E
+R(6): E + H => H + E
+R(7): E + H2 => H2 + E
+R(8): E + H2O => H2O + E
+R(9): E + H2O => E + H2O
+R(10): E + O2 => E + O2
+R(11): E + O2 => E + O2
+R(12): E + O2 => E + O2
+R(13): E + O2 => E + O2
+R(14): E + H2 => E + H2
+R(15): E + H2 => E + H2
+R(16): E + H2 => E + H2
+R(17): E + H2O => E + H2O
+R(18): E + H2O => E + H2O
+R(19): E + O => E + O(1D)
+R(20): E + O(1D) => E + O
+R(21): E + O => E + O(1S)
+R(22): E + O(1S) => E + O
+R(23): E + O => E + O
+R(24): E + O => E + O
+R(25): E + O => E + O
+R(26): E + O => E + O
+R(27): E + O2 => O + O + E
+R(28): E + O2 => O + O(1D) + E
+R(29): E + O2 => O + O(1S) + E
+R(30): E + O2 => O + O(1S) + E
+R(31): E + O2 => E + O2(a1)
+R(32): E + O2 => E + O2(b1)
+R(33): E + O2 => E + O2(c)
+R(34): E + O2(a1) => O2(b1) + E
+R(35): E + O2(a1) => O2(c) + E
+R(36): E + O2(b1) => O2(c) + E
+R(37): E + O2(a1) => O + O + E
+R(38): E + O2(b1) => O + O + E
+R(39): E + O2(a1) => O + O(1D) + E
+R(40): E + O2(b1) => O + O(1D) + E
+R(41): E + O3 => O2(a1) + O + E
+R(42): E + O3 => O2(a1) + O(1D) + E
+R(43): E + O3 => O2(a1) + O(1S) + E
+R(44): E + O3 => O2(a1) + O(1S) + E
+R(45): E + H2 => E + H2
+R(46): E + H2 => E + H + H
+R(47): E + H2 => E + H + H
+R(48): E + H2 => E + H + H
+R(49): E + H2 => E + H2
+R(50): E + H2 => E + H2
+R(51): E + H2 => E + H + H
+R(52): E + H2 => E + H2
+R(53): E + H2 => E + H2
+R(54): E + H2 => E + H2
+R(55): E + H2 => E + H2
+R(56): E + H2 => E + H + H
+R(57): E + H2 => E + H + H
+R(58): E + H2 => E + H + H
+R(59): E + H2 => E + H + H
+R(60): E + H2 => E + H + H
+R(61): E + H => E + H
+R(62): E + H => E + H
+R(63): E + H => E + H
+R(64): E + H => E + H
+R(65): E + H => E + H
+R(66): E + H2O => E + OH + H
+R(67): E + H2O => E + O(1D) + H2
+R(68): E + O => O^+ + E + E
+R(69): E + O2 => O2^+ + E + E
+R(70): E + O2 => O + O^+ + E + E
+R(71): E + O2(a1) => O2^+ + E + E
+R(72): E + O2(b1) => O2^+ + E + E
+R(73): E + O2(a1) => O + O^+ + E + E
+R(74): E + O2(b1) => O + O^+ + E + E
+R(75): E + H2 => H2^+ + E + E
+R(76): E + H => H^+ + E + E
+R(77): E + H2O => H2O^+ + E + E
+R(78): E + O^+ + M => O + M
+R(79): E + O^+ + E => O + E
+R(80): E + O2^+ + M => O2 + M
+R(81): E + O2^+ => O + O
+R(82): E + O2^+ => O + O(1D)
+R(83): E + O2^+ => O + O(1S)
+R(84): E + H^+ => H
+R(85): E + E + H^+ => E + H
+R(86): E + H2^+ => H + H
+R(87): E + E + H2^+ => E + H2
+R(88): E + H2O^+ => OH + H
+R(89): E + H2O^+ => O + H2
+R(90): E + H2O^+ => O + H + H
+R(91): E + E + H2O^+ => E + H2O
+R(92): O2(a1) => O2
+R(93): O2(b1) => O2(a1)
+R(94): O2(b1) => O2
+R(95): O2(c) => O2
+R(96): O(1D) => O
+R(97): O(1S) => O(1D)
+R(98): O2(a1) + O => O2 + O
+R(99): O2(a1) + O2 => O2 + O2
+R(100): O2(a1) + O3 => O2 + O2 + O(1D)
+R(101): O2(a1) + O2(a1) => O2 + O2(b1)
+R(102): O2(a1) + H2O => O2 + H2O
+R(103): O2(a1) + H2 => OH + OH
+R(104): O2(a1) + H2 => O2 + H2
+R(105): O2(a1) + H => OH + O
+R(106): O2(a1) + H => HO2
+R(107): O2(a1) + H => O2 + H
+R(108): O2(a1) + H2 => H + HO2
+R(109): O2(a1) + H2O => OH + HO2
+R(110): O2(a1) + H2 => H2O + O(1D)
+R(111): O2(a1) + OH => H + O3
+R(112): O2(a1) + OH => O + HO2
+R(113): O2(a1) + OH => O2 + OH
+R(114): O2(a1) + H2O2 => O2 + H2O2
+R(115): O2(a1) + HO2 => O2 + HO2
+R(116): O2(a1) + O2 => O3 + O
+R(117): O2(a1) + O2(a1) => O2 + O2
+R(118): O + O2(a1) + O2 => O + O2 + O2
+R(119): O2(a1) + H2 => O2(b1) + H2
+R(120): O2(a1) + H2O => O + H2O2
+R(121): O2(b1) + O => O2(a1) + O
+R(122): O2(b1) + O => O2 + O(1D)
+R(123): O2(b1) + O2 => O2(a1) + O2
+R(124): O2(b1) + O3 => O2 + O2 + O
+R(125): O2(b1) + O => O2 + O
+R(126): O2(b1) + H => O2(a1) + H
+R(127): O2(b1) + H => O2 + H
+R(128): O2(b1) + O2(b1) => O2(a1) + O2
+R(129): O2(b1) + H2 => O2 + H2
+R(130): O2(b1) + H2O => O2 + H2O
+R(131): O2(b1) + O3 => O2(a1) + O2 + O
+R(132): O2(b1) + O3 => O2 + O3
+R(133): O2(b1) + O3 => O2(a1) + O3
+R(134): O2(b1) + H2 => H + HO2
+R(135): O2(b1) + H => OH + O(1D)
+R(136): O2(b1) + H2O => OH + HO2
+R(137): O2(b1) + H2 => O2(a1) + H2
+R(138): O2(b1) + O2 => O2 + O2
+R(139): O2(b1) + H2O => O2(a1) + H2O
+R(140): O2(b1) + H2O => O + H2O2
+R(141): O2(b1) + HO2 => O2 + HO2
+R(142): O2(b1) + H2O2 => O2 + H2O2
+R(143): O2(b1) + OH => O + HO2
+R(144): O2(c) + O => O2 + O(1S)
+R(145): O2(c) + O2 => O2(b1) + O2(b1)
+R(146): O2(c) + O => O2 + O
+R(147): O2(c) + O => O2(a1) + O(1D)
+R(148): O2(c) + O => O2(b1) + O(1D)
+R(149): O2(c) + O2 => O2(a1) + O2
+R(150): O2(c) + O2 => O2(b1) + O2
+R(151): O2(c) + O2 => O2 + O2
+R(152): O2(c) + H2 => H2 + O2
+R(153): O2(c) + H2 => H2 + O2(a1)
+R(154): O2(c) + H2O => H2O + O2
+R(155): O2(c) + HO2 => HO2 + O2
+R(156): O2(c) + H2O2 => H2O2 + O2
+R(157): O(1D) + O => O + O
+R(158): O(1D) + O2 => O + O2
+R(159): O(1D) + O2 => O + O2(a1)
+R(160): O(1D) + O2 => O + O2(b1)
+R(161): O(1D) + O3 => O2 + O + O
+R(162): O(1D) + O3 => O2 + O2
+R(163): O(1D) + O3 => O + O3
+R(164): O(1D) + H2O2 => HO2 + OH
+R(165): O(1D) + H2O => OH + OH
+R(166): O(1D) + H2O => O + H2O
+R(167): O(1D) + H2 => OH + H
+R(168): O(1D) + H2 => O + H2
+R(169): O(1D) + OH => H + O2
+R(170): O(1D) + HO2 => OH + O2
+R(171): O(1S) + O => O(1D) + O
+R(172): O(1S) + O2 => O(1D) + O2
+R(173): O(1S) + O2 => O + O + O
+R(174): O(1S) + O2(a1) => O + O2(c)
+R(175): O(1S) + O2(a1) => O(1D) + O2(b1)
+R(176): O(1S) + O2(a1) => O + O + O
+R(177): O(1S) + O3 => O2 + O2
+R(178): O(1S) + O3 => O2 + O + O(1D)
+R(179): O(1S) + O => O + O
+R(180): O(1S) + O2 => O + O2
+R(181): O(1S) + H2 => H + OH
+R(182): O(1S) + OH => H + O2
+R(183): O(1S) + HO2 => OH + O2
+R(184): O(1S) + H2O => O(1D) + H2O
+R(185): O(1S) + H2O => O + H2O
+R(186): O(1S) + H2O => OH + OH
+R(187): O(1S) + H2O => H2 + O2
+
+Write sucussefully with 187 reactions and 21 species:
+['E', 'O^+', 'O2^+', 'H^+', 'H2^+', 'H2O^+', 'O', 'O(1D)', 'O(1S)', 'O2', 'O2(a1)', 'O2(b1)', 'O2(c)', 'O3', 'H', 'H2', 'H2O', 'OH', 'OH(v)', 'HO2', 'H2O2']
+
+>>>>>>>> Reading REACTION section ... <<<<<<<<
+Expanding 'E + @A => O + O + E                                ! BOLSIG+ O2 -> O + O' :
+E + O2 => O + O + E                                ! BOLSIG+ O2 -> O + O
+Expanding 'E + @A => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)' :
+E + O2 => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)
+Expanding 'E + @A => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)' :
+E + O2 => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)
+Expanding 'E + @A => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)' :
+E + O2 => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)
+Expanding 'E + @A => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)' :
+E + O2 => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)
+Expanding 'E + @A => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+' :
+E + O2 => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+
+Expanding 'E + @A => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+' :
+E + O2 => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+
+Expanding 'E + @A + ANY_NEUTRAL => @B + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5' :
+E + O^+ + ANY_NEUTRAL => O + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5
+Expanding 'E + @A + E => @B + E                               ! 7.0d-20 * (300.0d0/Te)**4.5' :
+E + O^+ + E => O + E                               ! 7.0d-20 * (300.0d0/Te)**4.5
+Expanding 'E + O2^+ => O + @B                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * @R' :
+E + O2^+ => O + O                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.55d0
+E + O2^+ => O + O(1D)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.40d0
+E + O2^+ => O + O(1S)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.05d0
+
+Variable list defined inline (preprocessed):
+M: 7.33894242685314e+21/Tgas
+ktot: 3.0e-11*Tgas**0.17*exp(-2726.0/Tgas)
+k0: 2.2e-37*Tgas**2.34*exp(-1350.0/Tgas)
+kR1: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+kR2: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+kR3: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+>>>>>>>> Processing reactions ... <<<<<<<<
+Rephrasing 'kR1' to: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+Rephrasing 'kR2' to: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+Rephrasing 'kR3' to: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+Reactions sucessfully parsed! 
+
+Writing reactions to kinetics.yaml:
+R(1): E + O => O + E
+R(2): E + O2 => O2 + E
+R(3): E + O2(a1) => O2(a1) + E
+R(4): E + O2(b1) => O2(b1) + E
+R(5): E + O3 => O3 + E
+R(6): E + H => H + E
+R(7): E + H2 => H2 + E
+R(8): E + H2O => H2O + E
+R(9): E + H2O => E + H2O
+R(10): E + O2 => E + O2
+R(11): E + O2 => E + O2
+R(12): E + O2 => E + O2
+R(13): E + O2 => E + O2
+R(14): E + H2 => E + H2
+R(15): E + H2 => E + H2
+R(16): E + H2 => E + H2
+R(17): E + H2O => E + H2O
+R(18): E + H2O => E + H2O
+R(19): E + O => E + O(1D)
+R(20): E + O(1D) => E + O
+R(21): E + O => E + O(1S)
+R(22): E + O(1S) => E + O
+R(23): E + O => E + O
+R(24): E + O => E + O
+R(25): E + O => E + O
+R(26): E + O => E + O
+R(27): E + O2 => O + O + E
+R(28): E + O2 => O + O(1D) + E
+R(29): E + O2 => O + O(1S) + E
+R(30): E + O2 => O + O(1S) + E
+R(31): E + O2 => E + O2(a1)
+R(32): E + O2 => E + O2(b1)
+R(33): E + O2 => E + O2(c)
+R(34): E + O2(a1) => O2(b1) + E
+R(35): E + O2(a1) => O2(c) + E
+R(36): E + O2(b1) => O2(c) + E
+R(37): E + O2(a1) => O + O + E
+R(38): E + O2(b1) => O + O + E
+R(39): E + O2(a1) => O + O(1D) + E
+R(40): E + O2(b1) => O + O(1D) + E
+R(41): E + O3 => O2(a1) + O + E
+R(42): E + O3 => O2(a1) + O(1D) + E
+R(43): E + O3 => O2(a1) + O(1S) + E
+R(44): E + O3 => O2(a1) + O(1S) + E
+R(45): E + H2 => E + H2
+R(46): E + H2 => E + H + H
+R(47): E + H2 => E + H + H
+R(48): E + H2 => E + H + H
+R(49): E + H2 => E + H2
+R(50): E + H2 => E + H2
+R(51): E + H2 => E + H + H
+R(52): E + H2 => E + H2
+R(53): E + H2 => E + H2
+R(54): E + H2 => E + H2
+R(55): E + H2 => E + H2
+R(56): E + H2 => E + H + H
+R(57): E + H2 => E + H + H
+R(58): E + H2 => E + H + H
+R(59): E + H2 => E + H + H
+R(60): E + H2 => E + H + H
+R(61): E + H => E + H
+R(62): E + H => E + H
+R(63): E + H => E + H
+R(64): E + H => E + H
+R(65): E + H => E + H
+R(66): E + H2O => E + OH + H
+R(67): E + H2O => E + O(1D) + H2
+R(68): E + O => O^+ + E + E
+R(69): E + O2 => O2^+ + E + E
+R(70): E + O2 => O + O^+ + E + E
+R(71): E + O2(a1) => O2^+ + E + E
+R(72): E + O2(b1) => O2^+ + E + E
+R(73): E + O2(a1) => O + O^+ + E + E
+R(74): E + O2(b1) => O + O^+ + E + E
+R(75): E + H2 => H2^+ + E + E
+R(76): E + H => H^+ + E + E
+R(77): E + H2O => H2O^+ + E + E
+R(78): E + O^+ + M => O + M
+R(79): E + O^+ + E => O + E
+R(80): E + O2^+ + M => O2 + M
+R(81): E + O2^+ => O + O
+R(82): E + O2^+ => O + O(1D)
+R(83): E + O2^+ => O + O(1S)
+R(84): E + H^+ => H
+R(85): E + E + H^+ => E + H
+R(86): E + H2^+ => H + H
+R(87): E + E + H2^+ => E + H2
+R(88): E + H2O^+ => OH + H
+R(89): E + H2O^+ => O + H2
+R(90): E + H2O^+ => O + H + H
+R(91): E + E + H2O^+ => E + H2O
+R(92): O2(a1) => O2
+R(93): O2(b1) => O2(a1)
+R(94): O2(b1) => O2
+R(95): O2(c) => O2
+R(96): O(1D) => O
+R(97): O(1S) => O(1D)
+R(98): O2(a1) + O => O2 + O
+R(99): O2(a1) + O2 => O2 + O2
+R(100): O2(a1) + O3 => O2 + O2 + O(1D)
+R(101): O2(a1) + O2(a1) => O2 + O2(b1)
+R(102): O2(a1) + H2O => O2 + H2O
+R(103): O2(a1) + H2 => OH + OH
+R(104): O2(a1) + H2 => O2 + H2
+R(105): O2(a1) + H => OH + O
+R(106): O2(a1) + H => HO2
+R(107): O2(a1) + H => O2 + H
+R(108): O2(a1) + H2 => H + HO2
+R(109): O2(a1) + H2O => OH + HO2
+R(110): O2(a1) + H2 => H2O + O(1D)
+R(111): O2(a1) + OH => H + O3
+R(112): O2(a1) + OH => O + HO2
+R(113): O2(a1) + OH => O2 + OH
+R(114): O2(a1) + H2O2 => O2 + H2O2
+R(115): O2(a1) + HO2 => O2 + HO2
+R(116): O2(a1) + O2 => O3 + O
+R(117): O2(a1) + O2(a1) => O2 + O2
+R(118): O + O2(a1) + O2 => O + O2 + O2
+R(119): O2(a1) + H2 => O2(b1) + H2
+R(120): O2(a1) + H2O => O + H2O2
+R(121): O2(b1) + O => O2(a1) + O
+R(122): O2(b1) + O => O2 + O(1D)
+R(123): O2(b1) + O2 => O2(a1) + O2
+R(124): O2(b1) + O3 => O2 + O2 + O
+R(125): O2(b1) + O => O2 + O
+R(126): O2(b1) + H => O2(a1) + H
+R(127): O2(b1) + H => O2 + H
+R(128): O2(b1) + O2(b1) => O2(a1) + O2
+R(129): O2(b1) + H2 => O2 + H2
+R(130): O2(b1) + H2O => O2 + H2O
+R(131): O2(b1) + O3 => O2(a1) + O2 + O
+R(132): O2(b1) + O3 => O2 + O3
+R(133): O2(b1) + O3 => O2(a1) + O3
+R(134): O2(b1) + H2 => H + HO2
+R(135): O2(b1) + H => OH + O(1D)
+R(136): O2(b1) + H2O => OH + HO2
+R(137): O2(b1) + H2 => O2(a1) + H2
+R(138): O2(b1) + O2 => O2 + O2
+R(139): O2(b1) + H2O => O2(a1) + H2O
+R(140): O2(b1) + H2O => O + H2O2
+R(141): O2(b1) + HO2 => O2 + HO2
+R(142): O2(b1) + H2O2 => O2 + H2O2
+R(143): O2(b1) + OH => O + HO2
+R(144): O2(c) + O => O2 + O(1S)
+R(145): O2(c) + O2 => O2(b1) + O2(b1)
+R(146): O2(c) + O => O2 + O
+R(147): O2(c) + O => O2(a1) + O(1D)
+R(148): O2(c) + O => O2(b1) + O(1D)
+R(149): O2(c) + O2 => O2(a1) + O2
+R(150): O2(c) + O2 => O2(b1) + O2
+R(151): O2(c) + O2 => O2 + O2
+R(152): O2(c) + H2 => H2 + O2
+R(153): O2(c) + H2 => H2 + O2(a1)
+R(154): O2(c) + H2O => H2O + O2
+R(155): O2(c) + HO2 => HO2 + O2
+R(156): O2(c) + H2O2 => H2O2 + O2
+R(157): O(1D) + O => O + O
+R(158): O(1D) + O2 => O + O2
+R(159): O(1D) + O2 => O + O2(a1)
+R(160): O(1D) + O2 => O + O2(b1)
+R(161): O(1D) + O3 => O2 + O + O
+R(162): O(1D) + O3 => O2 + O2
+R(163): O(1D) + O3 => O + O3
+R(164): O(1D) + H2O2 => HO2 + OH
+R(165): O(1D) + H2O => OH + OH
+R(166): O(1D) + H2O => O + H2O
+R(167): O(1D) + H2 => OH + H
+R(168): O(1D) + H2 => O + H2
+R(169): O(1D) + OH => H + O2
+R(170): O(1D) + HO2 => OH + O2
+R(171): O(1S) + O => O(1D) + O
+R(172): O(1S) + O2 => O(1D) + O2
+R(173): O(1S) + O2 => O + O + O
+R(174): O(1S) + O2(a1) => O + O2(c)
+R(175): O(1S) + O2(a1) => O(1D) + O2(b1)
+R(176): O(1S) + O2(a1) => O + O + O
+R(177): O(1S) + O3 => O2 + O2
+R(178): O(1S) + O3 => O2 + O + O(1D)
+R(179): O(1S) + O => O + O
+R(180): O(1S) + O2 => O + O2
+R(181): O(1S) + H2 => H + OH
+R(182): O(1S) + OH => H + O2
+R(183): O(1S) + HO2 => OH + O2
+R(184): O(1S) + H2O => O(1D) + H2O
+R(185): O(1S) + H2O => O + H2O
+R(186): O(1S) + H2O => OH + OH
+R(187): O(1S) + H2O => H2 + O2
+
+Write sucussefully with 187 reactions and 21 species:
+['E', 'O^+', 'O2^+', 'H^+', 'H2^+', 'H2O^+', 'O', 'O(1D)', 'O(1S)', 'O2', 'O2(a1)', 'O2(b1)', 'O2(c)', 'O3', 'H', 'H2', 'H2O', 'OH', 'OH(v)', 'HO2', 'H2O2']
+
+>>>>>>>> Reading REACTION section ... <<<<<<<<
+Expanding 'E + @A => O + O + E                                ! BOLSIG+ O2 -> O + O' :
+E + O2 => O + O + E                                ! BOLSIG+ O2 -> O + O
+Expanding 'E + @A => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)' :
+E + O2 => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)
+Expanding 'E + @A => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)' :
+E + O2 => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)
+Expanding 'E + @A => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)' :
+E + O2 => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)
+Expanding 'E + @A => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)' :
+E + O2 => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)
+Expanding 'E + @A => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+' :
+E + O2 => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+
+Expanding 'E + @A => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+' :
+E + O2 => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+
+Expanding 'E + @A + ANY_NEUTRAL => @B + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5' :
+E + O^+ + ANY_NEUTRAL => O + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5
+Expanding 'E + @A + E => @B + E                               ! 7.0d-20 * (300.0d0/Te)**4.5' :
+E + O^+ + E => O + E                               ! 7.0d-20 * (300.0d0/Te)**4.5
+Expanding 'E + O2^+ => O + @B                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * @R' :
+E + O2^+ => O + O                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.55d0
+E + O2^+ => O + O(1D)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.40d0
+E + O2^+ => O + O(1S)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.05d0
+
+Variable list defined inline (preprocessed):
+M: 7.33894242685314e+21/Tgas
+ktot: 3.0e-11*Tgas**0.17*exp(-2726.0/Tgas)
+k0: 2.2e-37*Tgas**2.34*exp(-1350.0/Tgas)
+kR1: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+kR2: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+kR3: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+>>>>>>>> Processing reactions ... <<<<<<<<
+Rephrasing 'kR1' to: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+Rephrasing 'kR2' to: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+Rephrasing 'kR3' to: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+Reactions sucessfully parsed! 
+
+Writing reactions to kinetics.yaml:
+R(1): E + O => O + E
+R(2): E + O2 => O2 + E
+R(3): E + O2(a1) => O2(a1) + E
+R(4): E + O2(b1) => O2(b1) + E
+R(5): E + O3 => O3 + E
+R(6): E + H => H + E
+R(7): E + H2 => H2 + E
+R(8): E + H2O => H2O + E
+R(9): E + H2O => E + H2O
+R(10): E + O2 => E + O2
+R(11): E + O2 => E + O2
+R(12): E + O2 => E + O2
+R(13): E + O2 => E + O2
+R(14): E + H2 => E + H2
+R(15): E + H2 => E + H2
+R(16): E + H2 => E + H2
+R(17): E + H2O => E + H2O
+R(18): E + H2O => E + H2O
+R(19): E + O => E + O(1D)
+R(20): E + O(1D) => E + O
+R(21): E + O => E + O(1S)
+R(22): E + O(1S) => E + O
+R(23): E + O => E + O
+R(24): E + O => E + O
+R(25): E + O => E + O
+R(26): E + O => E + O
+R(27): E + O2 => O + O + E
+R(28): E + O2 => O + O(1D) + E
+R(29): E + O2 => O + O(1S) + E
+R(30): E + O2 => O + O(1S) + E
+R(31): E + O2 => E + O2(a1)
+R(32): E + O2 => E + O2(b1)
+R(33): E + O2 => E + O2(c)
+R(34): E + O2(a1) => O2(b1) + E
+R(35): E + O2(a1) => O2(c) + E
+R(36): E + O2(b1) => O2(c) + E
+R(37): E + O2(a1) => O + O + E
+R(38): E + O2(b1) => O + O + E
+R(39): E + O2(a1) => O + O(1D) + E
+R(40): E + O2(b1) => O + O(1D) + E
+R(41): E + O3 => O2(a1) + O + E
+R(42): E + O3 => O2(a1) + O(1D) + E
+R(43): E + O3 => O2(a1) + O(1S) + E
+R(44): E + O3 => O2(a1) + O(1S) + E
+R(45): E + H2 => E + H2
+R(46): E + H2 => E + H + H
+R(47): E + H2 => E + H + H
+R(48): E + H2 => E + H + H
+R(49): E + H2 => E + H2
+R(50): E + H2 => E + H2
+R(51): E + H2 => E + H + H
+R(52): E + H2 => E + H2
+R(53): E + H2 => E + H2
+R(54): E + H2 => E + H2
+R(55): E + H2 => E + H2
+R(56): E + H2 => E + H + H
+R(57): E + H2 => E + H + H
+R(58): E + H2 => E + H + H
+R(59): E + H2 => E + H + H
+R(60): E + H2 => E + H + H
+R(61): E + H => E + H
+R(62): E + H => E + H
+R(63): E + H => E + H
+R(64): E + H => E + H
+R(65): E + H => E + H
+R(66): E + H2O => E + OH + H
+R(67): E + H2O => E + O(1D) + H2
+R(68): E + O => O^+ + E + E
+R(69): E + O2 => O2^+ + E + E
+R(70): E + O2 => O + O^+ + E + E
+R(71): E + O2(a1) => O2^+ + E + E
+R(72): E + O2(b1) => O2^+ + E + E
+R(73): E + O2(a1) => O + O^+ + E + E
+R(74): E + O2(b1) => O + O^+ + E + E
+R(75): E + H2 => H2^+ + E + E
+R(76): E + H => H^+ + E + E
+R(77): E + H2O => H2O^+ + E + E
+R(78): E + O^+ + M => O + M
+R(79): E + O^+ + E => O + E
+R(80): E + O2^+ + M => O2 + M
+R(81): E + O2^+ => O + O
+R(82): E + O2^+ => O + O(1D)
+R(83): E + O2^+ => O + O(1S)
+R(84): E + H^+ => H
+R(85): E + E + H^+ => E + H
+R(86): E + H2^+ => H + H
+R(87): E + E + H2^+ => E + H2
+R(88): E + H2O^+ => OH + H
+R(89): E + H2O^+ => O + H2
+R(90): E + H2O^+ => O + H + H
+R(91): E + E + H2O^+ => E + H2O
+R(92): O2(a1) => O2
+R(93): O2(b1) => O2(a1)
+R(94): O2(b1) => O2
+R(95): O2(c) => O2
+R(96): O(1D) => O
+R(97): O(1S) => O(1D)
+R(98): O2(a1) + O => O2 + O
+R(99): O2(a1) + O2 => O2 + O2
+R(100): O2(a1) + O3 => O2 + O2 + O(1D)
+R(101): O2(a1) + O2(a1) => O2 + O2(b1)
+R(102): O2(a1) + H2O => O2 + H2O
+R(103): O2(a1) + H2 => OH + OH
+R(104): O2(a1) + H2 => O2 + H2
+R(105): O2(a1) + H => OH + O
+R(106): O2(a1) + H => HO2
+R(107): O2(a1) + H => O2 + H
+R(108): O2(a1) + H2 => H + HO2
+R(109): O2(a1) + H2O => OH + HO2
+R(110): O2(a1) + H2 => H2O + O(1D)
+R(111): O2(a1) + OH => H + O3
+R(112): O2(a1) + OH => O + HO2
+R(113): O2(a1) + OH => O2 + OH
+R(114): O2(a1) + H2O2 => O2 + H2O2
+R(115): O2(a1) + HO2 => O2 + HO2
+R(116): O2(a1) + O2 => O3 + O
+R(117): O2(a1) + O2(a1) => O2 + O2
+R(118): O + O2(a1) + O2 => O + O2 + O2
+R(119): O2(a1) + H2 => O2(b1) + H2
+R(120): O2(a1) + H2O => O + H2O2
+R(121): O2(b1) + O => O2(a1) + O
+R(122): O2(b1) + O => O2 + O(1D)
+R(123): O2(b1) + O2 => O2(a1) + O2
+R(124): O2(b1) + O3 => O2 + O2 + O
+R(125): O2(b1) + O => O2 + O
+R(126): O2(b1) + H => O2(a1) + H
+R(127): O2(b1) + H => O2 + H
+R(128): O2(b1) + O2(b1) => O2(a1) + O2
+R(129): O2(b1) + H2 => O2 + H2
+R(130): O2(b1) + H2O => O2 + H2O
+R(131): O2(b1) + O3 => O2(a1) + O2 + O
+R(132): O2(b1) + O3 => O2 + O3
+R(133): O2(b1) + O3 => O2(a1) + O3
+R(134): O2(b1) + H2 => H + HO2
+R(135): O2(b1) + H => OH + O(1D)
+R(136): O2(b1) + H2O => OH + HO2
+R(137): O2(b1) + H2 => O2(a1) + H2
+R(138): O2(b1) + O2 => O2 + O2
+R(139): O2(b1) + H2O => O2(a1) + H2O
+R(140): O2(b1) + H2O => O + H2O2
+R(141): O2(b1) + HO2 => O2 + HO2
+R(142): O2(b1) + H2O2 => O2 + H2O2
+R(143): O2(b1) + OH => O + HO2
+R(144): O2(c) + O => O2 + O(1S)
+R(145): O2(c) + O2 => O2(b1) + O2(b1)
+R(146): O2(c) + O => O2 + O
+R(147): O2(c) + O => O2(a1) + O(1D)
+R(148): O2(c) + O => O2(b1) + O(1D)
+R(149): O2(c) + O2 => O2(a1) + O2
+R(150): O2(c) + O2 => O2(b1) + O2
+R(151): O2(c) + O2 => O2 + O2
+R(152): O2(c) + H2 => H2 + O2
+R(153): O2(c) + H2 => H2 + O2(a1)
+R(154): O2(c) + H2O => H2O + O2
+R(155): O2(c) + HO2 => HO2 + O2
+R(156): O2(c) + H2O2 => H2O2 + O2
+R(157): O(1D) + O => O + O
+R(158): O(1D) + O2 => O + O2
+R(159): O(1D) + O2 => O + O2(a1)
+R(160): O(1D) + O2 => O + O2(b1)
+R(161): O(1D) + O3 => O2 + O + O
+R(162): O(1D) + O3 => O2 + O2
+R(163): O(1D) + O3 => O + O3
+R(164): O(1D) + H2O2 => HO2 + OH
+R(165): O(1D) + H2O => OH + OH
+R(166): O(1D) + H2O => O + H2O
+R(167): O(1D) + H2 => OH + H
+R(168): O(1D) + H2 => O + H2
+R(169): O(1D) + OH => H + O2
+R(170): O(1D) + HO2 => OH + O2
+R(171): O(1S) + O => O(1D) + O
+R(172): O(1S) + O2 => O(1D) + O2
+R(173): O(1S) + O2 => O + O + O
+R(174): O(1S) + O2(a1) => O + O2(c)
+R(175): O(1S) + O2(a1) => O(1D) + O2(b1)
+R(176): O(1S) + O2(a1) => O + O + O
+R(177): O(1S) + O3 => O2 + O2
+R(178): O(1S) + O3 => O2 + O + O(1D)
+R(179): O(1S) + O => O + O
+R(180): O(1S) + O2 => O + O2
+R(181): O(1S) + H2 => H + OH
+R(182): O(1S) + OH => H + O2
+R(183): O(1S) + HO2 => OH + O2
+R(184): O(1S) + H2O => O(1D) + H2O
+R(185): O(1S) + H2O => O + H2O
+R(186): O(1S) + H2O => OH + OH
+R(187): O(1S) + H2O => H2 + O2
+
+Write sucussefully with 187 reactions and 21 species:
+['E', 'O^+', 'O2^+', 'H^+', 'H2^+', 'H2O^+', 'O', 'O(1D)', 'O(1S)', 'O2', 'O2(a1)', 'O2(b1)', 'O2(c)', 'O3', 'H', 'H2', 'H2O', 'OH', 'OH(v)', 'HO2', 'H2O2']
+
+>>>>>>>> Reading REACTION section ... <<<<<<<<
+Expanding 'E + O2 => E + @B                       ! BOLSIG O2 -> @R' :
+E + O2 => E + O2(A1)                       ! BOLSIG O2 -> O2(A1)
+E + O2 => E + O2(B1)                       ! BOLSIG O2 -> O2(B1)
+E + O2 => E + O2*                       ! BOLSIG O2 -> O2*
+Expanding 'E + H2 => E + H + H                    ! BOLSIG H2 -> @R' :
+E + H2 => E + H + H                    ! BOLSIG H2 -> H2(B3SIG)
+E + H2 => E + H + H                    ! BOLSIG H2 -> H2(B1SIG)
+E + H2 => E + H + H                    ! BOLSIG H2 -> H2(C3PI)
+E + H2 => E + H + H                    ! BOLSIG H2 -> H2(A3SIG)
+E + H2 => E + H + H                    ! BOLSIG H2 -> H2(C1PI)
+E + H2 => E + H + H                    ! BOLSIG H2 -> H2(G1SIG)
+E + H2 => E + H + H                    ! BOLSIG H2 -> H2(D3PI)
+E + H2 => E + H + H                    ! BOLSIG H2 -> H(n2)
+E + H2 => E + H + H                    ! BOLSIG H2 -> H2(RYDBERG_SUM)
+E + H2 => E + H + H                    ! BOLSIG H2 -> H(n3)
+Expanding 'O3  + @B => O2 + O + @B                    ! 6.6d-10*exp(-11600.0d0/Tgas)*@R' :
+O3  + O2 => O2 + O + O2                    ! 6.6d-10*exp(-11600.0d0/Tgas)*0.38d0
+O3  + O => O2 + O + O                    ! 6.6d-10*exp(-11600.0d0/Tgas)*6.3d0*exp(170.0d0/Tgas)
+Expanding 'E + O2^+ => O  + @B                   ! 2.7d-7*(300.0d0/Te)**0.7*@R' :
+E + O2^+ => O  + O                   ! 2.7d-7*(300.0d0/Te)**0.7*0.55d0
+E + O2^+ => O  + O(1D)                   ! 2.7d-7*(300.0d0/Te)**0.7*0.40d0
+E + O2^+ => O  + O(1S)                   ! 2.7d-7*(300.0d0/Te)**0.7*0.05d0
+Expanding 'O^- + @A => O + @B                     ! 2.0d-7*(300.0d0/Tgas)**0.5' :
+O^- + O^+ => O + O                     ! 2.0d-7*(300.0d0/Tgas)**0.5
+O^- + O2^+ => O + O2                     ! 2.0d-7*(300.0d0/Tgas)**0.5
+Expanding 'O^- + @A => O + @B                     ! 1.0d-7' :
+O^- + O2^+ => O + O+O                     ! 1.0d-7
+O^- + O4^+ => O + O2+O2                     ! 1.0d-7
+Expanding 'O^- + @A + ANY_NEUTRAL => O + @B + ANY_NEUTRAL    ! 2.0d-25*(300.0d0/Tgas)**2.5' :
+O^- + O^+ + ANY_NEUTRAL => O + O + ANY_NEUTRAL    ! 2.0d-25*(300.0d0/Tgas)**2.5
+O^- + O2^+ + ANY_NEUTRAL => O + O2 + ANY_NEUTRAL    ! 2.0d-25*(300.0d0/Tgas)**2.5
+O^- + O4^+ + ANY_NEUTRAL => O + O2+O2 + ANY_NEUTRAL    ! 2.0d-25*(300.0d0/Tgas)**2.5
+Expanding 'O^- + @A + ANY_NEUTRAL => @B + ANY_NEUTRAL        ! 2.0d-25*(300.0d0/Tgas)**2.5' :
+O^- + O^+ + ANY_NEUTRAL => O2 + ANY_NEUTRAL        ! 2.0d-25*(300.0d0/Tgas)**2.5
+O^- + O2^+ + ANY_NEUTRAL => O3 + ANY_NEUTRAL        ! 2.0d-25*(300.0d0/Tgas)**2.5
+Expanding 'O2^- + @A => O2 + @B                   ! 2.0d-7*(300.0d0/Tgas)**0.5' :
+O2^- + O^+ => O2 + O                   ! 2.0d-7*(300.0d0/Tgas)**0.5
+O2^- + O2^+ => O2 + O2                   ! 2.0d-7*(300.0d0/Tgas)**0.5
+Expanding 'O2^- + @A => O2 + @B                   ! 1.0d-7' :
+O2^- + O2^+ => O2 + O+O                   ! 1.0d-7
+O2^- + O4^+ => O2 + O2+O2                   ! 1.0d-7
+Expanding 'O2^- + @A  + ANY_NEUTRAL => O2 + @B + ANY_NEUTRAL ! 2.0d-25*(300.0d0/Tgas)**2.5' :
+O2^- + O^+  + ANY_NEUTRAL => O2 + O + ANY_NEUTRAL ! 2.0d-25*(300.0d0/Tgas)**2.5
+O2^- + O2^+  + ANY_NEUTRAL => O2 + O2 + ANY_NEUTRAL ! 2.0d-25*(300.0d0/Tgas)**2.5
+O2^- + O4^+  + ANY_NEUTRAL => O2 + O2+O2 + ANY_NEUTRAL ! 2.0d-25*(300.0d0/Tgas)**2.5
+Expanding 'O3^- + @A => O3 + @B                    ! 2.0d-7*(300.0d0/Tgas)**0.5' :
+O3^- + O^+ => O3 + O                    ! 2.0d-7*(300.0d0/Tgas)**0.5
+O3^- + O2^+ => O3 + O2                    ! 2.0d-7*(300.0d0/Tgas)**0.5
+Expanding 'O3^- + @A => O3 + @B                    ! 1.0d-7' :
+O3^- + O2^+ => O3 + O+O                    ! 1.0d-7
+O3^- + O4^+ => O3 + O2+O2                    ! 1.0d-7
+Expanding 'O3^- + @A + ANY_NEUTRAL => O3 + @B + ANY_NEUTRAL  ! 2.0d-25*(300.0d0/Tgas)**2.5' :
+O3^- + O^+ + ANY_NEUTRAL => O3 + O + ANY_NEUTRAL  ! 2.0d-25*(300.0d0/Tgas)**2.5
+O3^- + O2^+ + ANY_NEUTRAL => O3 + O2 + ANY_NEUTRAL  ! 2.0d-25*(300.0d0/Tgas)**2.5
+O3^- + O4^+ + ANY_NEUTRAL => O3 + O2+O2 + ANY_NEUTRAL  ! 2.0d-25*(300.0d0/Tgas)**2.5
+Expanding 'O4^- + @A => 2O2 + @B                   ! 1.0d-7' :
+O4^- + O^+ => 2O2 + O                   ! 1.0d-7
+O4^- + O2^+ => 2O2 + O2                   ! 1.0d-7
+O4^- + O4^+ => 2O2 + O2+O2                   ! 1.0d-7
+Expanding 'O4^- + @A + ANY_NEUTRAL => 2O2 + @B + ANY_NEUTRAL  ! 2.0d-25*(300.0d0/Tgas)**2.5' :
+O4^- + O^+ + ANY_NEUTRAL => 2O2 + O + ANY_NEUTRAL  ! 2.0d-25*(300.0d0/Tgas)**2.5
+O4^- + O2^+ + ANY_NEUTRAL => 2O2 + O2 + ANY_NEUTRAL  ! 2.0d-25*(300.0d0/Tgas)**2.5
+O4^- + O4^+ + ANY_NEUTRAL => 2O2 + O2+O2 + ANY_NEUTRAL  ! 2.0d-25*(300.0d0/Tgas)**2.5
+
+Variable list defined inline (preprocessed):
+energy_vibH2: 5988.18000000000
+energy_vibO2: 2204.95000000000
+QvibH2: exp(-5988.18/Tgas)
+QvibO2: exp(-2204.95/Tgas)
+M: 7.33894242685314e+21/Tgas
+kVT10_H2O2: 1.75088659547969e-10*exp(-144.9/Tgas**0.333333333333333)
+kVT10_H2H2O: 5.03379896200411e-10*exp(-144.9/Tgas**0.333333333333333)
+kVT10_H2H2: 2.18860824434961e-9*exp(-144.9/Tgas**0.333333333333333)
+kVT10_H2OH: 5.03379896200411e-10*exp(-144.9/Tgas**0.333333333333333)
+kVT10_H2H: 1.73e-14/Tgas**0.5
+kVT10_H2O: 2.20000000000000e-12
+kVT10_H2HE: 1.31e-13*Tgas*exp((5988.18 - 95.2*Tgas**0.666666666666667)/Tgas)/(1.0*exp(5988.18/Tgas) - 1)
+kVT10_O2O2: 1.10592351262749e-8*exp(-157.0/Tgas**0.333333333333333)
+kVT10_O2H2O: 1.10592351262749e-6*exp(-157.0/Tgas**0.333333333333333)
+kVT10_O2H2: 2.68009148448084e-10*exp(-91.5/Tgas**0.333333333333333)
+kVT10_O2OH: 1.10592351262749e-6*exp(-157.0/Tgas**0.333333333333333)
+kVT10_O2H: 4.55615552361742e-10*exp(-91.5/Tgas**0.333333333333333)
+kVT10_O2O: 2.89679863692064e-13*Tgas*exp(-111.0/Tgas**0.333333333333333)
+kVT10_O2HE: 4.54e-14*Tgas*exp((2204.95 - 60.85*Tgas**0.666666666666667)/Tgas)/(1.0*exp(2204.95/Tgas) - 1)
+kVV10_H2H2: 2.83170137884758e-14*(1/Tgas)**0.333333333333333
+kVV10_O2O2: 1.73205080756888e-18*Tgas**1.5
+ktot: 3.0e-11*Tgas**0.17*exp(-2726.0/Tgas)
+k0: 2.2e-37*Tgas**2.34*exp(-1350.0/Tgas)
+kR1: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+kR2: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+kR3: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+>>>>>>>> Processing reactions ... <<<<<<<<
+Rephrasing '1.4e-29*(300.0e0/Tgas)*exp(-600.0e0/Tgas)*exp(700.0e0*(Te-Tgas)/(Te*Tgas))' to: 4.2e-27*exp(100.0/Tgas - 700.0/Te)/Tgas
+Rephrasing 'kVT10_H2O2' to: 1.75088659547969e-10*exp(-144.9/Tgas**0.333333333333333)
+Rephrasing 'kVT10_H2O2*2.06*exp(14.92e0*(1.882e0/Tgas)**0.5)' to: 3.60682638668816e-10*exp(-144.9/Tgas**0.333333333333333 + 20.4681519634773*(1/Tgas)**0.5)
+Rephrasing 'kVT10_H2O2*3.18*exp(29.84e0*(1.882e0/Tgas)**0.5)' to: 5.56781937362541e-10*exp(-144.9/Tgas**0.333333333333333 + 40.9363039269546*(1/Tgas)**0.5)
+Rephrasing 'kVT10_H2H2O' to: 5.03379896200411e-10*exp(-144.9/Tgas**0.333333333333333)
+Rephrasing 'kVT10_H2H2O*2.06*exp(14.92e0*(1.8e0/Tgas)**0.5)' to: 1.03696258617285e-9*exp(-144.9/Tgas**0.333333333333333 + 20.0172805345781*(1/Tgas)**0.5)
+Rephrasing 'kVT10_H2H2O*3.18*exp(29.84e0*(1.8e0/Tgas)**0.5)' to: 1.60074806991731e-9*exp(-144.9/Tgas**0.333333333333333 + 40.0345610691562*(1/Tgas)**0.5)
+Rephrasing 'kVT10_H2H2' to: 2.18860824434961e-9*exp(-144.9/Tgas**0.333333333333333)
+Rephrasing 'kVT10_H2H2*2.06*exp(14.92e0*(1.0e0/Tgas)**0.5)' to: 4.5085329833602e-9*exp(-144.9/Tgas**0.333333333333333 + 14.92*(1/Tgas)**0.5)
+Rephrasing 'kVT10_H2H2*3.18*exp(29.84e0*(1.0e0/Tgas)**0.5)' to: 6.95977421703176e-9*exp(-144.9/Tgas**0.333333333333333 + 29.84*(1/Tgas)**0.5)
+Rephrasing 'kVT10_H2OH' to: 5.03379896200411e-10*exp(-144.9/Tgas**0.333333333333333)
+Rephrasing 'kVT10_H2OH*2.06*exp(14.92e0*(1.789e0/Tgas)**0.5)' to: 1.03696258617285e-9*exp(-144.9/Tgas**0.333333333333333 + 19.9560228903457*(1/Tgas)**0.5)
+Rephrasing 'kVT10_H2OH*3.18*exp(29.84e0*(1.789e0/Tgas)**0.5)' to: 1.60074806991731e-9*exp(-144.9/Tgas**0.333333333333333 + 39.9120457806913*(1/Tgas)**0.5)
+Rephrasing 'kVT10_H2H' to: 1.73e-14/Tgas**0.5
+Rephrasing 'kVT10_H2H*2.06*exp(14.92e0*(6.667e-1/Tgas)**0.5)' to: 3.5638e-14*exp(12.1824335368595*(1/Tgas)**0.5)/Tgas**0.5
+Rephrasing 'kVT10_H2H*3.18*exp(29.84e0*(6.667e-1/Tgas)**0.5)' to: 5.5014e-14*exp(24.3648670737191*(1/Tgas)**0.5)/Tgas**0.5
+Rephrasing 'kVT10_H2O' to: 2.20000000000000E-12
+Rephrasing 'kVT10_H2O*2.06*exp(14.92e0*(1.778e0/Tgas)**0.5)' to: 4.532e-12*exp(19.8945766278149*(1/Tgas)**0.5)
+Rephrasing 'kVT10_H2O*3.18*exp(29.84e0*(1.778e0/Tgas)**0.5)' to: 6.996e-12*exp(39.7891532556299*(1/Tgas)**0.5)
+Rephrasing 'kVT10_H2HE' to: 1.31e-13*Tgas*exp((5988.18 - 95.2*Tgas**0.666666666666667)/Tgas)/(1.0*exp(5988.18/Tgas) - 1)
+Rephrasing 'kVT10_H2HE*2.06*exp(14.92e0*(1.333e0/Tgas)**0.5)' to: 2.6986e-13*Tgas*exp(17.2259783815027*(1/Tgas)**0.5 + (5988.18 - 95.2*Tgas**0.666666666666667)/Tgas)/(1.0*exp(5988.18/Tgas) - 1)
+Rephrasing 'kVT10_H2HE*3.18*exp(29.84e0*(1.333e0/Tgas)**0.5)' to: 4.1658e-13*Tgas*exp(34.4519567630055*(1/Tgas)**0.5 + (5988.18 - 95.2*Tgas**0.666666666666667)/Tgas)/(1.0*exp(5988.18/Tgas) - 1)
+Rephrasing 'kVT10_O2O2' to: 1.10592351262749e-8*exp(-157.0/Tgas**0.333333333333333)
+Rephrasing 'kVT10_O2O2*2.015*exp(1.45e0*(16.0e0/Tgas)**0.5)' to: 2.22843587794439e-8*exp(-157.0/Tgas**0.333333333333333 + 5.8*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2O2*3.047*exp(2.90e0*(16.0e0/Tgas)**0.5)' to: 3.36974894297596e-8*exp(-157.0/Tgas**0.333333333333333 + 11.6*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2O2*4.094*exp(4.35e0*(16.0e0/Tgas)**0.5)' to: 4.52765086069694e-8*exp(-157.0/Tgas**0.333333333333333 + 17.4*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2H2O' to: 1.10592351262749e-6*exp(-157.0/Tgas**0.333333333333333)
+Rephrasing 'kVT10_O2H2O*2.015*exp(1.45e0*(11.52e0/Tgas)**0.5)' to: 2.22843587794439e-6*exp(-157.0/Tgas**0.333333333333333 + 4.92146319705837*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2H2O*3.047*exp(2.90e0*(11.52e0/Tgas)**0.5)' to: 3.36974894297596e-6*exp(-157.0/Tgas**0.333333333333333 + 9.84292639411674*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2H2O*4.094*exp(4.35e0*(11.52e0/Tgas)**0.5)' to: 4.52765086069694e-6*exp(-157.0/Tgas**0.333333333333333 + 14.7643895911751*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2H2' to: 2.68009148448084e-10*exp(-91.5/Tgas**0.333333333333333)
+Rephrasing 'kVT10_O2H2*2.015*exp(1.45e0*(1.882e0/Tgas)**0.5)' to: 5.40038434122889e-10*exp(-91.5/Tgas**0.333333333333333 + 1.98919707419853*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2H2*3.047*exp(2.90e0*(1.882e0/Tgas)**0.5)' to: 8.16623875321312e-10*exp(-91.5/Tgas**0.333333333333333 + 3.97839414839706*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2H2*4.094*exp(4.35e0*(1.882e0/Tgas)**0.5)' to: 1.09722945374646e-9*exp(-91.5/Tgas**0.333333333333333 + 5.9675912225956*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2OH' to: 1.10592351262749e-6*exp(-157.0/Tgas**0.333333333333333)
+Rephrasing 'kVT10_O2OH*2.015*exp(1.45e0*(11.102e0/Tgas)**0.5)' to: 2.22843587794439e-6*exp(-157.0/Tgas**0.333333333333333 + 4.83135126025836*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2OH*3.047*exp(2.90e0*(11.102e0/Tgas)**0.5)' to: 3.36974894297596e-6*exp(-157.0/Tgas**0.333333333333333 + 9.66270252051671*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2OH*4.094*exp(4.35e0*(11.102e0/Tgas)**0.5)' to: 4.52765086069694e-6*exp(-157.0/Tgas**0.333333333333333 + 14.4940537807751*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2H' to: 4.55615552361742e-10*exp(-91.5/Tgas**0.333333333333333)
+Rephrasing 'kVT10_O2H*2.015*exp(1.45e0*(9.697e-1/Tgas)**0.5)' to: 9.1806533800891e-10*exp(-91.5/Tgas**0.333333333333333 + 1.42786352639179*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2H*3.047*exp(2.90e0*(9.697e-1/Tgas)**0.5)' to: 1.38826058804623e-9*exp(-91.5/Tgas**0.333333333333333 + 2.85572705278358*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2H*4.094*exp(4.35e0*(9.697e-1/Tgas)**0.5)' to: 1.86529007136897e-9*exp(-91.5/Tgas**0.333333333333333 + 4.28359057917537*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2O' to: 2.89679863692064e-13*Tgas*exp(-111.0/Tgas**0.333333333333333)
+Rephrasing 'kVT10_O2O*2.015*exp(1.45e0*(10.667e0/Tgas)**0.5)' to: 5.83704925339509e-13*Tgas*exp(-111.0/Tgas**0.333333333333333 + 4.73575416380538*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2O*3.047*exp(2.90e0*(10.667e0/Tgas)**0.5)' to: 8.82654544669719e-13*Tgas*exp(-111.0/Tgas**0.333333333333333 + 9.47150832761076*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2O*4.094*exp(4.35e0*(10.667e0/Tgas)**0.5)' to: 1.18594936195531e-12*Tgas*exp(-111.0/Tgas**0.333333333333333 + 14.2072624914161*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2HE' to: 4.54e-14*Tgas*exp((2204.95 - 60.85*Tgas**0.666666666666667)/Tgas)/(1.0*exp(2204.95/Tgas) - 1)
+Rephrasing 'kVT10_O2HE*2.015*exp(1.45e0*(3.556e0/Tgas)**0.5)' to: 9.1481e-14*Tgas*exp(2.73431709938697*(1/Tgas)**0.5 + (2204.95 - 60.85*Tgas**0.666666666666667)/Tgas)/(1.0*exp(2204.95/Tgas) - 1)
+Rephrasing 'kVT10_O2HE*3.047*exp(2.90e0*(3.556e0/Tgas)**0.5)' to: 1.383338e-13*Tgas*exp(5.46863419877395*(1/Tgas)**0.5 + (2204.95 - 60.85*Tgas**0.666666666666667)/Tgas)/(1.0*exp(2204.95/Tgas) - 1)
+Rephrasing 'kVT10_O2HE*4.094*exp(4.35e0*(3.556e0/Tgas)**0.5)' to: 1.858676e-13*Tgas*exp(8.20295129816092*(1/Tgas)**0.5 + (2204.95 - 60.85*Tgas**0.666666666666667)/Tgas)/(1.0*exp(2204.95/Tgas) - 1)
+Rephrasing 'kVV10_H2H2*2.058*exp(0.21e0*(Tgas/300.0e0)**0.5)' to: 5.82764143766832e-14*(1/Tgas)**0.333333333333333*exp(0.0121243556529821*Tgas**0.5)
+Rephrasing 'kVV10_H2H2*3.18*exp(0.42e0*(Tgas/300.0e0)**0.5)' to: 9.0048103847353e-14*(1/Tgas)**0.333333333333333*exp(0.0242487113059643*Tgas**0.5)
+Rephrasing 'kVV10_H2H2*2.058*exp(0.21e0*(Tgas/300.0e0)**0.5)*exp(0.236e0*(Tgas/300.0e0)**0.25-0.0572e0*(300.0e0/Tgas)**(1.0e0/3.0e0))' to: 5.82764143766832e-14*(1/Tgas)**0.333333333333333*exp(0.0567063493735802*Tgas**0.25 + 0.0121243556529821*Tgas**0.5 - 0.382915647447001*(1/Tgas)**0.333333333333333)
+Rephrasing 'kVV10_H2H2*6.546*exp(0.21e0*(Tgas/300.0e0)**0.5)' to: 1.85363172259363e-13*(1/Tgas)**0.333333333333333*exp(0.0121243556529821*Tgas**0.5)
+Rephrasing 'kVV10_H2H2*3.18*exp(0.42e0*(Tgas/300.0e0)**0.5)*exp(2*0.236e0*(Tgas/300.0e0)**0.25-4*0.0572e0*(300.0e0/Tgas)**(1.0e0/3.0e0))' to: 9.0048103847353e-14*(1/Tgas)**0.333333333333333*exp(0.11341269874716*Tgas**0.25 + 0.0242487113059643*Tgas**0.5 - 1.531662589788*(1/Tgas)**0.333333333333333)
+Rephrasing 'kVV10_H2H2*6.545*exp(0.21e0*(Tgas/300.0e0)**0.5)*exp(0.236e0*(Tgas/300.0e0)**0.25-0.0572e0*(300.0e0/Tgas)**(1.0e0/3.0e0))' to: 1.85334855245574e-13*(1/Tgas)**0.333333333333333*exp(0.0567063493735802*Tgas**0.25 + 0.0121243556529821*Tgas**0.5 - 0.382915647447001*(1/Tgas)**0.333333333333333)
+Rephrasing 'kVV10_O2O2*2.015*exp(6.378e0/Tgas**0.5)' to: 3.49008237725129e-18*Tgas**1.5*exp(6.378/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*3.047*exp(12.756e0/Tgas**0.5)' to: 5.27755881066238e-18*Tgas**1.5*exp(12.756/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*4.094*exp(19.134e0/Tgas**0.5)' to: 7.09101600618699e-18*Tgas**1.5*exp(19.134/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*2.015*exp(6.378e0/Tgas**0.5)' to: 3.49008237725129e-18*Tgas**1.5*exp(6.378/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*6.14*exp(6.378e0/Tgas**0.5)' to: 1.06347919584729e-17*Tgas**1.5*exp(6.378/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*8.251*exp(12.756e0/Tgas**0.5)' to: 1.42911512132508e-17*Tgas**1.5*exp(12.756/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*3.047*exp(12.756e0/Tgas**0.5)' to: 5.27755881066238e-18*Tgas**1.5*exp(12.756/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*6.14*exp(6.378e0/Tgas**0.5)' to: 1.06347919584729e-17*Tgas**1.5*exp(6.378/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*12.472*exp(6.378e0/Tgas**0.5)' to: 2.16021376719991e-17*Tgas**1.5*exp(6.378/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*4.094*exp(19.134e0/Tgas**0.5)' to: 7.09101600618699e-18*Tgas**1.5*exp(19.134/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*8.251*exp(12.756e0/Tgas**0.5)' to: 1.42911512132508e-17*Tgas**1.5*exp(12.756/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*12.472*exp(6.378e0/Tgas**0.5)' to: 2.16021376719991e-17*Tgas**1.5*exp(6.378/Tgas**0.5)
+Rephrasing '6.34e-12*exp(-2204.0e0/Tgas)+1.46e-9*exp(-7851.12e0/Tgas)' to: 1.46e-9*exp(-7851.12/Tgas) + 6.34e-12*exp(-2204.0/Tgas)
+Rephrasing '6.34e-12*exp(-519.77e0/Tgas)+1.46e-9*exp(-6166.89e0/Tgas)' to: 1.46e-9*exp(-6166.89/Tgas) + 6.34e-12*exp(-519.77/Tgas)
+Rephrasing '3.59e-11*Tgas**0.252*exp(-32350.61e0/Tgas)+4.982e-1/Tgas**1.939*exp(-45180.94e0/Tgas)' to: 0.4982*exp(-45180.94/Tgas)/Tgas**1.939 + 3.59e-11*Tgas**0.252*exp(-32350.61/Tgas)
+Rephrasing '3.59e-11*Tgas**0.252*exp(-30111.93e0/Tgas)+4.982e-1/Tgas**1.939*exp(-43395.32e0/Tgas)' to: 0.4982*exp(-43395.32/Tgas)/Tgas**1.939 + 3.59e-11*Tgas**0.252*exp(-30111.93/Tgas)
+Rephrasing '3.59e-11*Tgas**0.252*exp(-27873.25e0/Tgas)+4.982e-1/Tgas**1.939*exp(-41609.70e0/Tgas)' to: 0.4982*exp(-41609.7/Tgas)/Tgas**1.939 + 3.59e-11*Tgas**0.252*exp(-27873.25/Tgas)
+Rephrasing '3.59e-11*Tgas**0.252*exp(-25634.57e0/Tgas)+4.982e-1/Tgas**1.939*exp(-39824.09e0/Tgas)' to: 0.4982*exp(-39824.09/Tgas)/Tgas**1.939 + 3.59e-11*Tgas**0.252*exp(-25634.57/Tgas)
+Rephrasing '4.151e-09/Tgas**0.164*exp(-23026.58e0/Tgas)+8.303e-12/Tgas**0.171*exp(-16352.52e0/Tgas)' to: 8.303e-12*exp(-16352.52/Tgas)/Tgas**0.171 + 4.151e-9*exp(-23026.58/Tgas)/Tgas**0.164
+Rephrasing '4.151e-09/Tgas**0.164*exp(-21196.89e0/Tgas)+8.303e-12/Tgas**0.171*exp(-14113.85e0/Tgas)' to: 8.303e-12*exp(-14113.85/Tgas)/Tgas**0.171 + 4.151e-9*exp(-21196.89/Tgas)/Tgas**0.164
+Rephrasing '4.151e-09/Tgas**0.164*exp(-19367.20e0/Tgas)+8.303e-12/Tgas**0.171*exp(-11875.17e0/Tgas)' to: 8.303e-12*exp(-11875.17/Tgas)/Tgas**0.171 + 4.151e-9*exp(-19367.2/Tgas)/Tgas**0.164
+Rephrasing '4.151e-09/Tgas**0.164*exp(-17537.50e0/Tgas)+8.303e-12/Tgas**0.171*exp(-9636.49e0/Tgas)' to: 8.303e-12*exp(-9636.49/Tgas)/Tgas**0.171 + 4.151e-9*exp(-17537.5/Tgas)/Tgas**0.164
+Rephrasing 'kR1' to: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+Rephrasing 'kR2' to: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+Rephrasing 'kR3' to: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+Reactions sucessfully parsed! 
+
+Writing reactions to kinetics.yaml:
+R(1): E + H2 => E + H2
+R(2): E + H2 => E + H2
+R(3): E + O2 => E + O2
+R(4): E + H2 => E + H2(v1)
+R(5): E + H2 => E + H2(v2)
+R(6): E + H2 => E + H2(v3)
+R(7): E + O2 => E + O2(v1)
+R(8): E + O2 => E + O2(v2)
+R(9): E + O2 => E + O2(v3)
+R(10): E + O2 => E + O2(v4)
+R(11): E + O2 => E + O2(A1)
+R(12): E + O2 => E + O2(B1)
+R(13): E + O2 => E + O2*
+R(14): E + HE => E + HE*
+R(15): E + HE => E + HE**
+R(16): E + O => E + O(1D)
+R(17): E + O => E + O(1S)
+R(18): E + H2 => E + H + H
+R(19): E + H2 => E + H + H
+R(20): E + H2 => E + H + H
+R(21): E + H2 => E + H + H
+R(22): E + H2 => E + H + H
+R(23): E + H2 => E + H + H
+R(24): E + H2 => E + H + H
+R(25): E + H2 => E + H + H
+R(26): E + H2 => E + H + H
+R(27): E + H2 => E + H + H
+R(28): E + O2 => E + O + O
+R(29): E + O2 => E + O + O(1D)
+R(30): E + O2 => E + O + O(1S)
+R(31): E + H2O => E + H + OH
+R(32): E + H2O => E + O + H2
+R(33): E + OH => E + O + H
+R(34): E + HO2 => E + OH + O
+R(35): E + HO2 => E + H + O2
+R(36): E + H2O2 => E + 2OH
+R(37): E + H2O2 => E + H + HO2
+R(38): E + O3 => E + O + O2
+R(39): E + H2 => E + E + H2^+
+R(40): E + O2 => E + E + O2^+
+R(41): E + HE => E + E + HE^+
+R(42): E + HE* => E + E + HE^+
+R(43): E + H => E + E + H^+
+R(44): E + O => E + E + O^+
+R(45): E + H2O => E + E + H2O^+
+R(46): E + H2O2 => E + E + OH + OH^+
+R(47): E + H2 => H^- + H
+R(48): E + O2 => O^- + O
+R(49): E + O3 => O2^- + O
+R(50): E + O3 => O^- + O2
+R(51): E + H2O => H2 + O^-
+R(52): E + H2O => H^- + OH
+R(53): E + H2O => OH^- + H
+R(54): E + O + O2 => O^- + O2
+R(55): E + O + O2 => O2^- + O
+R(56): E + O2 + O2 => O2^- + O2
+R(57): E + O3 + O2 => O3^- + O2
+R(58): E + O2 + H2O => O2^- + H2O
+R(59): E + OH + M => OH^- + M
+R(60): E + O + HE => O^- + HE
+R(61): E + O2 + HE => O2^- + HE
+R(62): E + O3 + HE => O3^- + HE
+R(63): E + H => H^-
+R(64): E + O => O^-
+R(65): E + OH => OH^-
+R(66): E + H2O2 => H2O + O^-
+R(67): E + H2O2 => OH + OH^-
+R(68): E + O + O => O^- + O
+R(69): E + O2 + H2 => O2^- + H2
+R(70): H2(v1) + O2 => H2 + O2
+R(71): H2(v2) + O2 => H2(v1) + O2
+R(72): H2(v3) + O2 => H2(v2) + O2
+R(73): H2(v1) + H2O => H2 + H2O
+R(74): H2(v2) + H2O => H2(v1) + H2O
+R(75): H2(v3) + H2O => H2(v2) + H2O
+R(76): H2(v1) + H2 => H2 + H2
+R(77): H2(v2) + H2 => H2(v1) + H2
+R(78): H2(v3) + H2 => H2(v2) + H2
+R(79): H2(v1) + OH => H2 + OH
+R(80): H2(v2) + OH => H2(v1) + OH
+R(81): H2(v3) + OH => H2(v2) + OH
+R(82): H2(v1) + H => H2 + H
+R(83): H2(v2) + H => H2(v1) + H
+R(84): H2(v3) + H => H2(v2) + H
+R(85): H2(v1) + O => H2 + O
+R(86): H2(v2) + O => H2(v1) + O
+R(87): H2(v3) + O => H2(v2) + O
+R(88): H2(v1) + HE => H2 + HE
+R(89): H2(v2) + HE => H2(v1) + HE
+R(90): H2(v3) + HE => H2(v2) + HE
+R(91): O2(v1) + O2 => O2 + O2
+R(92): O2(v2) + O2 => O2(v1) + O2
+R(93): O2(v3) + O2 => O2(v2) + O2
+R(94): O2(v4) + O2 => O2(v3) + O2
+R(95): O2(v1) + H2O => O2 + H2O
+R(96): O2(v2) + H2O => O2(v1) + H2O
+R(97): O2(v3) + H2O => O2(v2) + H2O
+R(98): O2(v4) + H2O => O2(v3) + H2O
+R(99): O2(v1) + H2 => O2 + H2
+R(100): O2(v2) + H2 => O2(v1) + H2
+R(101): O2(v3) + H2 => O2(v2) + H2
+R(102): O2(v4) + H2 => O2(v3) + H2
+R(103): O2(v1) + OH => O2 + OH
+R(104): O2(v2) + OH => O2(v1) + OH
+R(105): O2(v3) + OH => O2(v2) + OH
+R(106): O2(v4) + OH => O2(v3) + OH
+R(107): O2(v1) + H => O2 + H
+R(108): O2(v2) + H => O2(v1) + H
+R(109): O2(v3) + H => O2(v2) + H
+R(110): O2(v4) + H => O2(v3) + H
+R(111): O2(v1) + O => O2 + O
+R(112): O2(v2) + O => O2(v1) + O
+R(113): O2(v3) + O => O2(v2) + O
+R(114): O2(v4) + O => O2(v3) + O
+R(115): O2(v1) + HE => O2 + HE
+R(116): O2(v2) + HE => O2(v1) + HE
+R(117): O2(v3) + HE => O2(v2) + HE
+R(118): O2(v4) + HE => O2(v3) + HE
+R(119): H2(v1) + H2(v1) => H2 + H2(v2)
+R(120): H2(v1) + H2(v2) => H2 + H2(v3)
+R(121): H2(v2) + H2 => H2(v1) + H2(v1)
+R(122): H2(v2) + H2(v2) => H2(v1) + H2(v3)
+R(123): H2(v3) + H2 => H2(v2) + H2(v1)
+R(124): H2(v3) + H2(v1) => H2(v2) + H2(v2)
+R(125): O2(v1) + O2(v1) => O2 + O2(v2)
+R(126): O2(v1) + O2(v2) => O2 + O2(v3)
+R(127): O2(v1) + O2(v3) => O2 + O2(v4)
+R(128): O2(v2) + O2 => O2(v1) + O2(v1)
+R(129): O2(v2) + O2(v2) => O2(v1) + O2(v3)
+R(130): O2(v2) + O2(v3) => O2(v1) + O2(v4)
+R(131): O2(v3) + O2 => O2(v2) + O2(v1)
+R(132): O2(v3) + O2(v1) => O2(v2) + O2(v2)
+R(133): O2(v3) + O2(v3) => O2(v2) + O2(v4)
+R(134): O2(v4) + O2 => O2(v3) + O2(v1)
+R(135): O2(v4) + O2(v1) => O2(v3) + O2(v2)
+R(136): O2(v4) + O2(v2) => O2(v3) + O2(v3)
+R(137): O + H2(v1) => H + OH
+R(138): O + H2(v2) => H + OH
+R(139): O + H2(v3) => H + OH
+R(140): H2(v1) + OH => H2O + H
+R(141): H2(v2) + OH => H2O + H
+R(142): H2(v3) + OH => H2O + H
+R(143): H2(v1) + O2 => HO2 + H
+R(144): H2(v2) + O2 => HO2 + H
+R(145): H2(v3) + O2 => HO2 + H
+R(146): H2(v1) + HO2 => H2O2 + H
+R(147): H2(v2) + HO2 => H2O2 + H
+R(148): H2(v3) + HO2 => H2O2 + H
+R(149): H + O2(v1) => O + OH
+R(150): H + O2(v2) => O + OH
+R(151): H + O2(v3) => O + OH
+R(152): H + O2(v4) => O + OH
+R(153): H2 + O2(v1) => HO2 + H
+R(154): H2 + O2(v2) => HO2 + H
+R(155): H2 + O2(v3) => HO2 + H
+R(156): H2 + O2(v4) => HO2 + H
+R(157): O2(v1) + OH => HO2 + O
+R(158): O2(v2) + OH => HO2 + O
+R(159): O2(v3) + OH => HO2 + O
+R(160): O2(v4) + OH => HO2 + O
+R(161): O2(v1) + H2O => HO2 + OH
+R(162): O2(v2) + H2O => HO2 + OH
+R(163): O2(v3) + H2O => HO2 + OH
+R(164): O2(v4) + H2O => HO2 + OH
+R(165): H2O2 + O2(v1) => HO2 + HO2
+R(166): H2O2 + O2(v2) => HO2 + HO2
+R(167): H2O2 + O2(v3) => HO2 + HO2
+R(168): H2O2 + O2(v4) => HO2 + HO2
+R(169): H2(v1) + O2(v1) => HO2 + H
+R(170): H2(v1) + O2(v2) => HO2 + H
+R(171): H2(v1) + O2(v3) => HO2 + H
+R(172): H2(v1) + O2(v4) => HO2 + H
+R(173): H2(v2) + O2(v1) => HO2 + H
+R(174): H2(v2) + O2(v2) => HO2 + H
+R(175): H2(v2) + O2(v3) => HO2 + H
+R(176): H2(v2) + O2(v4) => HO2 + H
+R(177): H2(v3) + O2(v1) => HO2 + H
+R(178): H2(v3) + O2(v2) => HO2 + H
+R(179): H2(v3) + O2(v3) => HO2 + H
+R(180): H2(v3) + O2(v4) => HO2 + H
+R(181): O2(A1) => O2
+R(182): O2(B1) => O2(A1)
+R(183): O2(B1) => O2
+R(184): O2* => O2
+R(185): O(1D) => O
+R(186): O(1S) => O(1D)
+R(187): O2(A1) + O => O2 + O
+R(188): O2(A1) + O2 => O2 + O2
+R(189): O2(A1) + O3 => O2 + O2 + O(1D)
+R(190): O2(A1) + O2(A1) => O2 + O2(B1)
+R(191): O2(A1) + HE => O2 + HE
+R(192): O2(A1) + H2O => O2 + H2O
+R(193): O2(A1) + H2 => OH + OH
+R(194): O2(A1) + H2 => O2 + H2
+R(195): O2(A1) + H => OH + O
+R(196): O2(A1) + H => HO2
+R(197): O2(A1) + H => O2 + H
+R(198): O2(A1) + H2 => H + HO2
+R(199): O2(A1) + H2O => OH + HO2
+R(200): O2(A1) + H2 => H2O + O(1D)
+R(201): O2(A1) + OH => H + O3
+R(202): O2(A1) + OH => O + HO2
+R(203): O2(A1) + OH => O2 + OH
+R(204): O2(A1) + H2O2 => O2 + H2O2
+R(205): O2(A1) + HO2 => O2 + HO2
+R(206): O2(A1) + O2 => O3 + O
+R(207): O2(A1) + O2(A1) => O2 + O2
+R(208): O + O2(A1) + O2 => O + O2 + O2
+R(209): O + O2(A1) + HE => O + O2 + HE
+R(210): O2(A1) + H2 => O2(B1) + H2
+R(211): O2(A1) + H2O => O + H2O2
+R(212): O2(B1) + O => O2(A1) + O
+R(213): O2(B1) + O => O2 + O(1D)
+R(214): O2(B1) + O2 => O2(A1) + O2
+R(215): O2(B1) + O3 => O2 + O2 + O
+R(216): O2(B1) + HE => O2(A1) + HE
+R(217): O2(B1) + O => O2 + O
+R(218): O2(B1) + H => O2(A1) + H
+R(219): O2(B1) + H => O2 + H
+R(220): O2(B1) + O2(B1) => O2(A1) + O2
+R(221): O2(B1) + H2 => O2 + H2
+R(222): O2(B1) + H2O => O2 + H2O
+R(223): O2(B1) + O3 => O2(A1) + O2 + O
+R(224): O2(B1) + O3 => O2 + O3
+R(225): O2(B1) + O3 => O2(A1) + O3
+R(226): O2(B1) + H2 => H + HO2
+R(227): O2(B1) + H => OH + O(1D)
+R(228): O2(B1) + H2O => OH + HO2
+R(229): O2(B1) + H2 => O2(A1) + H2
+R(230): O2(B1) + O2 => O2 + O2
+R(231): O2(B1) + H2O => O2(A1) + H2O
+R(232): O2(B1) + H2O => O + H2O2
+R(233): O2(B1) + HO2 => O2 + HO2
+R(234): O2(B1) + H2O2 => O2 + H2O2
+R(235): O2(B1) + OH => O + HO2
+R(236): O2* + O => O2 + O(1S)
+R(237): O2* + O2 => O2(B1) + O2(B1)
+R(238): O2* + HE => O2(A1) + HE
+R(239): O2* + HE => O2(B1) + HE
+R(240): O2* + O => O2 + O
+R(241): O2* + O => O2(A1) + O(1D)
+R(242): O2* + O => O2(B1) + O(1D)
+R(243): O2* + O2 => O2(A1) + O2
+R(244): O2* + O2 => O2(B1) + O2
+R(245): O2* + O2 => O2 + O2
+R(246): O2* + H2 => H2 + O2
+R(247): O2* + H2 => H2 + O2(A1)
+R(248): O2* + H2O => H2O + O2
+R(249): O2* + HO2 => HO2 + O2
+R(250): O2* + H2O2 => H2O2 + O2
+R(251): O(1D) + HE => O + HE
+R(252): O(1D) + O => O + O
+R(253): O(1D) + O2 => O + O2
+R(254): O(1D) + O2 => O + O2(A1)
+R(255): O(1D) + O2 => O + O2(B1)
+R(256): O(1D) + O3 => O2 + O + O
+R(257): O(1D) + O3 => O2 + O2
+R(258): O(1D) + H2O2 => HO2 + OH
+R(259): O(1D) + H2O => OH + OH
+R(260): O(1D) + H2O => O + H2O
+R(261): O(1D) + H2 => OH + H
+R(262): O(1D) + H2 => O + H2
+R(263): O(1D) + OH => H + O2
+R(264): O(1D) + HO2 => OH + O2
+R(265): O(1S) + O => O(1D) + O
+R(266): O(1S) + O2 => O(1D) + O2
+R(267): O(1S) + O2 => O + O + O
+R(268): O(1S) + O2(A1) => O + O2*
+R(269): O(1S) + O2(A1) => O(1D) + O2(B1)
+R(270): O(1S) + O2(A1) => O + O + O
+R(271): O(1S) + O3 => O2 + O2
+R(272): O(1S) + O3 => O2 + O + O(1D)
+R(273): O(1S) + O => O + O
+R(274): O(1S) + O2 => O + O2
+R(275): O(1S) + H2 => H + OH
+R(276): O(1S) + OH => H + O2
+R(277): O(1S) + HO2 => OH + O2
+R(278): O(1S) + H2O => O(1D) + H2O
+R(279): O(1S) + H2O => O + H2O
+R(280): O(1S) + H2O => OH + OH
+R(281): O(1S) + H2O => H2 + O2
+R(282): E + HE* => E + HE
+R(283): HE + HE** => HE2^+ + E
+R(284): HE* + HE* => HE2^+ + E
+R(285): HE* + HE* => HE + HE^+ + E
+R(286): HE* + HE + HE => HE2 + HE
+R(287): HE* + HE2 => HE^+ + 2HE + E
+R(288): HE* + HE2 => HE2^+ + HE + E
+R(289): HE* + O => O^+ + HE + E
+R(290): HE* + O(1D) => O^+ + HE + E
+R(291): HE* + O(1S) => O^+ + HE + E
+R(292): HE* + O2 => O2^+ + HE + E
+R(293): HE* + O2(B1) => O2^+ + HE + E
+R(294): HE* + O3 => O2^+ + O + HE + E
+R(295): HE* + H => H^+ + HE + E
+R(296): HE* + H2 => H2^+ + HE + E
+R(297): HE* + H2 => H + HEH^+ + E
+R(298): HE* + OH => OH^+ + HE + E
+R(299): HE* + H2O => HE + H2O^+ + E
+R(300): HE* + H2O => HE + OH^+ + H + E
+R(301): HE* + H2O => HE + OH + H^+ + E
+R(302): HE* + H2O => HEH^+ + OH + E
+R(303): HE* + H2O2 => HE + OH^+ + OH + E
+R(304): HE* + H2 => H + H + HE
+R(305): E + HE2 => E + HE + HE
+R(306): HE2 + HE2 => HE^+ + 3HE + E
+R(307): HE2 + HE2 => HE2^+ + 2HE + E
+R(308): HE2 + HE => 3HE
+R(309): HE2 + O => O^+ + 2HE + E
+R(310): HE2 + O(1D) => O^+ + 2HE + E
+R(311): HE2 + O(1S) => O^+ + 2HE + E
+R(312): HE2 + O2 => O2^+ + 2HE + E
+R(313): HE2 + O3 => O2^+ + O + 2HE + E
+R(314): HE2 + H => 2HE + H^+ + E
+R(315): HE2 + H2 => 2HE + H2^+ + E
+R(316): HE2 + OH => OH^+ + 2HE + E
+R(317): HE2 + H2O => H2O^+ + 2HE + E
+R(318): HE2 + H2O2 => OH^+ + OH + 2HE + E
+R(319): O3 + O => O2 + O2(B1)
+R(320): O3 + H => O2 + OH
+R(321): O3 + HO2 => OH + O2 + O2
+R(322): O3 + H => O + HO2
+R(323): O3 + OH => O2 + HO2
+R(324): O3 + H2O => O2 + H2O2
+R(325): O3 + O => O2 + O2(A1)
+R(326): O3 + O2 => O2 + O + O2
+R(327): O3 + O => O2 + O + O
+R(328): O3 + O3 => O + O2 + O3
+R(329): O + O3 => 2O2
+R(330): O + O + O2 => O2 + O2(A1)
+R(331): O + O + HE => O2(A1) + HE
+R(332): O + O2 + HE => O3 + HE
+R(333): O + O2 + O2 => O3 + O2
+R(334): O + O2 + O => O3 + O
+R(335): O + O2 + O3 => O3 + O3
+R(336): E + H^+ => H
+R(337): E + E + H^+ => E + H
+R(338): E + HEH^+ => H + HE
+R(339): E + H2^+ => H^+ + H^-
+R(340): E + OH^+ => O + H
+R(341): E + H2O^+ => H + OH
+R(342): E + H2O^+ => H2 + O
+R(343): E + H2O^+ => 2H + O
+R(344): E + H3O^+ => H2O + H
+R(345): E + H3O^+ => 2H + OH
+R(346): E + H2^+ => H + H
+R(347): E + H3^+ => H + H + H
+R(348): E + H3^+ => H2 + H
+R(349): E + O2^+ => O + O
+R(350): E + O2^+ => O + O(1D)
+R(351): E + O2^+ => O + O(1S)
+R(352): E + O4^+ => O2 + O2
+R(353): E + O^+ + E => O + E
+R(354): E + O^+ + O2 => O + O2
+R(355): E + O2^+ + E => O2 + E
+R(356): E + O2^+ + O2 => O2 + O2
+R(357): E + O^+ => O(1D)
+R(358): E + O^+ + HE => O + HE
+R(359): E + O4^+ + E => O2 + O2 + E
+R(360): E + E + HE^+ => HE* + E
+R(361): E + E + HE2^+ => HE* + HE + E
+R(362): E + HE + HE2^+ => HE* + HE + HE
+R(363): E + E + HE2^+ => HE2 + E
+R(364): E + HE + HE2^+ => HE2 + HE
+R(365): H^+ + O => O^+ + H
+R(366): H^+ + H2 + M => H3^+ + M
+R(367): H^+ + HE => HEH^+
+R(368): H^+ + H + M => H2^+ + M
+R(369): H^+ + O2 => H + O2^+
+R(370): H^+ + OH => H + OH^+
+R(371): H^+ + H2O => H + H2O^+
+R(372): H^+ + H2 => H + H2^+
+R(373): H^+ + OH => O + H + H^+
+R(374): H2^+ + H2 => H3^+ + H
+R(375): H2^+ + HE => HEH^+ + H
+R(376): H2^+ + H => H2 + H^+
+R(377): H2^+ + O => H + OH^+
+R(378): H2^+ + O2 => H2 + O2^+
+R(379): H2^+ + H2O => H + H3O^+
+R(380): H2^+ + H2O => H2 + H2O^+
+R(381): H2^+ + OH => H2 + OH^+
+R(382): H2^+ + OH => H + H2O^+
+R(383): H3^+ + HE* => H2 + H^+ + HE
+R(384): H3^+ + HE2 => H2 + H^+ + 2HE
+R(385): H3^+ + H2O => H2 + H3O^+
+R(386): H3^+ + O => H2O^+ + H
+R(387): H3^+ + O => H2 + OH^+
+R(388): H3^+ + OH => H2 + H2O^+
+R(389): O^+ + H => H^+ + O
+R(390): O^+ + O2 => O2^+ + O
+R(391): O^+ + O3 => O2^+ + O2
+R(392): O^+ + O + M => O2^+ + M
+R(393): O^+ + OH => O2^+ + H
+R(394): O^+ + H2 => OH^+ + H
+R(395): O^+ + OH => OH^+ + O
+R(396): O^+ + H2O => H2O^+ + O
+R(397): O2^+ + O2 + O2 => O4^+ + O2
+R(398): O2^+ + HE* => O^+ + O + HE
+R(399): O2^+ + HE2 => O^+ + O + 2HE
+R(400): O2^+ + O(1D) => O2(A1) + O^+
+R(401): O2^+ + O2 + HE => O4^+ + HE
+R(402): O4^+ + O => O2^+ + O3
+R(403): O4^+ + O2 => O2^+ + O2 + O2
+R(404): O4^+ + O(1D) => O2^+ + O3
+R(405): O4^+ + O(1S) => O2^+ + O3
+R(406): O4^+ + HE => O2^+ + O2 + HE
+R(407): O4^+ + HE* => O^+ + O + O2 + HE
+R(408): O4^+ + HE2 => O^+ + O + O2 + 2HE
+R(409): OH^+ + O => O2^+ + H
+R(410): OH^+ + H2 => H2O^+ + H
+R(411): OH^+ + O2 => O2^+ + OH
+R(412): OH^+ + OH => H2O^+ + O
+R(413): OH^+ + H2O => H2O^+ + OH
+R(414): OH^+ + H2O => H3O^+ + O
+R(415): H2O^+ + O => O2^+ + H2
+R(416): H2O^+ + OH => H3O^+ + O
+R(417): H2O^+ + H2 => H3O^+ + H
+R(418): H2O^+ + O2 => O2^+ + H2O
+R(419): H2O^+ + H2O => H3O^+ + OH
+R(420): HE^+ + O => O^+ + HE
+R(421): HE^+ + O(1D) => O^+ + HE
+R(422): HE^+ + O(1S) => O^+ + HE
+R(423): HE^+ + O2(A1) => O^+ + O + HE
+R(424): HE^+ + O2(A1) => O2^+ + HE
+R(425): HE^+ + O3 => O^+ + O2 + HE
+R(426): HE^+ + H => HE + H^+
+R(427): HE^+ + H2 => HE + H2^+
+R(428): HE^+ + H2 => H^+ + H + HE
+R(429): HE^+ + O2 => O2^+ + HE
+R(430): HE^+ + O2 => O^+ + O + HE
+R(431): HE^+ + OH => O^+ + HE + H
+R(432): HE^+ + H2O => HE + H2O^+
+R(433): HE^+ + H2O => HE + H + OH^+
+R(434): HE^+ + H2O => OH + HE + H^+
+R(435): HE^+ + HE + HE => HE2^+ + HE
+R(436): HE^+ + H => HEH^+
+R(437): HE2^+ + O => O^+ + 2HE
+R(438): HE2^+ + O(1D) => O^+ + 2HE
+R(439): HE2^+ + O(1S) => O^+ + 2HE
+R(440): HE2^+ + O2 => O2^+ + 2HE
+R(441): HE2^+ + O2(A1) => O2^+ + 2HE
+R(442): HE2^+ + O2(B1) => O2^+ + 2HE
+R(443): HE2^+ + O3 => O^+ + O2 + 2HE
+R(444): HE2^+ + H => H^+ + 2HE
+R(445): HE2^+ + H2 => H2^+ + 2HE
+R(446): HE2^+ + H2 => HEH^+ + H + HE
+R(447): HE2^+ + OH => OH^+ + 2HE
+R(448): HE2^+ + H2O => O^+ + H2 + 2HE
+R(449): HE2^+ + H2O => OH^+ + H + 2HE
+R(450): HE2^+ + H2O => H^+ + OH + 2HE
+R(451): HE2^+ + H2O => HEH^+ + HE + OH
+R(452): HE2^+ + H2O => H2^+ + O + 2HE
+R(453): HEH^+ + H => H2^+ + HE
+R(454): HEH^+ + H2 => H3^+ + HE
+R(455): HEH^+ + H2O => H3O^+ + HE
+R(456): H^- + H => H2 + E
+R(457): H^- + O2 => HO2 + E
+R(458): H^- + H2O => OH^- + H2
+R(459): H^- + O => OH + E
+R(460): H^- + OH => H2O + E
+R(461): H^- + H => 2H + E
+R(462): H^- + HE* => H + HE + E
+R(463): H^- + HE2 => H + 2HE + E
+R(464): H^- + HE => H + HE + E
+R(465): H^- + O(1D) => OH + E
+R(466): H^- + O => H + O^-
+R(467): H^- + OH => H + OH^-
+R(468): O^- + O => O2 + E
+R(469): O^- + O2 => O3 + E
+R(470): O^- + O2(A1) => O3 + E
+R(471): O^- + O2(A1) => O2^- + O
+R(472): O^- + O2(B1) => O + O2 + E
+R(473): O^- + O3 => O2 + O2 + E
+R(474): O^- + O3 => O3^- + O
+R(475): O^- + O2 + O2 => O2 + O3^-
+R(476): O^- + H2 => H2O + E
+R(477): O^- + H => OH + E
+R(478): O^- + O2 => O + O2^-
+R(479): O^- + H2 => OH^- + H
+R(480): O^- + O3 => O2^- + O2
+R(481): O^- + HE => HE + O + E
+R(482): O^- + HE* => HE + O + E
+R(483): O^- + HE2 => 2HE + O + E
+R(484): O^- + O(1D) => O2 + E
+R(485): O^- + O(1S) => O2 + E
+R(486): O^- + H2O => OH^- + OH
+R(487): O^- + H2O => H2O2 + E
+R(488): O^- + OH => HO2 + E
+R(489): O^- + HO2 => OH + O2 + E
+R(490): O^- + H2O2 => H2O + O2 + E
+R(491): O2^- + O => O3 + E
+R(492): O2^- + O2 => E + O2 + O2
+R(493): O2^- + O2(A1) => O2 + O2 + E
+R(494): O2^- + O2(B1) => O2 + O2 + E
+R(495): O2^- + O => O^- + O2
+R(496): O2^- + O3 => O3^- + O2
+R(497): O2^- + O2 + O2 => O4^- + O2
+R(498): O2^- + HE => HE + O2 + E
+R(499): O2^- + HE* => HE + O2 + E
+R(500): O2^- + HE2 => 2HE + O2 + E
+R(501): O2^- + O(1D) => O + O2 + E
+R(502): O2^- + O(1S) => O + O2 + E
+R(503): O2^- + O(1S) => O^- + 2O
+R(504): O2^- + H => HO2 + E
+R(505): O2^- + H2O => O2 + H2O + E
+R(506): O2^- + OH => OH^- + O2
+R(507): O2^- + H => OH^- + O
+R(508): O2^- + H => O2 + H^-
+R(509): O2^- + H2 => OH + OH^-
+R(510): O2^- + HO2 => OH + O3^-
+R(511): O2^- + H2O2 => H2O + O3^-
+R(512): O3^- + O => O2 + O2 + E
+R(513): O3^- + O => O2^- + O2
+R(514): O3^- + H => OH^- + O2
+R(515): O3^- + HE* => O + O2 + HE + E
+R(516): O3^- + HE2 => O + O2 + 2HE + E
+R(517): O3^- + O(1S) => O + O3 + E
+R(518): O3^- + O(1D) => O^- + O + O2
+R(519): O3^- + O(1S) => O^- + O + O2
+R(520): O3^- + O(1S) => O2^- + 2O
+R(521): O3^- + O2(B1) => O^- + 2O2
+R(522): O3^- + H2 => H2O + O2 + E
+R(523): O3^- + HO2 => O2 + O2 + OH^-
+R(524): O4^- + O => O3^- + O2
+R(525): O4^- + O => O^- + O2 + O2
+R(526): O4^- + O2(A1) => O2^- + O2 + O2
+R(527): O4^- + O2(B1) => O2^- + O2 + O2
+R(528): O4^- + HE* => 2O2 + HE + E
+R(529): O4^- + HE2 => 2O2 + 2HE + E
+R(530): O4^- + O(1D) => O + 2O2 + E
+R(531): O4^- + O(1S) => O + 2O2 + E
+R(532): O4^- + O2(B1) => 3O2 + E
+R(533): O4^- + M => O2^- + O2 + M
+R(534): O4^- + O(1D) => O2^- + O2 + O
+R(535): O4^- + O(1S) => O^- + 2O2
+R(536): O4^- + O3 => O3^- + 2O2
+R(537): OH^- + H => H2O + E
+R(538): OH^- + HE => OH + HE + E
+R(539): OH^- + O => HO2 + E
+R(540): H^- + H^+ => H + H
+R(541): H^- + H2^+ => H + H2
+R(542): H^- + H3^+ => H2 + 2H
+R(543): H^- + O^+ => H + O
+R(544): H^- + HE^+ => H + HE
+R(545): H^- + H3O^+ => H + H + H2O
+R(546): H^- + O^+ + O2 => H + O + O2
+R(547): H^- + O^+ + H2 => H + O + H2
+R(548): H^- + O2^+ => OH + O
+R(549): H^- + O2^+ + O2 => OH + O + O2
+R(550): H^- + O2^+ + H2 => OH + O + H2
+R(551): H^- + H^+ + M => H + H + M
+R(552): H^- + H2^+ + M => H + H2 + M
+R(553): H^- + H3^+ + M => 2H + H2 + M
+R(554): H^- + HE^+ + M => H + HE + M
+R(555): H^- + HE2^+ => H + 2HE
+R(556): H^- + HE2^+ + M => H + 2HE + M
+R(557): H^- + HEH^+ => H2 + HE
+R(558): H^- + HEH^+ + M => 2H + HE + M
+R(559): H^- + H3^+ => 2H2
+R(560): H^- + O2^+ => H + O2
+R(561): H^- + OH^+ => H2O
+R(562): H^- + H2O^+ => H + H2O
+R(563): H^- + H3O^+ => OH + H2 + H
+R(564): H^- + H3O^+ => H2 + H2O
+R(565): O^- + H^+ => H + O
+R(566): O^- + H3^+ => O + H + H2
+R(567): O^- + H3O^+ => O + H + H2O
+R(568): O^- + H2^+ => OH + H
+R(569): O^- + O^+ => O + O
+R(570): O^- + O2^+ => O + O2
+R(571): O^- + O2^+ => O + O + O
+R(572): O^- + O4^+ => O + O2 + O2
+R(573): O^- + O^+ + M => O + O + M
+R(574): O^- + O2^+ + M => O + O2 + M
+R(575): O^- + O4^+ + M => O + O2 + O2 + M
+R(576): O^- + O^+ + M => O2 + M
+R(577): O^- + O2^+ + M => O3 + M
+R(578): O^- + HE^+ => O + HE
+R(579): O^- + O^+ => O + O(1D)
+R(580): O^- + HE^+ + M => O + HE + M
+R(581): O^- + HE2^+ => O + 2HE
+R(582): O^- + HE2^+ + M => O + 2HE + M
+R(583): O^- + H2^+ => H2O
+R(584): O^- + H3^+ => OH + H2
+R(585): O^- + OH^+ => HO2
+R(586): O^- + H2O^+ => O + H2O
+R(587): O^- + H2O^+ + M => O + H2O + M
+R(588): O^- + H3O^+ => H2O + OH
+R(589): O^- + HEH^+ => OH + HE
+R(590): O2^- + H^+ => H + O2
+R(591): O2^- + H3^+ => O2 + H + H2
+R(592): O2^- + H3O^+ => O2 + H + H2O
+R(593): O2^- + H2^+ => H + OH + O
+R(594): O2^- + O^+ => O2 + O
+R(595): O2^- + O2^+ => O2 + O2
+R(596): O2^- + O2^+ => O2 + O + O
+R(597): O2^- + O4^+ => O2 + O2 + O2
+R(598): O2^- + O^+ + M => O2 + O + M
+R(599): O2^- + O2^+ + M => O2 + O2 + M
+R(600): O2^- + O4^+ + M => O2 + O2 + O2 + M
+R(601): O2^- + O^+ + M => O3 + M
+R(602): O2^- + HE^+ => O2 + HE
+R(603): O2^- + HE2^+ => O2 + 2HE
+R(604): O2^- + HE2^+ + M => O2 + 2HE + M
+R(605): O2^- + H^+ => HO2
+R(606): O2^- + H2^+ => O2 + H2
+R(607): O2^- + H3^+ => OH + H2O
+R(608): O2^- + OH^+ => O2 + OH
+R(609): O2^- + H2O^+ => O2 + H2O
+R(610): O2^- + HEH^+ => HO2 + HE
+R(611): O3^- + H2^+ => H + OH + O2
+R(612): O3^- + O^+ => O3 + O
+R(613): O3^- + O2^+ => O3 + O2
+R(614): O3^- + O2^+ => O3 + O + O
+R(615): O3^- + O4^+ => O3 + O2 + O2
+R(616): O3^- + HE^+ => O3 + HE
+R(617): O3^- + O^+ + M => O3 + O + M
+R(618): O3^- + O2^+ + M => O3 + O2 + M
+R(619): O3^- + O4^+ + M => O3 + O2 + O2 + M
+R(620): O3^- + HE2^+ => O3 + 2HE
+R(621): O3^- + HE2^+ + M => O3 + 2HE + M
+R(622): O4^- + O^+ => 2O2 + O
+R(623): O4^- + O2^+ => 2O2 + O2
+R(624): O4^- + O4^+ => 2O2 + O2 + O2
+R(625): O4^- + O^+ + M => 2O2 + O + M
+R(626): O4^- + O2^+ + M => 2O2 + O2 + M
+R(627): O4^- + O4^+ + M => 2O2 + O2 + O2 + M
+R(628): O4^- + HE^+ + M => 2O2 + HE + M
+R(629): O4^- + HE2^+ + M => 2O2 + 2HE + M
+R(630): OH^- + H^+ => OH + H
+R(631): OH^- + HE^+ => OH + HE
+R(632): OH^- + O^+ => OH + O
+R(633): OH^- + H3^+ => OH + H + H2
+R(634): OH^- + H3O^+ => OH + H + H2O
+R(635): OH^- + H^+ + M => H2O + M
+R(636): OH^- + H2^+ => H2O + H
+R(637): OH^- + H3^+ => H2 + H2O
+R(638): OH^- + O^+ => HO2
+R(639): OH^- + O2^+ => OH + O2
+R(640): OH^- + OH^+ => 2OH
+R(641): OH^- + H2O^+ => OH + H2O
+R(642): OH^- + H2O^+ + M => OH + H2O + M
+R(643): OH^- + H3O^+ => 2H2O
+R(644): OH^- + HE^+ + M => OH + HE + M
+R(645): OH^- + HE2^+ => OH + 2HE
+R(646): OH^- + HE2^+ + M => OH + 2HE + M
+R(647): OH^- + HEH^+ => H2O + HE
+
+Write sucussefully with 647 reactions and 45 species:
+['H', 'H2', 'O', 'O2', 'OH', 'H2O', 'HO2', 'H2O2', 'AR', 'HE', 'H2(v1)', 'H2(v2)', 'H2(v3)', 'O2(v1)', 'O2(v2)', 'O2(v3)', 'O2(v4)', 'O2(A1)', 'O2(B1)', 'O2*', 'O(1D)', 'O(1S)', 'O3', 'HE*', 'HE**', 'HE2', 'H^+', 'H2^+', 'H3^+', 'O^+', 'O2^+', 'O4^+', 'OH^+', 'H2O^+', 'H3O^+', 'HE^+', 'HE2^+', 'HEH^+', 'H^-', 'O^-', 'O2^-', 'O3^-', 'O4^-', 'OH^-', 'E']
+Parsing complete. 25 processes read.
+Solver succesfully initialized/updated
+Convergence achieved after 10 iterations. err = 2.83798e-05
+Parsing complete. 28 processes read.
+Solver succesfully initialized/updated
+Convergence achieved after 10 iterations. err = 2.83798e-05
+Parsing complete. 28 processes read.
+Solver succesfully initialized/updated
+Convergence achieved after 7 iterations. err = 2.50219e-05
+Parsing complete. 28 processes read.
+Solver succesfully initialized/updated
+Convergence achieved after 7 iterations. err = 1.66717e-05
+Parsing complete. 28 processes read.
+Solver succesfully initialized/updated
+Convergence achieved after 11 iterations. err = 3.97514e-05
+Parsing complete. 56 processes read.
+After substracting INELASTIC from EFFECTIVE, target H2 has negative cross-section.
+Setting as max(0, ...)
+Target HE* has no ELASTIC or EFFECTIVE cross sections
+After substracting INELASTIC from EFFECTIVE, target H2O has negative cross-section.
+Setting as max(0, ...)
+Solver succesfully initialized/updated
+Convergence achieved after 9 iterations. err = 9.50325e-05
+
+>>>>>>>> Reading REACTION section ... <<<<<<<<
+Expanding 'E + O2 => E + @B                       ! BOLSIG O2 -> @R' :
+E + O2 => E + O2(A1)                       ! BOLSIG O2 -> O2(A1)
+E + O2 => E + O2(B1)                       ! BOLSIG O2 -> O2(B1)
+E + O2 => E + O2*                       ! BOLSIG O2 -> O2*
+Expanding 'E + H2 => E + H + H                    ! BOLSIG H2 -> @R' :
+E + H2 => E + H + H                    ! BOLSIG H2 -> H2(B3SIG)
+E + H2 => E + H + H                    ! BOLSIG H2 -> H2(B1SIG)
+E + H2 => E + H + H                    ! BOLSIG H2 -> H2(C3PI)
+E + H2 => E + H + H                    ! BOLSIG H2 -> H2(A3SIG)
+E + H2 => E + H + H                    ! BOLSIG H2 -> H2(C1PI)
+E + H2 => E + H + H                    ! BOLSIG H2 -> H2(G1SIG)
+E + H2 => E + H + H                    ! BOLSIG H2 -> H2(D3PI)
+E + H2 => E + H + H                    ! BOLSIG H2 -> H(n2)
+E + H2 => E + H + H                    ! BOLSIG H2 -> H2(RYDBERG_SUM)
+E + H2 => E + H + H                    ! BOLSIG H2 -> H(n3)
+Expanding 'O3  + @B => O2 + O + @B                    ! 6.6d-10*exp(-11600.0d0/Tgas)*@R' :
+O3  + O2 => O2 + O + O2                    ! 6.6d-10*exp(-11600.0d0/Tgas)*0.38d0
+O3  + O => O2 + O + O                    ! 6.6d-10*exp(-11600.0d0/Tgas)*6.3d0*exp(170.0d0/Tgas)
+Expanding 'E + O2^+ => O  + @B                   ! 2.7d-7*(300.0d0/Te)**0.7*@R' :
+E + O2^+ => O  + O                   ! 2.7d-7*(300.0d0/Te)**0.7*0.55d0
+E + O2^+ => O  + O(1D)                   ! 2.7d-7*(300.0d0/Te)**0.7*0.40d0
+E + O2^+ => O  + O(1S)                   ! 2.7d-7*(300.0d0/Te)**0.7*0.05d0
+Expanding 'O^- + @A => O + @B                     ! 2.0d-7*(300.0d0/Tgas)**0.5' :
+O^- + O^+ => O + O                     ! 2.0d-7*(300.0d0/Tgas)**0.5
+O^- + O2^+ => O + O2                     ! 2.0d-7*(300.0d0/Tgas)**0.5
+Expanding 'O^- + @A => O + @B                     ! 1.0d-7' :
+O^- + O2^+ => O + O+O                     ! 1.0d-7
+O^- + O4^+ => O + O2+O2                     ! 1.0d-7
+Expanding 'O^- + @A + ANY_NEUTRAL => O + @B + ANY_NEUTRAL    ! 2.0d-25*(300.0d0/Tgas)**2.5' :
+O^- + O^+ + ANY_NEUTRAL => O + O + ANY_NEUTRAL    ! 2.0d-25*(300.0d0/Tgas)**2.5
+O^- + O2^+ + ANY_NEUTRAL => O + O2 + ANY_NEUTRAL    ! 2.0d-25*(300.0d0/Tgas)**2.5
+O^- + O4^+ + ANY_NEUTRAL => O + O2+O2 + ANY_NEUTRAL    ! 2.0d-25*(300.0d0/Tgas)**2.5
+Expanding 'O^- + @A + ANY_NEUTRAL => @B + ANY_NEUTRAL        ! 2.0d-25*(300.0d0/Tgas)**2.5' :
+O^- + O^+ + ANY_NEUTRAL => O2 + ANY_NEUTRAL        ! 2.0d-25*(300.0d0/Tgas)**2.5
+O^- + O2^+ + ANY_NEUTRAL => O3 + ANY_NEUTRAL        ! 2.0d-25*(300.0d0/Tgas)**2.5
+Expanding 'O2^- + @A => O2 + @B                   ! 2.0d-7*(300.0d0/Tgas)**0.5' :
+O2^- + O^+ => O2 + O                   ! 2.0d-7*(300.0d0/Tgas)**0.5
+O2^- + O2^+ => O2 + O2                   ! 2.0d-7*(300.0d0/Tgas)**0.5
+Expanding 'O2^- + @A => O2 + @B                   ! 1.0d-7' :
+O2^- + O2^+ => O2 + O+O                   ! 1.0d-7
+O2^- + O4^+ => O2 + O2+O2                   ! 1.0d-7
+Expanding 'O2^- + @A  + ANY_NEUTRAL => O2 + @B + ANY_NEUTRAL ! 2.0d-25*(300.0d0/Tgas)**2.5' :
+O2^- + O^+  + ANY_NEUTRAL => O2 + O + ANY_NEUTRAL ! 2.0d-25*(300.0d0/Tgas)**2.5
+O2^- + O2^+  + ANY_NEUTRAL => O2 + O2 + ANY_NEUTRAL ! 2.0d-25*(300.0d0/Tgas)**2.5
+O2^- + O4^+  + ANY_NEUTRAL => O2 + O2+O2 + ANY_NEUTRAL ! 2.0d-25*(300.0d0/Tgas)**2.5
+Expanding 'O3^- + @A => O3 + @B                    ! 2.0d-7*(300.0d0/Tgas)**0.5' :
+O3^- + O^+ => O3 + O                    ! 2.0d-7*(300.0d0/Tgas)**0.5
+O3^- + O2^+ => O3 + O2                    ! 2.0d-7*(300.0d0/Tgas)**0.5
+Expanding 'O3^- + @A => O3 + @B                    ! 1.0d-7' :
+O3^- + O2^+ => O3 + O+O                    ! 1.0d-7
+O3^- + O4^+ => O3 + O2+O2                    ! 1.0d-7
+Expanding 'O3^- + @A + ANY_NEUTRAL => O3 + @B + ANY_NEUTRAL  ! 2.0d-25*(300.0d0/Tgas)**2.5' :
+O3^- + O^+ + ANY_NEUTRAL => O3 + O + ANY_NEUTRAL  ! 2.0d-25*(300.0d0/Tgas)**2.5
+O3^- + O2^+ + ANY_NEUTRAL => O3 + O2 + ANY_NEUTRAL  ! 2.0d-25*(300.0d0/Tgas)**2.5
+O3^- + O4^+ + ANY_NEUTRAL => O3 + O2+O2 + ANY_NEUTRAL  ! 2.0d-25*(300.0d0/Tgas)**2.5
+Expanding 'O4^- + @A => 2O2 + @B                   ! 1.0d-7' :
+O4^- + O^+ => 2O2 + O                   ! 1.0d-7
+O4^- + O2^+ => 2O2 + O2                   ! 1.0d-7
+O4^- + O4^+ => 2O2 + O2+O2                   ! 1.0d-7
+Expanding 'O4^- + @A + ANY_NEUTRAL => 2O2 + @B + ANY_NEUTRAL  ! 2.0d-25*(300.0d0/Tgas)**2.5' :
+O4^- + O^+ + ANY_NEUTRAL => 2O2 + O + ANY_NEUTRAL  ! 2.0d-25*(300.0d0/Tgas)**2.5
+O4^- + O2^+ + ANY_NEUTRAL => 2O2 + O2 + ANY_NEUTRAL  ! 2.0d-25*(300.0d0/Tgas)**2.5
+O4^- + O4^+ + ANY_NEUTRAL => 2O2 + O2+O2 + ANY_NEUTRAL  ! 2.0d-25*(300.0d0/Tgas)**2.5
+
+Variable list defined inline (preprocessed):
+energy_vibH2: 5988.18000000000
+energy_vibO2: 2204.95000000000
+QvibH2: exp(-5988.18/Tgas)
+QvibO2: exp(-2204.95/Tgas)
+M: 7.33894242685314e+21/Tgas
+kVT10_H2O2: 1.75088659547969e-10*exp(-144.9/Tgas**0.333333333333333)
+kVT10_H2H2O: 5.03379896200411e-10*exp(-144.9/Tgas**0.333333333333333)
+kVT10_H2H2: 2.18860824434961e-9*exp(-144.9/Tgas**0.333333333333333)
+kVT10_H2OH: 5.03379896200411e-10*exp(-144.9/Tgas**0.333333333333333)
+kVT10_H2H: 1.73e-14/Tgas**0.5
+kVT10_H2O: 2.20000000000000e-12
+kVT10_H2HE: 1.31e-13*Tgas*exp((5988.18 - 95.2*Tgas**0.666666666666667)/Tgas)/(1.0*exp(5988.18/Tgas) - 1)
+kVT10_O2O2: 1.10592351262749e-8*exp(-157.0/Tgas**0.333333333333333)
+kVT10_O2H2O: 1.10592351262749e-6*exp(-157.0/Tgas**0.333333333333333)
+kVT10_O2H2: 2.68009148448084e-10*exp(-91.5/Tgas**0.333333333333333)
+kVT10_O2OH: 1.10592351262749e-6*exp(-157.0/Tgas**0.333333333333333)
+kVT10_O2H: 4.55615552361742e-10*exp(-91.5/Tgas**0.333333333333333)
+kVT10_O2O: 2.89679863692064e-13*Tgas*exp(-111.0/Tgas**0.333333333333333)
+kVT10_O2HE: 4.54e-14*Tgas*exp((2204.95 - 60.85*Tgas**0.666666666666667)/Tgas)/(1.0*exp(2204.95/Tgas) - 1)
+kVV10_H2H2: 2.83170137884758e-14*(1/Tgas)**0.333333333333333
+kVV10_O2O2: 1.73205080756888e-18*Tgas**1.5
+ktot: 3.0e-11*Tgas**0.17*exp(-2726.0/Tgas)
+k0: 2.2e-37*Tgas**2.34*exp(-1350.0/Tgas)
+kR1: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+kR2: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+kR3: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+>>>>>>>> Processing reactions ... <<<<<<<<
+Rephrasing '1.4e-29*(300.0e0/Tgas)*exp(-600.0e0/Tgas)*exp(700.0e0*(Te-Tgas)/(Te*Tgas))' to: 4.2e-27*exp(100.0/Tgas - 700.0/Te)/Tgas
+Rephrasing 'kVT10_H2O2' to: 1.75088659547969e-10*exp(-144.9/Tgas**0.333333333333333)
+Rephrasing 'kVT10_H2O2*2.06*exp(14.92e0*(1.882e0/Tgas)**0.5)' to: 3.60682638668816e-10*exp(-144.9/Tgas**0.333333333333333 + 20.4681519634773*(1/Tgas)**0.5)
+Rephrasing 'kVT10_H2O2*3.18*exp(29.84e0*(1.882e0/Tgas)**0.5)' to: 5.56781937362541e-10*exp(-144.9/Tgas**0.333333333333333 + 40.9363039269546*(1/Tgas)**0.5)
+Rephrasing 'kVT10_H2H2O' to: 5.03379896200411e-10*exp(-144.9/Tgas**0.333333333333333)
+Rephrasing 'kVT10_H2H2O*2.06*exp(14.92e0*(1.8e0/Tgas)**0.5)' to: 1.03696258617285e-9*exp(-144.9/Tgas**0.333333333333333 + 20.0172805345781*(1/Tgas)**0.5)
+Rephrasing 'kVT10_H2H2O*3.18*exp(29.84e0*(1.8e0/Tgas)**0.5)' to: 1.60074806991731e-9*exp(-144.9/Tgas**0.333333333333333 + 40.0345610691562*(1/Tgas)**0.5)
+Rephrasing 'kVT10_H2H2' to: 2.18860824434961e-9*exp(-144.9/Tgas**0.333333333333333)
+Rephrasing 'kVT10_H2H2*2.06*exp(14.92e0*(1.0e0/Tgas)**0.5)' to: 4.5085329833602e-9*exp(-144.9/Tgas**0.333333333333333 + 14.92*(1/Tgas)**0.5)
+Rephrasing 'kVT10_H2H2*3.18*exp(29.84e0*(1.0e0/Tgas)**0.5)' to: 6.95977421703176e-9*exp(-144.9/Tgas**0.333333333333333 + 29.84*(1/Tgas)**0.5)
+Rephrasing 'kVT10_H2OH' to: 5.03379896200411e-10*exp(-144.9/Tgas**0.333333333333333)
+Rephrasing 'kVT10_H2OH*2.06*exp(14.92e0*(1.789e0/Tgas)**0.5)' to: 1.03696258617285e-9*exp(-144.9/Tgas**0.333333333333333 + 19.9560228903457*(1/Tgas)**0.5)
+Rephrasing 'kVT10_H2OH*3.18*exp(29.84e0*(1.789e0/Tgas)**0.5)' to: 1.60074806991731e-9*exp(-144.9/Tgas**0.333333333333333 + 39.9120457806913*(1/Tgas)**0.5)
+Rephrasing 'kVT10_H2H' to: 1.73e-14/Tgas**0.5
+Rephrasing 'kVT10_H2H*2.06*exp(14.92e0*(6.667e-1/Tgas)**0.5)' to: 3.5638e-14*exp(12.1824335368595*(1/Tgas)**0.5)/Tgas**0.5
+Rephrasing 'kVT10_H2H*3.18*exp(29.84e0*(6.667e-1/Tgas)**0.5)' to: 5.5014e-14*exp(24.3648670737191*(1/Tgas)**0.5)/Tgas**0.5
+Rephrasing 'kVT10_H2O' to: 2.20000000000000E-12
+Rephrasing 'kVT10_H2O*2.06*exp(14.92e0*(1.778e0/Tgas)**0.5)' to: 4.532e-12*exp(19.8945766278149*(1/Tgas)**0.5)
+Rephrasing 'kVT10_H2O*3.18*exp(29.84e0*(1.778e0/Tgas)**0.5)' to: 6.996e-12*exp(39.7891532556299*(1/Tgas)**0.5)
+Rephrasing 'kVT10_H2HE' to: 1.31e-13*Tgas*exp((5988.18 - 95.2*Tgas**0.666666666666667)/Tgas)/(1.0*exp(5988.18/Tgas) - 1)
+Rephrasing 'kVT10_H2HE*2.06*exp(14.92e0*(1.333e0/Tgas)**0.5)' to: 2.6986e-13*Tgas*exp(17.2259783815027*(1/Tgas)**0.5 + (5988.18 - 95.2*Tgas**0.666666666666667)/Tgas)/(1.0*exp(5988.18/Tgas) - 1)
+Rephrasing 'kVT10_H2HE*3.18*exp(29.84e0*(1.333e0/Tgas)**0.5)' to: 4.1658e-13*Tgas*exp(34.4519567630055*(1/Tgas)**0.5 + (5988.18 - 95.2*Tgas**0.666666666666667)/Tgas)/(1.0*exp(5988.18/Tgas) - 1)
+Rephrasing 'kVT10_O2O2' to: 1.10592351262749e-8*exp(-157.0/Tgas**0.333333333333333)
+Rephrasing 'kVT10_O2O2*2.015*exp(1.45e0*(16.0e0/Tgas)**0.5)' to: 2.22843587794439e-8*exp(-157.0/Tgas**0.333333333333333 + 5.8*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2O2*3.047*exp(2.90e0*(16.0e0/Tgas)**0.5)' to: 3.36974894297596e-8*exp(-157.0/Tgas**0.333333333333333 + 11.6*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2O2*4.094*exp(4.35e0*(16.0e0/Tgas)**0.5)' to: 4.52765086069694e-8*exp(-157.0/Tgas**0.333333333333333 + 17.4*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2H2O' to: 1.10592351262749e-6*exp(-157.0/Tgas**0.333333333333333)
+Rephrasing 'kVT10_O2H2O*2.015*exp(1.45e0*(11.52e0/Tgas)**0.5)' to: 2.22843587794439e-6*exp(-157.0/Tgas**0.333333333333333 + 4.92146319705837*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2H2O*3.047*exp(2.90e0*(11.52e0/Tgas)**0.5)' to: 3.36974894297596e-6*exp(-157.0/Tgas**0.333333333333333 + 9.84292639411674*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2H2O*4.094*exp(4.35e0*(11.52e0/Tgas)**0.5)' to: 4.52765086069694e-6*exp(-157.0/Tgas**0.333333333333333 + 14.7643895911751*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2H2' to: 2.68009148448084e-10*exp(-91.5/Tgas**0.333333333333333)
+Rephrasing 'kVT10_O2H2*2.015*exp(1.45e0*(1.882e0/Tgas)**0.5)' to: 5.40038434122889e-10*exp(-91.5/Tgas**0.333333333333333 + 1.98919707419853*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2H2*3.047*exp(2.90e0*(1.882e0/Tgas)**0.5)' to: 8.16623875321312e-10*exp(-91.5/Tgas**0.333333333333333 + 3.97839414839706*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2H2*4.094*exp(4.35e0*(1.882e0/Tgas)**0.5)' to: 1.09722945374646e-9*exp(-91.5/Tgas**0.333333333333333 + 5.9675912225956*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2OH' to: 1.10592351262749e-6*exp(-157.0/Tgas**0.333333333333333)
+Rephrasing 'kVT10_O2OH*2.015*exp(1.45e0*(11.102e0/Tgas)**0.5)' to: 2.22843587794439e-6*exp(-157.0/Tgas**0.333333333333333 + 4.83135126025836*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2OH*3.047*exp(2.90e0*(11.102e0/Tgas)**0.5)' to: 3.36974894297596e-6*exp(-157.0/Tgas**0.333333333333333 + 9.66270252051671*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2OH*4.094*exp(4.35e0*(11.102e0/Tgas)**0.5)' to: 4.52765086069694e-6*exp(-157.0/Tgas**0.333333333333333 + 14.4940537807751*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2H' to: 4.55615552361742e-10*exp(-91.5/Tgas**0.333333333333333)
+Rephrasing 'kVT10_O2H*2.015*exp(1.45e0*(9.697e-1/Tgas)**0.5)' to: 9.1806533800891e-10*exp(-91.5/Tgas**0.333333333333333 + 1.42786352639179*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2H*3.047*exp(2.90e0*(9.697e-1/Tgas)**0.5)' to: 1.38826058804623e-9*exp(-91.5/Tgas**0.333333333333333 + 2.85572705278358*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2H*4.094*exp(4.35e0*(9.697e-1/Tgas)**0.5)' to: 1.86529007136897e-9*exp(-91.5/Tgas**0.333333333333333 + 4.28359057917537*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2O' to: 2.89679863692064e-13*Tgas*exp(-111.0/Tgas**0.333333333333333)
+Rephrasing 'kVT10_O2O*2.015*exp(1.45e0*(10.667e0/Tgas)**0.5)' to: 5.83704925339509e-13*Tgas*exp(-111.0/Tgas**0.333333333333333 + 4.73575416380538*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2O*3.047*exp(2.90e0*(10.667e0/Tgas)**0.5)' to: 8.82654544669719e-13*Tgas*exp(-111.0/Tgas**0.333333333333333 + 9.47150832761076*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2O*4.094*exp(4.35e0*(10.667e0/Tgas)**0.5)' to: 1.18594936195531e-12*Tgas*exp(-111.0/Tgas**0.333333333333333 + 14.2072624914161*(1/Tgas)**0.5)
+Rephrasing 'kVT10_O2HE' to: 4.54e-14*Tgas*exp((2204.95 - 60.85*Tgas**0.666666666666667)/Tgas)/(1.0*exp(2204.95/Tgas) - 1)
+Rephrasing 'kVT10_O2HE*2.015*exp(1.45e0*(3.556e0/Tgas)**0.5)' to: 9.1481e-14*Tgas*exp(2.73431709938697*(1/Tgas)**0.5 + (2204.95 - 60.85*Tgas**0.666666666666667)/Tgas)/(1.0*exp(2204.95/Tgas) - 1)
+Rephrasing 'kVT10_O2HE*3.047*exp(2.90e0*(3.556e0/Tgas)**0.5)' to: 1.383338e-13*Tgas*exp(5.46863419877395*(1/Tgas)**0.5 + (2204.95 - 60.85*Tgas**0.666666666666667)/Tgas)/(1.0*exp(2204.95/Tgas) - 1)
+Rephrasing 'kVT10_O2HE*4.094*exp(4.35e0*(3.556e0/Tgas)**0.5)' to: 1.858676e-13*Tgas*exp(8.20295129816092*(1/Tgas)**0.5 + (2204.95 - 60.85*Tgas**0.666666666666667)/Tgas)/(1.0*exp(2204.95/Tgas) - 1)
+Rephrasing 'kVV10_H2H2*2.058*exp(0.21e0*(Tgas/300.0e0)**0.5)' to: 5.82764143766832e-14*(1/Tgas)**0.333333333333333*exp(0.0121243556529821*Tgas**0.5)
+Rephrasing 'kVV10_H2H2*3.18*exp(0.42e0*(Tgas/300.0e0)**0.5)' to: 9.0048103847353e-14*(1/Tgas)**0.333333333333333*exp(0.0242487113059643*Tgas**0.5)
+Rephrasing 'kVV10_H2H2*2.058*exp(0.21e0*(Tgas/300.0e0)**0.5)*exp(0.236e0*(Tgas/300.0e0)**0.25-0.0572e0*(300.0e0/Tgas)**(1.0e0/3.0e0))' to: 5.82764143766832e-14*(1/Tgas)**0.333333333333333*exp(0.0567063493735802*Tgas**0.25 + 0.0121243556529821*Tgas**0.5 - 0.382915647447001*(1/Tgas)**0.333333333333333)
+Rephrasing 'kVV10_H2H2*6.546*exp(0.21e0*(Tgas/300.0e0)**0.5)' to: 1.85363172259363e-13*(1/Tgas)**0.333333333333333*exp(0.0121243556529821*Tgas**0.5)
+Rephrasing 'kVV10_H2H2*3.18*exp(0.42e0*(Tgas/300.0e0)**0.5)*exp(2*0.236e0*(Tgas/300.0e0)**0.25-4*0.0572e0*(300.0e0/Tgas)**(1.0e0/3.0e0))' to: 9.0048103847353e-14*(1/Tgas)**0.333333333333333*exp(0.11341269874716*Tgas**0.25 + 0.0242487113059643*Tgas**0.5 - 1.531662589788*(1/Tgas)**0.333333333333333)
+Rephrasing 'kVV10_H2H2*6.545*exp(0.21e0*(Tgas/300.0e0)**0.5)*exp(0.236e0*(Tgas/300.0e0)**0.25-0.0572e0*(300.0e0/Tgas)**(1.0e0/3.0e0))' to: 1.85334855245574e-13*(1/Tgas)**0.333333333333333*exp(0.0567063493735802*Tgas**0.25 + 0.0121243556529821*Tgas**0.5 - 0.382915647447001*(1/Tgas)**0.333333333333333)
+Rephrasing 'kVV10_O2O2*2.015*exp(6.378e0/Tgas**0.5)' to: 3.49008237725129e-18*Tgas**1.5*exp(6.378/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*3.047*exp(12.756e0/Tgas**0.5)' to: 5.27755881066238e-18*Tgas**1.5*exp(12.756/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*4.094*exp(19.134e0/Tgas**0.5)' to: 7.09101600618699e-18*Tgas**1.5*exp(19.134/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*2.015*exp(6.378e0/Tgas**0.5)' to: 3.49008237725129e-18*Tgas**1.5*exp(6.378/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*6.14*exp(6.378e0/Tgas**0.5)' to: 1.06347919584729e-17*Tgas**1.5*exp(6.378/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*8.251*exp(12.756e0/Tgas**0.5)' to: 1.42911512132508e-17*Tgas**1.5*exp(12.756/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*3.047*exp(12.756e0/Tgas**0.5)' to: 5.27755881066238e-18*Tgas**1.5*exp(12.756/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*6.14*exp(6.378e0/Tgas**0.5)' to: 1.06347919584729e-17*Tgas**1.5*exp(6.378/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*12.472*exp(6.378e0/Tgas**0.5)' to: 2.16021376719991e-17*Tgas**1.5*exp(6.378/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*4.094*exp(19.134e0/Tgas**0.5)' to: 7.09101600618699e-18*Tgas**1.5*exp(19.134/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*8.251*exp(12.756e0/Tgas**0.5)' to: 1.42911512132508e-17*Tgas**1.5*exp(12.756/Tgas**0.5)
+Rephrasing 'kVV10_O2O2*12.472*exp(6.378e0/Tgas**0.5)' to: 2.16021376719991e-17*Tgas**1.5*exp(6.378/Tgas**0.5)
+Rephrasing '6.34e-12*exp(-2204.0e0/Tgas)+1.46e-9*exp(-7851.12e0/Tgas)' to: 1.46e-9*exp(-7851.12/Tgas) + 6.34e-12*exp(-2204.0/Tgas)
+Rephrasing '6.34e-12*exp(-519.77e0/Tgas)+1.46e-9*exp(-6166.89e0/Tgas)' to: 1.46e-9*exp(-6166.89/Tgas) + 6.34e-12*exp(-519.77/Tgas)
+Rephrasing '3.59e-11*Tgas**0.252*exp(-32350.61e0/Tgas)+4.982e-1/Tgas**1.939*exp(-45180.94e0/Tgas)' to: 0.4982*exp(-45180.94/Tgas)/Tgas**1.939 + 3.59e-11*Tgas**0.252*exp(-32350.61/Tgas)
+Rephrasing '3.59e-11*Tgas**0.252*exp(-30111.93e0/Tgas)+4.982e-1/Tgas**1.939*exp(-43395.32e0/Tgas)' to: 0.4982*exp(-43395.32/Tgas)/Tgas**1.939 + 3.59e-11*Tgas**0.252*exp(-30111.93/Tgas)
+Rephrasing '3.59e-11*Tgas**0.252*exp(-27873.25e0/Tgas)+4.982e-1/Tgas**1.939*exp(-41609.70e0/Tgas)' to: 0.4982*exp(-41609.7/Tgas)/Tgas**1.939 + 3.59e-11*Tgas**0.252*exp(-27873.25/Tgas)
+Rephrasing '3.59e-11*Tgas**0.252*exp(-25634.57e0/Tgas)+4.982e-1/Tgas**1.939*exp(-39824.09e0/Tgas)' to: 0.4982*exp(-39824.09/Tgas)/Tgas**1.939 + 3.59e-11*Tgas**0.252*exp(-25634.57/Tgas)
+Rephrasing '4.151e-09/Tgas**0.164*exp(-23026.58e0/Tgas)+8.303e-12/Tgas**0.171*exp(-16352.52e0/Tgas)' to: 8.303e-12*exp(-16352.52/Tgas)/Tgas**0.171 + 4.151e-9*exp(-23026.58/Tgas)/Tgas**0.164
+Rephrasing '4.151e-09/Tgas**0.164*exp(-21196.89e0/Tgas)+8.303e-12/Tgas**0.171*exp(-14113.85e0/Tgas)' to: 8.303e-12*exp(-14113.85/Tgas)/Tgas**0.171 + 4.151e-9*exp(-21196.89/Tgas)/Tgas**0.164
+Rephrasing '4.151e-09/Tgas**0.164*exp(-19367.20e0/Tgas)+8.303e-12/Tgas**0.171*exp(-11875.17e0/Tgas)' to: 8.303e-12*exp(-11875.17/Tgas)/Tgas**0.171 + 4.151e-9*exp(-19367.2/Tgas)/Tgas**0.164
+Rephrasing '4.151e-09/Tgas**0.164*exp(-17537.50e0/Tgas)+8.303e-12/Tgas**0.171*exp(-9636.49e0/Tgas)' to: 8.303e-12*exp(-9636.49/Tgas)/Tgas**0.171 + 4.151e-9*exp(-17537.5/Tgas)/Tgas**0.164
+Rephrasing 'kR1' to: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+Rephrasing 'kR2' to: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+Rephrasing 'kR3' to: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+Reactions sucessfully parsed! 
+
+Writing reactions to kinetics.yaml:
+R(1): E + H2 => E + H2
+R(2): E + H2 => E + H2
+R(3): E + O2 => E + O2
+R(4): E + H2 => E + H2(v1)
+R(5): E + H2 => E + H2(v2)
+R(6): E + H2 => E + H2(v3)
+R(7): E + O2 => E + O2(v1)
+R(8): E + O2 => E + O2(v2)
+R(9): E + O2 => E + O2(v3)
+R(10): E + O2 => E + O2(v4)
+R(11): E + O2 => E + O2(A1)
+R(12): E + O2 => E + O2(B1)
+R(13): E + O2 => E + O2*
+R(14): E + HE => E + HE*
+R(15): E + HE => E + HE**
+R(16): E + O => E + O(1D)
+R(17): E + O => E + O(1S)
+R(18): E + H2 => E + H + H
+R(19): E + H2 => E + H + H
+R(20): E + H2 => E + H + H
+R(21): E + H2 => E + H + H
+R(22): E + H2 => E + H + H
+R(23): E + H2 => E + H + H
+R(24): E + H2 => E + H + H
+R(25): E + H2 => E + H + H
+R(26): E + H2 => E + H + H
+R(27): E + H2 => E + H + H
+R(28): E + O2 => E + O + O
+R(29): E + O2 => E + O + O(1D)
+R(30): E + O2 => E + O + O(1S)
+R(31): E + H2O => E + H + OH
+R(32): E + H2O => E + O + H2
+R(33): E + OH => E + O + H
+R(34): E + HO2 => E + OH + O
+R(35): E + HO2 => E + H + O2
+R(36): E + H2O2 => E + 2 OH
+R(37): E + H2O2 => E + H + HO2
+R(38): E + O3 => E + O + O2
+R(39): E + H2 => E + E + H2^+
+R(40): E + O2 => E + E + O2^+
+R(41): E + HE => E + E + HE^+
+R(42): E + HE* => E + E + HE^+
+R(43): E + H => E + E + H^+
+R(44): E + O => E + E + O^+
+R(45): E + H2O => E + E + H2O^+
+R(46): E + H2O2 => E + E + OH + OH^+
+R(47): E + H2 => H^- + H
+R(48): E + O2 => O^- + O
+R(49): E + O3 => O2^- + O
+R(50): E + O3 => O^- + O2
+R(51): E + H2O => H2 + O^-
+R(52): E + H2O => H^- + OH
+R(53): E + H2O => OH^- + H
+R(54): E + O + O2 => O^- + O2
+R(55): E + O + O2 => O2^- + O
+R(56): E + O2 + O2 => O2^- + O2
+R(57): E + O3 + O2 => O3^- + O2
+R(58): E + O2 + H2O => O2^- + H2O
+R(59): E + OH + M => OH^- + M
+R(60): E + O + HE => O^- + HE
+R(61): E + O2 + HE => O2^- + HE
+R(62): E + O3 + HE => O3^- + HE
+R(63): E + H => H^-
+R(64): E + O => O^-
+R(65): E + OH => OH^-
+R(66): E + H2O2 => H2O + O^-
+R(67): E + H2O2 => OH + OH^-
+R(68): E + O + O => O^- + O
+R(69): E + O2 + H2 => O2^- + H2
+R(70): H2(v1) + O2 => H2 + O2
+R(71): H2(v2) + O2 => H2(v1) + O2
+R(72): H2(v3) + O2 => H2(v2) + O2
+R(73): H2(v1) + H2O => H2 + H2O
+R(74): H2(v2) + H2O => H2(v1) + H2O
+R(75): H2(v3) + H2O => H2(v2) + H2O
+R(76): H2(v1) + H2 => H2 + H2
+R(77): H2(v2) + H2 => H2(v1) + H2
+R(78): H2(v3) + H2 => H2(v2) + H2
+R(79): H2(v1) + OH => H2 + OH
+R(80): H2(v2) + OH => H2(v1) + OH
+R(81): H2(v3) + OH => H2(v2) + OH
+R(82): H2(v1) + H => H2 + H
+R(83): H2(v2) + H => H2(v1) + H
+R(84): H2(v3) + H => H2(v2) + H
+R(85): H2(v1) + O => H2 + O
+R(86): H2(v2) + O => H2(v1) + O
+R(87): H2(v3) + O => H2(v2) + O
+R(88): H2(v1) + HE => H2 + HE
+R(89): H2(v2) + HE => H2(v1) + HE
+R(90): H2(v3) + HE => H2(v2) + HE
+R(91): O2(v1) + O2 => O2 + O2
+R(92): O2(v2) + O2 => O2(v1) + O2
+R(93): O2(v3) + O2 => O2(v2) + O2
+R(94): O2(v4) + O2 => O2(v3) + O2
+R(95): O2(v1) + H2O => O2 + H2O
+R(96): O2(v2) + H2O => O2(v1) + H2O
+R(97): O2(v3) + H2O => O2(v2) + H2O
+R(98): O2(v4) + H2O => O2(v3) + H2O
+R(99): O2(v1) + H2 => O2 + H2
+R(100): O2(v2) + H2 => O2(v1) + H2
+R(101): O2(v3) + H2 => O2(v2) + H2
+R(102): O2(v4) + H2 => O2(v3) + H2
+R(103): O2(v1) + OH => O2 + OH
+R(104): O2(v2) + OH => O2(v1) + OH
+R(105): O2(v3) + OH => O2(v2) + OH
+R(106): O2(v4) + OH => O2(v3) + OH
+R(107): O2(v1) + H => O2 + H
+R(108): O2(v2) + H => O2(v1) + H
+R(109): O2(v3) + H => O2(v2) + H
+R(110): O2(v4) + H => O2(v3) + H
+R(111): O2(v1) + O => O2 + O
+R(112): O2(v2) + O => O2(v1) + O
+R(113): O2(v3) + O => O2(v2) + O
+R(114): O2(v4) + O => O2(v3) + O
+R(115): O2(v1) + HE => O2 + HE
+R(116): O2(v2) + HE => O2(v1) + HE
+R(117): O2(v3) + HE => O2(v2) + HE
+R(118): O2(v4) + HE => O2(v3) + HE
+R(119): H2(v1) + H2(v1) => H2 + H2(v2)
+R(120): H2(v1) + H2(v2) => H2 + H2(v3)
+R(121): H2(v2) + H2 => H2(v1) + H2(v1)
+R(122): H2(v2) + H2(v2) => H2(v1) + H2(v3)
+R(123): H2(v3) + H2 => H2(v2) + H2(v1)
+R(124): H2(v3) + H2(v1) => H2(v2) + H2(v2)
+R(125): O2(v1) + O2(v1) => O2 + O2(v2)
+R(126): O2(v1) + O2(v2) => O2 + O2(v3)
+R(127): O2(v1) + O2(v3) => O2 + O2(v4)
+R(128): O2(v2) + O2 => O2(v1) + O2(v1)
+R(129): O2(v2) + O2(v2) => O2(v1) + O2(v3)
+R(130): O2(v2) + O2(v3) => O2(v1) + O2(v4)
+R(131): O2(v3) + O2 => O2(v2) + O2(v1)
+R(132): O2(v3) + O2(v1) => O2(v2) + O2(v2)
+R(133): O2(v3) + O2(v3) => O2(v2) + O2(v4)
+R(134): O2(v4) + O2 => O2(v3) + O2(v1)
+R(135): O2(v4) + O2(v1) => O2(v3) + O2(v2)
+R(136): O2(v4) + O2(v2) => O2(v3) + O2(v3)
+R(137): O + H2(v1) => H + OH
+R(138): O + H2(v2) => H + OH
+R(139): O + H2(v3) => H + OH
+R(140): H2(v1) + OH => H2O + H
+R(141): H2(v2) + OH => H2O + H
+R(142): H2(v3) + OH => H2O + H
+R(143): H2(v1) + O2 => HO2 + H
+R(144): H2(v2) + O2 => HO2 + H
+R(145): H2(v3) + O2 => HO2 + H
+R(146): H2(v1) + HO2 => H2O2 + H
+R(147): H2(v2) + HO2 => H2O2 + H
+R(148): H2(v3) + HO2 => H2O2 + H
+R(149): H + O2(v1) => O + OH
+R(150): H + O2(v2) => O + OH
+R(151): H + O2(v3) => O + OH
+R(152): H + O2(v4) => O + OH
+R(153): H2 + O2(v1) => HO2 + H
+R(154): H2 + O2(v2) => HO2 + H
+R(155): H2 + O2(v3) => HO2 + H
+R(156): H2 + O2(v4) => HO2 + H
+R(157): O2(v1) + OH => HO2 + O
+R(158): O2(v2) + OH => HO2 + O
+R(159): O2(v3) + OH => HO2 + O
+R(160): O2(v4) + OH => HO2 + O
+R(161): O2(v1) + H2O => HO2 + OH
+R(162): O2(v2) + H2O => HO2 + OH
+R(163): O2(v3) + H2O => HO2 + OH
+R(164): O2(v4) + H2O => HO2 + OH
+R(165): H2O2 + O2(v1) => HO2 + HO2
+R(166): H2O2 + O2(v2) => HO2 + HO2
+R(167): H2O2 + O2(v3) => HO2 + HO2
+R(168): H2O2 + O2(v4) => HO2 + HO2
+R(169): H2(v1) + O2(v1) => HO2 + H
+R(170): H2(v1) + O2(v2) => HO2 + H
+R(171): H2(v1) + O2(v3) => HO2 + H
+R(172): H2(v1) + O2(v4) => HO2 + H
+R(173): H2(v2) + O2(v1) => HO2 + H
+R(174): H2(v2) + O2(v2) => HO2 + H
+R(175): H2(v2) + O2(v3) => HO2 + H
+R(176): H2(v2) + O2(v4) => HO2 + H
+R(177): H2(v3) + O2(v1) => HO2 + H
+R(178): H2(v3) + O2(v2) => HO2 + H
+R(179): H2(v3) + O2(v3) => HO2 + H
+R(180): H2(v3) + O2(v4) => HO2 + H
+R(181): O2(A1) => O2
+R(182): O2(B1) => O2(A1)
+R(183): O2(B1) => O2
+R(184): O2* => O2
+R(185): O(1D) => O
+R(186): O(1S) => O(1D)
+R(187): O2(A1) + O => O2 + O
+R(188): O2(A1) + O2 => O2 + O2
+R(189): O2(A1) + O3 => O2 + O2 + O(1D)
+R(190): O2(A1) + O2(A1) => O2 + O2(B1)
+R(191): O2(A1) + HE => O2 + HE
+R(192): O2(A1) + H2O => O2 + H2O
+R(193): O2(A1) + H2 => OH + OH
+R(194): O2(A1) + H2 => O2 + H2
+R(195): O2(A1) + H => OH + O
+R(196): O2(A1) + H => HO2
+R(197): O2(A1) + H => O2 + H
+R(198): O2(A1) + H2 => H + HO2
+R(199): O2(A1) + H2O => OH + HO2
+R(200): O2(A1) + H2 => H2O + O(1D)
+R(201): O2(A1) + OH => H + O3
+R(202): O2(A1) + OH => O + HO2
+R(203): O2(A1) + OH => O2 + OH
+R(204): O2(A1) + H2O2 => O2 + H2O2
+R(205): O2(A1) + HO2 => O2 + HO2
+R(206): O2(A1) + O2 => O3 + O
+R(207): O2(A1) + O2(A1) => O2 + O2
+R(208): O + O2(A1) + O2 => O + O2 + O2
+R(209): O + O2(A1) + HE => O + O2 + HE
+R(210): O2(A1) + H2 => O2(B1) + H2
+R(211): O2(A1) + H2O => O + H2O2
+R(212): O2(B1) + O => O2(A1) + O
+R(213): O2(B1) + O => O2 + O(1D)
+R(214): O2(B1) + O2 => O2(A1) + O2
+R(215): O2(B1) + O3 => O2 + O2 + O
+R(216): O2(B1) + HE => O2(A1) + HE
+R(217): O2(B1) + O => O2 + O
+R(218): O2(B1) + H => O2(A1) + H
+R(219): O2(B1) + H => O2 + H
+R(220): O2(B1) + O2(B1) => O2(A1) + O2
+R(221): O2(B1) + H2 => O2 + H2
+R(222): O2(B1) + H2O => O2 + H2O
+R(223): O2(B1) + O3 => O2(A1) + O2 + O
+R(224): O2(B1) + O3 => O2 + O3
+R(225): O2(B1) + O3 => O2(A1) + O3
+R(226): O2(B1) + H2 => H + HO2
+R(227): O2(B1) + H => OH + O(1D)
+R(228): O2(B1) + H2O => OH + HO2
+R(229): O2(B1) + H2 => O2(A1) + H2
+R(230): O2(B1) + O2 => O2 + O2
+R(231): O2(B1) + H2O => O2(A1) + H2O
+R(232): O2(B1) + H2O => O + H2O2
+R(233): O2(B1) + HO2 => O2 + HO2
+R(234): O2(B1) + H2O2 => O2 + H2O2
+R(235): O2(B1) + OH => O + HO2
+R(236): O2* + O => O2 + O(1S)
+R(237): O2* + O2 => O2(B1) + O2(B1)
+R(238): O2* + HE => O2(A1) + HE
+R(239): O2* + HE => O2(B1) + HE
+R(240): O2* + O => O2 + O
+R(241): O2* + O => O2(A1) + O(1D)
+R(242): O2* + O => O2(B1) + O(1D)
+R(243): O2* + O2 => O2(A1) + O2
+R(244): O2* + O2 => O2(B1) + O2
+R(245): O2* + O2 => O2 + O2
+R(246): O2* + H2 => H2 + O2
+R(247): O2* + H2 => H2 + O2(A1)
+R(248): O2* + H2O => H2O + O2
+R(249): O2* + HO2 => HO2 + O2
+R(250): O2* + H2O2 => H2O2 + O2
+R(251): O(1D) + HE => O + HE
+R(252): O(1D) + O => O + O
+R(253): O(1D) + O2 => O + O2
+R(254): O(1D) + O2 => O + O2(A1)
+R(255): O(1D) + O2 => O + O2(B1)
+R(256): O(1D) + O3 => O2 + O + O
+R(257): O(1D) + O3 => O2 + O2
+R(258): O(1D) + H2O2 => HO2 + OH
+R(259): O(1D) + H2O => OH + OH
+R(260): O(1D) + H2O => O + H2O
+R(261): O(1D) + H2 => OH + H
+R(262): O(1D) + H2 => O + H2
+R(263): O(1D) + OH => H + O2
+R(264): O(1D) + HO2 => OH + O2
+R(265): O(1S) + O => O(1D) + O
+R(266): O(1S) + O2 => O(1D) + O2
+R(267): O(1S) + O2 => O + O + O
+R(268): O(1S) + O2(A1) => O + O2*
+R(269): O(1S) + O2(A1) => O(1D) + O2(B1)
+R(270): O(1S) + O2(A1) => O + O + O
+R(271): O(1S) + O3 => O2 + O2
+R(272): O(1S) + O3 => O2 + O + O(1D)
+R(273): O(1S) + O => O + O
+R(274): O(1S) + O2 => O + O2
+R(275): O(1S) + H2 => H + OH
+R(276): O(1S) + OH => H + O2
+R(277): O(1S) + HO2 => OH + O2
+R(278): O(1S) + H2O => O(1D) + H2O
+R(279): O(1S) + H2O => O + H2O
+R(280): O(1S) + H2O => OH + OH
+R(281): O(1S) + H2O => H2 + O2
+R(282): E + HE* => E + HE
+R(283): HE + HE** => HE2^+ + E
+R(284): HE* + HE* => HE2^+ + E
+R(285): HE* + HE* => HE + HE^+ + E
+R(286): HE* + HE + HE => HE2 + HE
+R(287): HE* + HE2 => HE^+ + 2 HE + E
+R(288): HE* + HE2 => HE2^+ + HE + E
+R(289): HE* + O => O^+ + HE + E
+R(290): HE* + O(1D) => O^+ + HE + E
+R(291): HE* + O(1S) => O^+ + HE + E
+R(292): HE* + O2 => O2^+ + HE + E
+R(293): HE* + O2(B1) => O2^+ + HE + E
+R(294): HE* + O3 => O2^+ + O + HE + E
+R(295): HE* + H => H^+ + HE + E
+R(296): HE* + H2 => H2^+ + HE + E
+R(297): HE* + H2 => H + HEH^+ + E
+R(298): HE* + OH => OH^+ + HE + E
+R(299): HE* + H2O => HE + H2O^+ + E
+R(300): HE* + H2O => HE + OH^+ + H + E
+R(301): HE* + H2O => HE + OH + H^+ + E
+R(302): HE* + H2O => HEH^+ + OH + E
+R(303): HE* + H2O2 => HE + OH^+ + OH + E
+R(304): HE* + H2 => H + H + HE
+R(305): E + HE2 => E + HE + HE
+R(306): HE2 + HE2 => HE^+ + 3 HE + E
+R(307): HE2 + HE2 => HE2^+ + 2 HE + E
+R(308): HE2 + HE => 3 HE
+R(309): HE2 + O => O^+ + 2 HE + E
+R(310): HE2 + O(1D) => O^+ + 2 HE + E
+R(311): HE2 + O(1S) => O^+ + 2 HE + E
+R(312): HE2 + O2 => O2^+ + 2 HE + E
+R(313): HE2 + O3 => O2^+ + O + 2 HE + E
+R(314): HE2 + H => 2 HE + H^+ + E
+R(315): HE2 + H2 => 2 HE + H2^+ + E
+R(316): HE2 + OH => OH^+ + 2 HE + E
+R(317): HE2 + H2O => H2O^+ + 2 HE + E
+R(318): HE2 + H2O2 => OH^+ + OH + 2 HE + E
+R(319): O3 + O => O2 + O2(B1)
+R(320): O3 + H => O2 + OH
+R(321): O3 + HO2 => OH + O2 + O2
+R(322): O3 + H => O + HO2
+R(323): O3 + OH => O2 + HO2
+R(324): O3 + H2O => O2 + H2O2
+R(325): O3 + O => O2 + O2(A1)
+R(326): O3 + O2 => O2 + O + O2
+R(327): O3 + O => O2 + O + O
+R(328): O3 + O3 => O + O2 + O3
+R(329): O + O3 => 2 O2
+R(330): O + O + O2 => O2 + O2(A1)
+R(331): O + O + HE => O2(A1) + HE
+R(332): O + O2 + HE => O3 + HE
+R(333): O + O2 + O2 => O3 + O2
+R(334): O + O2 + O => O3 + O
+R(335): O + O2 + O3 => O3 + O3
+R(336): E + H^+ => H
+R(337): E + E + H^+ => E + H
+R(338): E + HEH^+ => H + HE
+R(339): E + H2^+ => H^+ + H^-
+R(340): E + OH^+ => O + H
+R(341): E + H2O^+ => H + OH
+R(342): E + H2O^+ => H2 + O
+R(343): E + H2O^+ => 2 H + O
+R(344): E + H3O^+ => H2O + H
+R(345): E + H3O^+ => 2 H + OH
+R(346): E + H2^+ => H + H
+R(347): E + H3^+ => H + H + H
+R(348): E + H3^+ => H2 + H
+R(349): E + O2^+ => O + O
+R(350): E + O2^+ => O + O(1D)
+R(351): E + O2^+ => O + O(1S)
+R(352): E + O4^+ => O2 + O2
+R(353): E + O^+ + E => O + E
+R(354): E + O^+ + O2 => O + O2
+R(355): E + O2^+ + E => O2 + E
+R(356): E + O2^+ + O2 => O2 + O2
+R(357): E + O^+ => O(1D)
+R(358): E + O^+ + HE => O + HE
+R(359): E + O4^+ + E => O2 + O2 + E
+R(360): E + E + HE^+ => HE* + E
+R(361): E + E + HE2^+ => HE* + HE + E
+R(362): E + HE + HE2^+ => HE* + HE + HE
+R(363): E + E + HE2^+ => HE2 + E
+R(364): E + HE + HE2^+ => HE2 + HE
+R(365): H^+ + O => O^+ + H
+R(366): H^+ + H2 + M => H3^+ + M
+R(367): H^+ + HE => HEH^+
+R(368): H^+ + H + M => H2^+ + M
+R(369): H^+ + O2 => H + O2^+
+R(370): H^+ + OH => H + OH^+
+R(371): H^+ + H2O => H + H2O^+
+R(372): H^+ + H2 => H + H2^+
+R(373): H^+ + OH => O + H + H^+
+R(374): H2^+ + H2 => H3^+ + H
+R(375): H2^+ + HE => HEH^+ + H
+R(376): H2^+ + H => H2 + H^+
+R(377): H2^+ + O => H + OH^+
+R(378): H2^+ + O2 => H2 + O2^+
+R(379): H2^+ + H2O => H + H3O^+
+R(380): H2^+ + H2O => H2 + H2O^+
+R(381): H2^+ + OH => H2 + OH^+
+R(382): H2^+ + OH => H + H2O^+
+R(383): H3^+ + HE* => H2 + H^+ + HE
+R(384): H3^+ + HE2 => H2 + H^+ + 2 HE
+R(385): H3^+ + H2O => H2 + H3O^+
+R(386): H3^+ + O => H2O^+ + H
+R(387): H3^+ + O => H2 + OH^+
+R(388): H3^+ + OH => H2 + H2O^+
+R(389): O^+ + H => H^+ + O
+R(390): O^+ + O2 => O2^+ + O
+R(391): O^+ + O3 => O2^+ + O2
+R(392): O^+ + O + M => O2^+ + M
+R(393): O^+ + OH => O2^+ + H
+R(394): O^+ + H2 => OH^+ + H
+R(395): O^+ + OH => OH^+ + O
+R(396): O^+ + H2O => H2O^+ + O
+R(397): O2^+ + O2 + O2 => O4^+ + O2
+R(398): O2^+ + HE* => O^+ + O + HE
+R(399): O2^+ + HE2 => O^+ + O + 2 HE
+R(400): O2^+ + O(1D) => O2(A1) + O^+
+R(401): O2^+ + O2 + HE => O4^+ + HE
+R(402): O4^+ + O => O2^+ + O3
+R(403): O4^+ + O2 => O2^+ + O2 + O2
+R(404): O4^+ + O(1D) => O2^+ + O3
+R(405): O4^+ + O(1S) => O2^+ + O3
+R(406): O4^+ + HE => O2^+ + O2 + HE
+R(407): O4^+ + HE* => O^+ + O + O2 + HE
+R(408): O4^+ + HE2 => O^+ + O + O2 + 2 HE
+R(409): OH^+ + O => O2^+ + H
+R(410): OH^+ + H2 => H2O^+ + H
+R(411): OH^+ + O2 => O2^+ + OH
+R(412): OH^+ + OH => H2O^+ + O
+R(413): OH^+ + H2O => H2O^+ + OH
+R(414): OH^+ + H2O => H3O^+ + O
+R(415): H2O^+ + O => O2^+ + H2
+R(416): H2O^+ + OH => H3O^+ + O
+R(417): H2O^+ + H2 => H3O^+ + H
+R(418): H2O^+ + O2 => O2^+ + H2O
+R(419): H2O^+ + H2O => H3O^+ + OH
+R(420): HE^+ + O => O^+ + HE
+R(421): HE^+ + O(1D) => O^+ + HE
+R(422): HE^+ + O(1S) => O^+ + HE
+R(423): HE^+ + O2(A1) => O^+ + O + HE
+R(424): HE^+ + O2(A1) => O2^+ + HE
+R(425): HE^+ + O3 => O^+ + O2 + HE
+R(426): HE^+ + H => HE + H^+
+R(427): HE^+ + H2 => HE + H2^+
+R(428): HE^+ + H2 => H^+ + H + HE
+R(429): HE^+ + O2 => O2^+ + HE
+R(430): HE^+ + O2 => O^+ + O + HE
+R(431): HE^+ + OH => O^+ + HE + H
+R(432): HE^+ + H2O => HE + H2O^+
+R(433): HE^+ + H2O => HE + H + OH^+
+R(434): HE^+ + H2O => OH + HE + H^+
+R(435): HE^+ + HE + HE => HE2^+ + HE
+R(436): HE^+ + H => HEH^+
+R(437): HE2^+ + O => O^+ + 2 HE
+R(438): HE2^+ + O(1D) => O^+ + 2 HE
+R(439): HE2^+ + O(1S) => O^+ + 2 HE
+R(440): HE2^+ + O2 => O2^+ + 2 HE
+R(441): HE2^+ + O2(A1) => O2^+ + 2 HE
+R(442): HE2^+ + O2(B1) => O2^+ + 2 HE
+R(443): HE2^+ + O3 => O^+ + O2 + 2 HE
+R(444): HE2^+ + H => H^+ + 2 HE
+R(445): HE2^+ + H2 => H2^+ + 2 HE
+R(446): HE2^+ + H2 => HEH^+ + H + HE
+R(447): HE2^+ + OH => OH^+ + 2 HE
+R(448): HE2^+ + H2O => O^+ + H2 + 2 HE
+R(449): HE2^+ + H2O => OH^+ + H + 2 HE
+R(450): HE2^+ + H2O => H^+ + OH + 2 HE
+R(451): HE2^+ + H2O => HEH^+ + HE + OH
+R(452): HE2^+ + H2O => H2^+ + O + 2 HE
+R(453): HEH^+ + H => H2^+ + HE
+R(454): HEH^+ + H2 => H3^+ + HE
+R(455): HEH^+ + H2O => H3O^+ + HE
+R(456): H^- + H => H2 + E
+R(457): H^- + O2 => HO2 + E
+R(458): H^- + H2O => OH^- + H2
+R(459): H^- + O => OH + E
+R(460): H^- + OH => H2O + E
+R(461): H^- + H => 2 H + E
+R(462): H^- + HE* => H + HE + E
+R(463): H^- + HE2 => H + 2 HE + E
+R(464): H^- + HE => H + HE + E
+R(465): H^- + O(1D) => OH + E
+R(466): H^- + O => H + O^-
+R(467): H^- + OH => H + OH^-
+R(468): O^- + O => O2 + E
+R(469): O^- + O2 => O3 + E
+R(470): O^- + O2(A1) => O3 + E
+R(471): O^- + O2(A1) => O2^- + O
+R(472): O^- + O2(B1) => O + O2 + E
+R(473): O^- + O3 => O2 + O2 + E
+R(474): O^- + O3 => O3^- + O
+R(475): O^- + O2 + O2 => O2 + O3^-
+R(476): O^- + H2 => H2O + E
+R(477): O^- + H => OH + E
+R(478): O^- + O2 => O + O2^-
+R(479): O^- + H2 => OH^- + H
+R(480): O^- + O3 => O2^- + O2
+R(481): O^- + HE => HE + O + E
+R(482): O^- + HE* => HE + O + E
+R(483): O^- + HE2 => 2 HE + O + E
+R(484): O^- + O(1D) => O2 + E
+R(485): O^- + O(1S) => O2 + E
+R(486): O^- + H2O => OH^- + OH
+R(487): O^- + H2O => H2O2 + E
+R(488): O^- + OH => HO2 + E
+R(489): O^- + HO2 => OH + O2 + E
+R(490): O^- + H2O2 => H2O + O2 + E
+R(491): O2^- + O => O3 + E
+R(492): O2^- + O2 => E + O2 + O2
+R(493): O2^- + O2(A1) => O2 + O2 + E
+R(494): O2^- + O2(B1) => O2 + O2 + E
+R(495): O2^- + O => O^- + O2
+R(496): O2^- + O3 => O3^- + O2
+R(497): O2^- + O2 + O2 => O4^- + O2
+R(498): O2^- + HE => HE + O2 + E
+R(499): O2^- + HE* => HE + O2 + E
+R(500): O2^- + HE2 => 2 HE + O2 + E
+R(501): O2^- + O(1D) => O + O2 + E
+R(502): O2^- + O(1S) => O + O2 + E
+R(503): O2^- + O(1S) => O^- + 2 O
+R(504): O2^- + H => HO2 + E
+R(505): O2^- + H2O => O2 + H2O + E
+R(506): O2^- + OH => OH^- + O2
+R(507): O2^- + H => OH^- + O
+R(508): O2^- + H => O2 + H^-
+R(509): O2^- + H2 => OH + OH^-
+R(510): O2^- + HO2 => OH + O3^-
+R(511): O2^- + H2O2 => H2O + O3^-
+R(512): O3^- + O => O2 + O2 + E
+R(513): O3^- + O => O2^- + O2
+R(514): O3^- + H => OH^- + O2
+R(515): O3^- + HE* => O + O2 + HE + E
+R(516): O3^- + HE2 => O + O2 + 2 HE + E
+R(517): O3^- + O(1S) => O + O3 + E
+R(518): O3^- + O(1D) => O^- + O + O2
+R(519): O3^- + O(1S) => O^- + O + O2
+R(520): O3^- + O(1S) => O2^- + 2 O
+R(521): O3^- + O2(B1) => O^- + 2 O2
+R(522): O3^- + H2 => H2O + O2 + E
+R(523): O3^- + HO2 => O2 + O2 + OH^-
+R(524): O4^- + O => O3^- + O2
+R(525): O4^- + O => O^- + O2 + O2
+R(526): O4^- + O2(A1) => O2^- + O2 + O2
+R(527): O4^- + O2(B1) => O2^- + O2 + O2
+R(528): O4^- + HE* => 2 O2 + HE + E
+R(529): O4^- + HE2 => 2 O2 + 2 HE + E
+R(530): O4^- + O(1D) => O + 2 O2 + E
+R(531): O4^- + O(1S) => O + 2 O2 + E
+R(532): O4^- + O2(B1) => 3 O2 + E
+R(533): O4^- + M => O2^- + O2 + M
+R(534): O4^- + O(1D) => O2^- + O2 + O
+R(535): O4^- + O(1S) => O^- + 2 O2
+R(536): O4^- + O3 => O3^- + 2 O2
+R(537): OH^- + H => H2O + E
+R(538): OH^- + HE => OH + HE + E
+R(539): OH^- + O => HO2 + E
+R(540): H^- + H^+ => H + H
+R(541): H^- + H2^+ => H + H2
+R(542): H^- + H3^+ => H2 + 2 H
+R(543): H^- + O^+ => H + O
+R(544): H^- + HE^+ => H + HE
+R(545): H^- + H3O^+ => H + H + H2O
+R(546): H^- + O^+ + O2 => H + O + O2
+R(547): H^- + O^+ + H2 => H + O + H2
+R(548): H^- + O2^+ => OH + O
+R(549): H^- + O2^+ + O2 => OH + O + O2
+R(550): H^- + O2^+ + H2 => OH + O + H2
+R(551): H^- + H^+ + M => H + H + M
+R(552): H^- + H2^+ + M => H + H2 + M
+R(553): H^- + H3^+ + M => 2 H + H2 + M
+R(554): H^- + HE^+ + M => H + HE + M
+R(555): H^- + HE2^+ => H + 2 HE
+R(556): H^- + HE2^+ + M => H + 2 HE + M
+R(557): H^- + HEH^+ => H2 + HE
+R(558): H^- + HEH^+ + M => 2 H + HE + M
+R(559): H^- + H3^+ => 2 H2
+R(560): H^- + O2^+ => H + O2
+R(561): H^- + OH^+ => H2O
+R(562): H^- + H2O^+ => H + H2O
+R(563): H^- + H3O^+ => OH + H2 + H
+R(564): H^- + H3O^+ => H2 + H2O
+R(565): O^- + H^+ => H + O
+R(566): O^- + H3^+ => O + H + H2
+R(567): O^- + H3O^+ => O + H + H2O
+R(568): O^- + H2^+ => OH + H
+R(569): O^- + O^+ => O + O
+R(570): O^- + O2^+ => O + O2
+R(571): O^- + O2^+ => O + O + O
+R(572): O^- + O4^+ => O + O2 + O2
+R(573): O^- + O^+ + M => O + O + M
+R(574): O^- + O2^+ + M => O + O2 + M
+R(575): O^- + O4^+ + M => O + O2 + O2 + M
+R(576): O^- + O^+ + M => O2 + M
+R(577): O^- + O2^+ + M => O3 + M
+R(578): O^- + HE^+ => O + HE
+R(579): O^- + O^+ => O + O(1D)
+R(580): O^- + HE^+ + M => O + HE + M
+R(581): O^- + HE2^+ => O + 2 HE
+R(582): O^- + HE2^+ + M => O + 2 HE + M
+R(583): O^- + H2^+ => H2O
+R(584): O^- + H3^+ => OH + H2
+R(585): O^- + OH^+ => HO2
+R(586): O^- + H2O^+ => O + H2O
+R(587): O^- + H2O^+ + M => O + H2O + M
+R(588): O^- + H3O^+ => H2O + OH
+R(589): O^- + HEH^+ => OH + HE
+R(590): O2^- + H^+ => H + O2
+R(591): O2^- + H3^+ => O2 + H + H2
+R(592): O2^- + H3O^+ => O2 + H + H2O
+R(593): O2^- + H2^+ => H + OH + O
+R(594): O2^- + O^+ => O2 + O
+R(595): O2^- + O2^+ => O2 + O2
+R(596): O2^- + O2^+ => O2 + O + O
+R(597): O2^- + O4^+ => O2 + O2 + O2
+R(598): O2^- + O^+ + M => O2 + O + M
+R(599): O2^- + O2^+ + M => O2 + O2 + M
+R(600): O2^- + O4^+ + M => O2 + O2 + O2 + M
+R(601): O2^- + O^+ + M => O3 + M
+R(602): O2^- + HE^+ => O2 + HE
+R(603): O2^- + HE2^+ => O2 + 2 HE
+R(604): O2^- + HE2^+ + M => O2 + 2 HE + M
+R(605): O2^- + H^+ => HO2
+R(606): O2^- + H2^+ => O2 + H2
+R(607): O2^- + H3^+ => OH + H2O
+R(608): O2^- + OH^+ => O2 + OH
+R(609): O2^- + H2O^+ => O2 + H2O
+R(610): O2^- + HEH^+ => HO2 + HE
+R(611): O3^- + H2^+ => H + OH + O2
+R(612): O3^- + O^+ => O3 + O
+R(613): O3^- + O2^+ => O3 + O2
+R(614): O3^- + O2^+ => O3 + O + O
+R(615): O3^- + O4^+ => O3 + O2 + O2
+R(616): O3^- + HE^+ => O3 + HE
+R(617): O3^- + O^+ + M => O3 + O + M
+R(618): O3^- + O2^+ + M => O3 + O2 + M
+R(619): O3^- + O4^+ + M => O3 + O2 + O2 + M
+R(620): O3^- + HE2^+ => O3 + 2 HE
+R(621): O3^- + HE2^+ + M => O3 + 2 HE + M
+R(622): O4^- + O^+ => 2 O2 + O
+R(623): O4^- + O2^+ => 2 O2 + O2
+R(624): O4^- + O4^+ => 2 O2 + O2 + O2
+R(625): O4^- + O^+ + M => 2 O2 + O + M
+R(626): O4^- + O2^+ + M => 2 O2 + O2 + M
+R(627): O4^- + O4^+ + M => 2 O2 + O2 + O2 + M
+R(628): O4^- + HE^+ + M => 2 O2 + HE + M
+R(629): O4^- + HE2^+ + M => 2 O2 + 2 HE + M
+R(630): OH^- + H^+ => OH + H
+R(631): OH^- + HE^+ => OH + HE
+R(632): OH^- + O^+ => OH + O
+R(633): OH^- + H3^+ => OH + H + H2
+R(634): OH^- + H3O^+ => OH + H + H2O
+R(635): OH^- + H^+ + M => H2O + M
+R(636): OH^- + H2^+ => H2O + H
+R(637): OH^- + H3^+ => H2 + H2O
+R(638): OH^- + O^+ => HO2
+R(639): OH^- + O2^+ => OH + O2
+R(640): OH^- + OH^+ => 2 OH
+R(641): OH^- + H2O^+ => OH + H2O
+R(642): OH^- + H2O^+ + M => OH + H2O + M
+R(643): OH^- + H3O^+ => 2 H2O
+R(644): OH^- + HE^+ + M => OH + HE + M
+R(645): OH^- + HE2^+ => OH + 2 HE
+R(646): OH^- + HE2^+ + M => OH + 2 HE + M
+R(647): OH^- + HEH^+ => H2O + HE
+
+Write sucussefully with 647 reactions and 45 species:
+['H', 'H2', 'O', 'O2', 'OH', 'H2O', 'HO2', 'H2O2', 'AR', 'HE', 'H2(v1)', 'H2(v2)', 'H2(v3)', 'O2(v1)', 'O2(v2)', 'O2(v3)', 'O2(v4)', 'O2(A1)', 'O2(B1)', 'O2*', 'O(1D)', 'O(1S)', 'O3', 'HE*', 'HE**', 'HE2', 'H^+', 'H2^+', 'H3^+', 'O^+', 'O2^+', 'O4^+', 'OH^+', 'H2O^+', 'H3O^+', 'HE^+', 'HE2^+', 'HEH^+', 'H^-', 'O^-', 'O2^-', 'O3^-', 'O4^-', 'OH^-', 'E']
+Parsing complete. 56 processes read.
+After substracting INELASTIC from EFFECTIVE, target H2 has negative cross-section.
+Setting as max(0, ...)
+Target HE* has no ELASTIC or EFFECTIVE cross sections
+After substracting INELASTIC from EFFECTIVE, target H2O has negative cross-section.
+Setting as max(0, ...)
+Parsing complete. 56 processes read.
+After substracting INELASTIC from EFFECTIVE, target H2 has negative cross-section.
+Setting as max(0, ...)
+Target HE* has no ELASTIC or EFFECTIVE cross sections
+After substracting INELASTIC from EFFECTIVE, target H2O has negative cross-section.
+Setting as max(0, ...)
+Solver succesfully initialized/updated
+Convergence achieved after 8 iterations. err = 2.14481e-05
+Parsing complete. 56 processes read.
+After substracting INELASTIC from EFFECTIVE, target H2 has negative cross-section.
+Setting as max(0, ...)
+Target HE* has no ELASTIC or EFFECTIVE cross sections
+After substracting INELASTIC from EFFECTIVE, target H2O has negative cross-section.
+Setting as max(0, ...)
+Solver succesfully initialized/updated
+Convergence achieved after 8 iterations. err = 2.14481e-05
+Parsing complete. 56 processes read.
+After substracting INELASTIC from EFFECTIVE, target H2 has negative cross-section.
+Setting as max(0, ...)
+Target HE* has no ELASTIC or EFFECTIVE cross sections
+After substracting INELASTIC from EFFECTIVE, target H2O has negative cross-section.
+Setting as max(0, ...)
+Solver succesfully initialized/updated
+Convergence achieved after 7 iterations. err = 1.69414e-05
+Parsing complete. 56 processes read.
+After substracting INELASTIC from EFFECTIVE, target H2 has negative cross-section.
+Setting as max(0, ...)
+Target HE* has no ELASTIC or EFFECTIVE cross sections
+After substracting INELASTIC from EFFECTIVE, target H2O has negative cross-section.
+Setting as max(0, ...)
+Solver succesfully initialized/updated
+Convergence achieved after 9 iterations. err = 7.86901e-05
+
+>>>>>>>> Reading REACTION section ... <<<<<<<<
+Expanding 'E + @A => O + O + E                                ! BOLSIG+ O2 -> O + O' :
+E + O2 => O + O + E                                ! BOLSIG+ O2 -> O + O
+Expanding 'E + @A => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)' :
+E + O2 => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)
+Expanding 'E + @A => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)' :
+E + O2 => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)
+Expanding 'E + @A => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)' :
+E + O2 => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)
+Expanding 'E + @A => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)' :
+E + O2 => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)
+Expanding 'E + @A => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+' :
+E + O2 => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+
+Expanding 'E + @A => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+' :
+E + O2 => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+
+Expanding 'E + @A + ANY_NEUTRAL => @B + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5' :
+E + O^+ + ANY_NEUTRAL => O + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5
+Expanding 'E + @A + E => @B + E                               ! 7.0d-20 * (300.0d0/Te)**4.5' :
+E + O^+ + E => O + E                               ! 7.0d-20 * (300.0d0/Te)**4.5
+Expanding 'E + O2^+ => O + @B                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * @R' :
+E + O2^+ => O + O                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.55d0
+E + O2^+ => O + O(1D)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.40d0
+E + O2^+ => O + O(1S)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.05d0
+
+Variable list defined inline (preprocessed):
+M: 7.33894242685314e+21/Tgas
+ktot: 3.0e-11*Tgas**0.17*exp(-2726.0/Tgas)
+k0: 2.2e-37*Tgas**2.34*exp(-1350.0/Tgas)
+kR1: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+kR2: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+kR3: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+>>>>>>>> Processing reactions ... <<<<<<<<
+Rephrasing 'kR1' to: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+Rephrasing 'kR2' to: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+Rephrasing 'kR3' to: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+Reactions sucessfully parsed! 
+
+Writing reactions to PlasmaKinetics.yaml:
+R(1): E + O => O + E
+R(2): E + O2 => O2 + E
+R(3): E + O2(a1) => O2(a1) + E
+R(4): E + O2(b1) => O2(b1) + E
+R(5): E + O3 => O3 + E
+R(6): E + H => H + E
+R(7): E + H2 => H2 + E
+R(8): E + H2O => H2O + E
+R(9): E + H2O => E + H2O
+R(10): E + O2 => E + O2
+R(11): E + O2 => E + O2
+R(12): E + O2 => E + O2
+R(13): E + O2 => E + O2
+R(14): E + H2 => E + H2
+R(15): E + H2 => E + H2
+R(16): E + H2 => E + H2
+R(17): E + H2O => E + H2O
+R(18): E + H2O => E + H2O
+R(19): E + O => E + O(1D)
+R(20): E + O(1D) => E + O
+R(21): E + O => E + O(1S)
+R(22): E + O(1S) => E + O
+R(23): E + O => E + O
+R(24): E + O => E + O
+R(25): E + O => E + O
+R(26): E + O => E + O
+R(27): E + O2 => O + O + E
+R(28): E + O2 => O + O(1D) + E
+R(29): E + O2 => O + O(1S) + E
+R(30): E + O2 => O + O(1S) + E
+R(31): E + O2 => E + O2(a1)
+R(32): E + O2 => E + O2(b1)
+R(33): E + O2 => E + O2(c)
+R(34): E + O2(a1) => O2(b1) + E
+R(35): E + O2(a1) => O2(c) + E
+R(36): E + O2(b1) => O2(c) + E
+R(37): E + O2(a1) => O + O + E
+R(38): E + O2(b1) => O + O + E
+R(39): E + O2(a1) => O + O(1D) + E
+R(40): E + O2(b1) => O + O(1D) + E
+R(41): E + O3 => O2(a1) + O + E
+R(42): E + O3 => O2(a1) + O(1D) + E
+R(43): E + O3 => O2(a1) + O(1S) + E
+R(44): E + O3 => O2(a1) + O(1S) + E
+R(45): E + H2 => E + H2
+R(46): E + H2 => E + H + H
+R(47): E + H2 => E + H + H
+R(48): E + H2 => E + H + H
+R(49): E + H2 => E + H2
+R(50): E + H2 => E + H2
+R(51): E + H2 => E + H + H
+R(52): E + H2 => E + H2
+R(53): E + H2 => E + H2
+R(54): E + H2 => E + H2
+R(55): E + H2 => E + H2
+R(56): E + H2 => E + H + H
+R(57): E + H2 => E + H + H
+R(58): E + H2 => E + H + H
+R(59): E + H2 => E + H + H
+R(60): E + H2 => E + H + H
+R(61): E + H => E + H
+R(62): E + H => E + H
+R(63): E + H => E + H
+R(64): E + H => E + H
+R(65): E + H => E + H
+R(66): E + H2O => E + OH + H
+R(67): E + H2O => E + O(1D) + H2
+R(68): E + O => O^+ + E + E
+R(69): E + O2 => O2^+ + E + E
+R(70): E + O2 => O + O^+ + E + E
+R(71): E + O2(a1) => O2^+ + E + E
+R(72): E + O2(b1) => O2^+ + E + E
+R(73): E + O2(a1) => O + O^+ + E + E
+R(74): E + O2(b1) => O + O^+ + E + E
+R(75): E + H2 => H2^+ + E + E
+R(76): E + H => H^+ + E + E
+R(77): E + H2O => H2O^+ + E + E
+R(78): E + O^+ + M => O + M
+R(79): E + O^+ + E => O + E
+R(80): E + O2^+ + M => O2 + M
+R(81): E + O2^+ => O + O
+R(82): E + O2^+ => O + O(1D)
+R(83): E + O2^+ => O + O(1S)
+R(84): E + H^+ => H
+R(85): E + E + H^+ => E + H
+R(86): E + H2^+ => H + H
+R(87): E + E + H2^+ => E + H2
+R(88): E + H2O^+ => OH + H
+R(89): E + H2O^+ => O + H2
+R(90): E + H2O^+ => O + H + H
+R(91): E + E + H2O^+ => E + H2O
+R(92): O2(a1) => O2
+R(93): O2(b1) => O2(a1)
+R(94): O2(b1) => O2
+R(95): O2(c) => O2
+R(96): O(1D) => O
+R(97): O(1S) => O(1D)
+R(98): O2(a1) + O => O2 + O
+R(99): O2(a1) + O2 => O2 + O2
+R(100): O2(a1) + O3 => O2 + O2 + O(1D)
+R(101): O2(a1) + O2(a1) => O2 + O2(b1)
+R(102): O2(a1) + H2O => O2 + H2O
+R(103): O2(a1) + H2 => OH + OH
+R(104): O2(a1) + H2 => O2 + H2
+R(105): O2(a1) + H => OH + O
+R(106): O2(a1) + H => HO2
+R(107): O2(a1) + H => O2 + H
+R(108): O2(a1) + H2 => H + HO2
+R(109): O2(a1) + H2O => OH + HO2
+R(110): O2(a1) + H2 => H2O + O(1D)
+R(111): O2(a1) + OH => H + O3
+R(112): O2(a1) + OH => O + HO2
+R(113): O2(a1) + OH => O2 + OH
+R(114): O2(a1) + H2O2 => O2 + H2O2
+R(115): O2(a1) + HO2 => O2 + HO2
+R(116): O2(a1) + O2 => O3 + O
+R(117): O2(a1) + O2(a1) => O2 + O2
+R(118): O + O2(a1) + O2 => O + O2 + O2
+R(119): O2(a1) + H2 => O2(b1) + H2
+R(120): O2(a1) + H2O => O + H2O2
+R(121): O2(b1) + O => O2(a1) + O
+R(122): O2(b1) + O => O2 + O(1D)
+R(123): O2(b1) + O2 => O2(a1) + O2
+R(124): O2(b1) + O3 => O2 + O2 + O
+R(125): O2(b1) + O => O2 + O
+R(126): O2(b1) + H => O2(a1) + H
+R(127): O2(b1) + H => O2 + H
+R(128): O2(b1) + O2(b1) => O2(a1) + O2
+R(129): O2(b1) + H2 => O2 + H2
+R(130): O2(b1) + H2O => O2 + H2O
+R(131): O2(b1) + O3 => O2(a1) + O2 + O
+R(132): O2(b1) + O3 => O2 + O3
+R(133): O2(b1) + O3 => O2(a1) + O3
+R(134): O2(b1) + H2 => H + HO2
+R(135): O2(b1) + H => OH + O(1D)
+R(136): O2(b1) + H2O => OH + HO2
+R(137): O2(b1) + H2 => O2(a1) + H2
+R(138): O2(b1) + O2 => O2 + O2
+R(139): O2(b1) + H2O => O2(a1) + H2O
+R(140): O2(b1) + H2O => O + H2O2
+R(141): O2(b1) + HO2 => O2 + HO2
+R(142): O2(b1) + H2O2 => O2 + H2O2
+R(143): O2(b1) + OH => O + HO2
+R(144): O2(c) + O => O2 + O(1S)
+R(145): O2(c) + O2 => O2(b1) + O2(b1)
+R(146): O2(c) + O => O2 + O
+R(147): O2(c) + O => O2(a1) + O(1D)
+R(148): O2(c) + O => O2(b1) + O(1D)
+R(149): O2(c) + O2 => O2(a1) + O2
+R(150): O2(c) + O2 => O2(b1) + O2
+R(151): O2(c) + O2 => O2 + O2
+R(152): O2(c) + H2 => H2 + O2
+R(153): O2(c) + H2 => H2 + O2(a1)
+R(154): O2(c) + H2O => H2O + O2
+R(155): O2(c) + HO2 => HO2 + O2
+R(156): O2(c) + H2O2 => H2O2 + O2
+R(157): O(1D) + O => O + O
+R(158): O(1D) + O2 => O + O2
+R(159): O(1D) + O2 => O + O2(a1)
+R(160): O(1D) + O2 => O + O2(b1)
+R(161): O(1D) + O3 => O2 + O + O
+R(162): O(1D) + O3 => O2 + O2
+R(163): O(1D) + O3 => O + O3
+R(164): O(1D) + H2O2 => HO2 + OH
+R(165): O(1D) + H2O => OH + OH
+R(166): O(1D) + H2O => O + H2O
+R(167): O(1D) + H2 => OH + H
+R(168): O(1D) + H2 => O + H2
+R(169): O(1D) + OH => H + O2
+R(170): O(1D) + HO2 => OH + O2
+R(171): O(1S) + O => O(1D) + O
+R(172): O(1S) + O2 => O(1D) + O2
+R(173): O(1S) + O2 => O + O + O
+R(174): O(1S) + O2(a1) => O + O2(c)
+R(175): O(1S) + O2(a1) => O(1D) + O2(b1)
+R(176): O(1S) + O2(a1) => O + O + O
+R(177): O(1S) + O3 => O2 + O2
+R(178): O(1S) + O3 => O2 + O + O(1D)
+R(179): O(1S) + O => O + O
+R(180): O(1S) + O2 => O + O2
+R(181): O(1S) + H2 => H + OH
+R(182): O(1S) + OH => H + O2
+R(183): O(1S) + HO2 => OH + O2
+R(184): O(1S) + H2O => O(1D) + H2O
+R(185): O(1S) + H2O => O + H2O
+R(186): O(1S) + H2O => OH + OH
+R(187): O(1S) + H2O => H2 + O2
+
+Write sucussefully with 187 reactions and 21 species:
+['E', 'O^+', 'O2^+', 'H^+', 'H2^+', 'H2O^+', 'O', 'O(1D)', 'O(1S)', 'O2', 'O2(a1)', 'O2(b1)', 'O2(c)', 'O3', 'H', 'H2', 'H2O', 'OH', 'OH(v)', 'HO2', 'H2O2']
+
+>>>>>>>> Reading REACTION section ... <<<<<<<<
+Expanding 'E + @A => O + O + E                                ! BOLSIG+ O2 -> O + O' :
+E + O2 => O + O + E                                ! BOLSIG+ O2 -> O + O
+Expanding 'E + @A => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)' :
+E + O2 => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)
+Expanding 'E + @A => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)' :
+E + O2 => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)
+Expanding 'E + @A => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)' :
+E + O2 => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)
+Expanding 'E + @A => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)' :
+E + O2 => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)
+Expanding 'E + @A => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+' :
+E + O2 => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+
+Expanding 'E + @A => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+' :
+E + O2 => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+
+Expanding 'E + @A + ANY_NEUTRAL => @B + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5' :
+E + O^+ + ANY_NEUTRAL => O + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5
+Expanding 'E + @A + E => @B + E                               ! 7.0d-20 * (300.0d0/Te)**4.5' :
+E + O^+ + E => O + E                               ! 7.0d-20 * (300.0d0/Te)**4.5
+Expanding 'E + O2^+ => O + @B                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * @R' :
+E + O2^+ => O + O                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.55d0
+E + O2^+ => O + O(1D)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.40d0
+E + O2^+ => O + O(1S)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.05d0
+
+Variable list defined inline (preprocessed):
+M: 7.33894242685314e+21/Tgas
+ktot: 3.0e-11*Tgas**0.17*exp(-2726.0/Tgas)
+k0: 2.2e-37*Tgas**2.34*exp(-1350.0/Tgas)
+kR1: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+kR2: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+kR3: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+>>>>>>>> Processing reactions ... <<<<<<<<
+Rephrasing 'kR1' to: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+Rephrasing 'kR2' to: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+Rephrasing 'kR3' to: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+Reactions sucessfully parsed! 
+
+Writing reactions to PlasmaKinetics.yaml:
+R(1): E + O => O + E
+R(2): E + O2 => O2 + E
+R(3): E + O2(a1) => O2(a1) + E
+R(4): E + O2(b1) => O2(b1) + E
+R(5): E + O3 => O3 + E
+R(6): E + H => H + E
+R(7): E + H2 => H2 + E
+R(8): E + H2O => H2O + E
+R(9): E + H2O => E + H2O
+R(10): E + O2 => E + O2
+R(11): E + O2 => E + O2
+R(12): E + O2 => E + O2
+R(13): E + O2 => E + O2
+R(14): E + H2 => E + H2
+R(15): E + H2 => E + H2
+R(16): E + H2 => E + H2
+R(17): E + H2O => E + H2O
+R(18): E + H2O => E + H2O
+R(19): E + O => E + O(1D)
+R(20): E + O(1D) => E + O
+R(21): E + O => E + O(1S)
+R(22): E + O(1S) => E + O
+R(23): E + O => E + O
+R(24): E + O => E + O
+R(25): E + O => E + O
+R(26): E + O => E + O
+R(27): E + O2 => O + O + E
+R(28): E + O2 => O + O(1D) + E
+R(29): E + O2 => O + O(1S) + E
+R(30): E + O2 => O + O(1S) + E
+R(31): E + O2 => E + O2(a1)
+R(32): E + O2 => E + O2(b1)
+R(33): E + O2 => E + O2(c)
+R(34): E + O2(a1) => O2(b1) + E
+R(35): E + O2(a1) => O2(c) + E
+R(36): E + O2(b1) => O2(c) + E
+R(37): E + O2(a1) => O + O + E
+R(38): E + O2(b1) => O + O + E
+R(39): E + O2(a1) => O + O(1D) + E
+R(40): E + O2(b1) => O + O(1D) + E
+R(41): E + O3 => O2(a1) + O + E
+R(42): E + O3 => O2(a1) + O(1D) + E
+R(43): E + O3 => O2(a1) + O(1S) + E
+R(44): E + O3 => O2(a1) + O(1S) + E
+R(45): E + H2 => E + H2
+R(46): E + H2 => E + H + H
+R(47): E + H2 => E + H + H
+R(48): E + H2 => E + H + H
+R(49): E + H2 => E + H2
+R(50): E + H2 => E + H2
+R(51): E + H2 => E + H + H
+R(52): E + H2 => E + H2
+R(53): E + H2 => E + H2
+R(54): E + H2 => E + H2
+R(55): E + H2 => E + H2
+R(56): E + H2 => E + H + H
+R(57): E + H2 => E + H + H
+R(58): E + H2 => E + H + H
+R(59): E + H2 => E + H + H
+R(60): E + H2 => E + H + H
+R(61): E + H => E + H
+R(62): E + H => E + H
+R(63): E + H => E + H
+R(64): E + H => E + H
+R(65): E + H => E + H
+R(66): E + H2O => E + OH + H
+R(67): E + H2O => E + O(1D) + H2
+R(68): E + O => O^+ + E + E
+R(69): E + O2 => O2^+ + E + E
+R(70): E + O2 => O + O^+ + E + E
+R(71): E + O2(a1) => O2^+ + E + E
+R(72): E + O2(b1) => O2^+ + E + E
+R(73): E + O2(a1) => O + O^+ + E + E
+R(74): E + O2(b1) => O + O^+ + E + E
+R(75): E + H2 => H2^+ + E + E
+R(76): E + H => H^+ + E + E
+R(77): E + H2O => H2O^+ + E + E
+R(78): E + O^+ + M => O + M
+R(79): E + O^+ + E => O + E
+R(80): E + O2^+ + M => O2 + M
+R(81): E + O2^+ => O + O
+R(82): E + O2^+ => O + O(1D)
+R(83): E + O2^+ => O + O(1S)
+R(84): E + H^+ => H
+R(85): E + E + H^+ => E + H
+R(86): E + H2^+ => H + H
+R(87): E + E + H2^+ => E + H2
+R(88): E + H2O^+ => OH + H
+R(89): E + H2O^+ => O + H2
+R(90): E + H2O^+ => O + H + H
+R(91): E + E + H2O^+ => E + H2O
+R(92): O2(a1) => O2
+R(93): O2(b1) => O2(a1)
+R(94): O2(b1) => O2
+R(95): O2(c) => O2
+R(96): O(1D) => O
+R(97): O(1S) => O(1D)
+R(98): O2(a1) + O => O2 + O
+R(99): O2(a1) + O2 => O2 + O2
+R(100): O2(a1) + O3 => O2 + O2 + O(1D)
+R(101): O2(a1) + O2(a1) => O2 + O2(b1)
+R(102): O2(a1) + H2O => O2 + H2O
+R(103): O2(a1) + H2 => OH + OH
+R(104): O2(a1) + H2 => O2 + H2
+R(105): O2(a1) + H => OH + O
+R(106): O2(a1) + H => HO2
+R(107): O2(a1) + H => O2 + H
+R(108): O2(a1) + H2 => H + HO2
+R(109): O2(a1) + H2O => OH + HO2
+R(110): O2(a1) + H2 => H2O + O(1D)
+R(111): O2(a1) + OH => H + O3
+R(112): O2(a1) + OH => O + HO2
+R(113): O2(a1) + OH => O2 + OH
+R(114): O2(a1) + H2O2 => O2 + H2O2
+R(115): O2(a1) + HO2 => O2 + HO2
+R(116): O2(a1) + O2 => O3 + O
+R(117): O2(a1) + O2(a1) => O2 + O2
+R(118): O + O2(a1) + O2 => O + O2 + O2
+R(119): O2(a1) + H2 => O2(b1) + H2
+R(120): O2(a1) + H2O => O + H2O2
+R(121): O2(b1) + O => O2(a1) + O
+R(122): O2(b1) + O => O2 + O(1D)
+R(123): O2(b1) + O2 => O2(a1) + O2
+R(124): O2(b1) + O3 => O2 + O2 + O
+R(125): O2(b1) + O => O2 + O
+R(126): O2(b1) + H => O2(a1) + H
+R(127): O2(b1) + H => O2 + H
+R(128): O2(b1) + O2(b1) => O2(a1) + O2
+R(129): O2(b1) + H2 => O2 + H2
+R(130): O2(b1) + H2O => O2 + H2O
+R(131): O2(b1) + O3 => O2(a1) + O2 + O
+R(132): O2(b1) + O3 => O2 + O3
+R(133): O2(b1) + O3 => O2(a1) + O3
+R(134): O2(b1) + H2 => H + HO2
+R(135): O2(b1) + H => OH + O(1D)
+R(136): O2(b1) + H2O => OH + HO2
+R(137): O2(b1) + H2 => O2(a1) + H2
+R(138): O2(b1) + O2 => O2 + O2
+R(139): O2(b1) + H2O => O2(a1) + H2O
+R(140): O2(b1) + H2O => O + H2O2
+R(141): O2(b1) + HO2 => O2 + HO2
+R(142): O2(b1) + H2O2 => O2 + H2O2
+R(143): O2(b1) + OH => O + HO2
+R(144): O2(c) + O => O2 + O(1S)
+R(145): O2(c) + O2 => O2(b1) + O2(b1)
+R(146): O2(c) + O => O2 + O
+R(147): O2(c) + O => O2(a1) + O(1D)
+R(148): O2(c) + O => O2(b1) + O(1D)
+R(149): O2(c) + O2 => O2(a1) + O2
+R(150): O2(c) + O2 => O2(b1) + O2
+R(151): O2(c) + O2 => O2 + O2
+R(152): O2(c) + H2 => H2 + O2
+R(153): O2(c) + H2 => H2 + O2(a1)
+R(154): O2(c) + H2O => H2O + O2
+R(155): O2(c) + HO2 => HO2 + O2
+R(156): O2(c) + H2O2 => H2O2 + O2
+R(157): O(1D) + O => O + O
+R(158): O(1D) + O2 => O + O2
+R(159): O(1D) + O2 => O + O2(a1)
+R(160): O(1D) + O2 => O + O2(b1)
+R(161): O(1D) + O3 => O2 + O + O
+R(162): O(1D) + O3 => O2 + O2
+R(163): O(1D) + O3 => O + O3
+R(164): O(1D) + H2O2 => HO2 + OH
+R(165): O(1D) + H2O => OH + OH
+R(166): O(1D) + H2O => O + H2O
+R(167): O(1D) + H2 => OH + H
+R(168): O(1D) + H2 => O + H2
+R(169): O(1D) + OH => H + O2
+R(170): O(1D) + HO2 => OH + O2
+R(171): O(1S) + O => O(1D) + O
+R(172): O(1S) + O2 => O(1D) + O2
+R(173): O(1S) + O2 => O + O + O
+R(174): O(1S) + O2(a1) => O + O2(c)
+R(175): O(1S) + O2(a1) => O(1D) + O2(b1)
+R(176): O(1S) + O2(a1) => O + O + O
+R(177): O(1S) + O3 => O2 + O2
+R(178): O(1S) + O3 => O2 + O + O(1D)
+R(179): O(1S) + O => O + O
+R(180): O(1S) + O2 => O + O2
+R(181): O(1S) + H2 => H + OH
+R(182): O(1S) + OH => H + O2
+R(183): O(1S) + HO2 => OH + O2
+R(184): O(1S) + H2O => O(1D) + H2O
+R(185): O(1S) + H2O => O + H2O
+R(186): O(1S) + H2O => OH + OH
+R(187): O(1S) + H2O => H2 + O2
+
+Write sucussefully with 187 reactions and 21 species:
+['E', 'O^+', 'O2^+', 'H^+', 'H2^+', 'H2O^+', 'O', 'O(1D)', 'O(1S)', 'O2', 'O2(a1)', 'O2(b1)', 'O2(c)', 'O3', 'H', 'H2', 'H2O', 'OH', 'OH(v)', 'HO2', 'H2O2']
+
+>>>>>>>> Reading REACTION section ... <<<<<<<<
+Expanding 'E + @A => O + O + E                                ! BOLSIG+ O2 -> O + O' :
+E + O2 => O + O + E                                ! BOLSIG+ O2 -> O + O
+Expanding 'E + @A => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)' :
+E + O2 => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)
+Expanding 'E + @A => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)' :
+E + O2 => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)
+Expanding 'E + @A => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)' :
+E + O2 => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)
+Expanding 'E + @A => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)' :
+E + O2 => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)
+Expanding 'E + @A => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+' :
+E + O2 => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+
+Expanding 'E + @A => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+' :
+E + O2 => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+
+Expanding 'E + @A + ANY_NEUTRAL => @B + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5' :
+E + O^+ + ANY_NEUTRAL => O + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5
+Expanding 'E + @A + E => @B + E                               ! 7.0d-20 * (300.0d0/Te)**4.5' :
+E + O^+ + E => O + E                               ! 7.0d-20 * (300.0d0/Te)**4.5
+Expanding 'E + O2^+ => O + @B                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * @R' :
+E + O2^+ => O + O                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.55d0
+E + O2^+ => O + O(1D)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.40d0
+E + O2^+ => O + O(1S)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.05d0
+
+Variable list defined inline (preprocessed):
+M: 7.33894242685314e+21/Tgas
+ktot: 3.0e-11*Tgas**0.17*exp(-2726.0/Tgas)
+k0: 2.2e-37*Tgas**2.34*exp(-1350.0/Tgas)
+kR1: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+kR2: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+kR3: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+>>>>>>>> Processing reactions ... <<<<<<<<
+Rephrasing 'kR1' to: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+Rephrasing 'kR2' to: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+Rephrasing 'kR3' to: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+Reactions sucessfully parsed! 
+
+Writing reactions to parsedPlasKin.yaml:
+R(1): E + O => O + E
+R(2): E + O2 => O2 + E
+R(3): E + O2(a1) => O2(a1) + E
+R(4): E + O2(b1) => O2(b1) + E
+R(5): E + O3 => O3 + E
+R(6): E + H => H + E
+R(7): E + H2 => H2 + E
+R(8): E + H2O => H2O + E
+R(9): E + H2O => E + H2O
+R(10): E + O2 => E + O2
+R(11): E + O2 => E + O2
+R(12): E + O2 => E + O2
+R(13): E + O2 => E + O2
+R(14): E + H2 => E + H2
+R(15): E + H2 => E + H2
+R(16): E + H2 => E + H2
+R(17): E + H2O => E + H2O
+R(18): E + H2O => E + H2O
+R(19): E + O => E + O(1D)
+R(20): E + O(1D) => E + O
+R(21): E + O => E + O(1S)
+R(22): E + O(1S) => E + O
+R(23): E + O => E + O
+R(24): E + O => E + O
+R(25): E + O => E + O
+R(26): E + O => E + O
+R(27): E + O2 => O + O + E
+R(28): E + O2 => O + O(1D) + E
+R(29): E + O2 => O + O(1S) + E
+R(30): E + O2 => O + O(1S) + E
+R(31): E + O2 => E + O2(a1)
+R(32): E + O2 => E + O2(b1)
+R(33): E + O2 => E + O2(c)
+R(34): E + O2(a1) => O2(b1) + E
+R(35): E + O2(a1) => O2(c) + E
+R(36): E + O2(b1) => O2(c) + E
+R(37): E + O2(a1) => O + O + E
+R(38): E + O2(b1) => O + O + E
+R(39): E + O2(a1) => O + O(1D) + E
+R(40): E + O2(b1) => O + O(1D) + E
+R(41): E + O3 => O2(a1) + O + E
+R(42): E + O3 => O2(a1) + O(1D) + E
+R(43): E + O3 => O2(a1) + O(1S) + E
+R(44): E + O3 => O2(a1) + O(1S) + E
+R(45): E + H2 => E + H2
+R(46): E + H2 => E + H + H
+R(47): E + H2 => E + H + H
+R(48): E + H2 => E + H + H
+R(49): E + H2 => E + H2
+R(50): E + H2 => E + H2
+R(51): E + H2 => E + H + H
+R(52): E + H2 => E + H2
+R(53): E + H2 => E + H2
+R(54): E + H2 => E + H2
+R(55): E + H2 => E + H2
+R(56): E + H2 => E + H + H
+R(57): E + H2 => E + H + H
+R(58): E + H2 => E + H + H
+R(59): E + H2 => E + H + H
+R(60): E + H2 => E + H + H
+R(61): E + H => E + H
+R(62): E + H => E + H
+R(63): E + H => E + H
+R(64): E + H => E + H
+R(65): E + H => E + H
+R(66): E + H2O => E + OH + H
+R(67): E + H2O => E + O(1D) + H2
+R(68): E + O => O^+ + E + E
+R(69): E + O2 => O2^+ + E + E
+R(70): E + O2 => O + O^+ + E + E
+R(71): E + O2(a1) => O2^+ + E + E
+R(72): E + O2(b1) => O2^+ + E + E
+R(73): E + O2(a1) => O + O^+ + E + E
+R(74): E + O2(b1) => O + O^+ + E + E
+R(75): E + H2 => H2^+ + E + E
+R(76): E + H => H^+ + E + E
+R(77): E + H2O => H2O^+ + E + E
+R(78): E + O^+ + M => O + M
+R(79): E + O^+ + E => O + E
+R(80): E + O2^+ + M => O2 + M
+R(81): E + O2^+ => O + O
+R(82): E + O2^+ => O + O(1D)
+R(83): E + O2^+ => O + O(1S)
+R(84): E + H^+ => H
+R(85): E + E + H^+ => E + H
+R(86): E + H2^+ => H + H
+R(87): E + E + H2^+ => E + H2
+R(88): E + H2O^+ => OH + H
+R(89): E + H2O^+ => O + H2
+R(90): E + H2O^+ => O + H + H
+R(91): E + E + H2O^+ => E + H2O
+R(92): O2(a1) => O2
+R(93): O2(b1) => O2(a1)
+R(94): O2(b1) => O2
+R(95): O2(c) => O2
+R(96): O(1D) => O
+R(97): O(1S) => O(1D)
+R(98): O2(a1) + O => O2 + O
+R(99): O2(a1) + O2 => O2 + O2
+R(100): O2(a1) + O3 => O2 + O2 + O(1D)
+R(101): O2(a1) + O2(a1) => O2 + O2(b1)
+R(102): O2(a1) + H2O => O2 + H2O
+R(103): O2(a1) + H2 => OH + OH
+R(104): O2(a1) + H2 => O2 + H2
+R(105): O2(a1) + H => OH + O
+R(106): O2(a1) + H => HO2
+R(107): O2(a1) + H => O2 + H
+R(108): O2(a1) + H2 => H + HO2
+R(109): O2(a1) + H2O => OH + HO2
+R(110): O2(a1) + H2 => H2O + O(1D)
+R(111): O2(a1) + OH => H + O3
+R(112): O2(a1) + OH => O + HO2
+R(113): O2(a1) + OH => O2 + OH
+R(114): O2(a1) + H2O2 => O2 + H2O2
+R(115): O2(a1) + HO2 => O2 + HO2
+R(116): O2(a1) + O2 => O3 + O
+R(117): O2(a1) + O2(a1) => O2 + O2
+R(118): O + O2(a1) + O2 => O + O2 + O2
+R(119): O2(a1) + H2 => O2(b1) + H2
+R(120): O2(a1) + H2O => O + H2O2
+R(121): O2(b1) + O => O2(a1) + O
+R(122): O2(b1) + O => O2 + O(1D)
+R(123): O2(b1) + O2 => O2(a1) + O2
+R(124): O2(b1) + O3 => O2 + O2 + O
+R(125): O2(b1) + O => O2 + O
+R(126): O2(b1) + H => O2(a1) + H
+R(127): O2(b1) + H => O2 + H
+R(128): O2(b1) + O2(b1) => O2(a1) + O2
+R(129): O2(b1) + H2 => O2 + H2
+R(130): O2(b1) + H2O => O2 + H2O
+R(131): O2(b1) + O3 => O2(a1) + O2 + O
+R(132): O2(b1) + O3 => O2 + O3
+R(133): O2(b1) + O3 => O2(a1) + O3
+R(134): O2(b1) + H2 => H + HO2
+R(135): O2(b1) + H => OH + O(1D)
+R(136): O2(b1) + H2O => OH + HO2
+R(137): O2(b1) + H2 => O2(a1) + H2
+R(138): O2(b1) + O2 => O2 + O2
+R(139): O2(b1) + H2O => O2(a1) + H2O
+R(140): O2(b1) + H2O => O + H2O2
+R(141): O2(b1) + HO2 => O2 + HO2
+R(142): O2(b1) + H2O2 => O2 + H2O2
+R(143): O2(b1) + OH => O + HO2
+R(144): O2(c) + O => O2 + O(1S)
+R(145): O2(c) + O2 => O2(b1) + O2(b1)
+R(146): O2(c) + O => O2 + O
+R(147): O2(c) + O => O2(a1) + O(1D)
+R(148): O2(c) + O => O2(b1) + O(1D)
+R(149): O2(c) + O2 => O2(a1) + O2
+R(150): O2(c) + O2 => O2(b1) + O2
+R(151): O2(c) + O2 => O2 + O2
+R(152): O2(c) + H2 => H2 + O2
+R(153): O2(c) + H2 => H2 + O2(a1)
+R(154): O2(c) + H2O => H2O + O2
+R(155): O2(c) + HO2 => HO2 + O2
+R(156): O2(c) + H2O2 => H2O2 + O2
+R(157): O(1D) + O => O + O
+R(158): O(1D) + O2 => O + O2
+R(159): O(1D) + O2 => O + O2(a1)
+R(160): O(1D) + O2 => O + O2(b1)
+R(161): O(1D) + O3 => O2 + O + O
+R(162): O(1D) + O3 => O2 + O2
+R(163): O(1D) + O3 => O + O3
+R(164): O(1D) + H2O2 => HO2 + OH
+R(165): O(1D) + H2O => OH + OH
+R(166): O(1D) + H2O => O + H2O
+R(167): O(1D) + H2 => OH + H
+R(168): O(1D) + H2 => O + H2
+R(169): O(1D) + OH => H + O2
+R(170): O(1D) + HO2 => OH + O2
+R(171): O(1S) + O => O(1D) + O
+R(172): O(1S) + O2 => O(1D) + O2
+R(173): O(1S) + O2 => O + O + O
+R(174): O(1S) + O2(a1) => O + O2(c)
+R(175): O(1S) + O2(a1) => O(1D) + O2(b1)
+R(176): O(1S) + O2(a1) => O + O + O
+R(177): O(1S) + O3 => O2 + O2
+R(178): O(1S) + O3 => O2 + O + O(1D)
+R(179): O(1S) + O => O + O
+R(180): O(1S) + O2 => O + O2
+R(181): O(1S) + H2 => H + OH
+R(182): O(1S) + OH => H + O2
+R(183): O(1S) + HO2 => OH + O2
+R(184): O(1S) + H2O => O(1D) + H2O
+R(185): O(1S) + H2O => O + H2O
+R(186): O(1S) + H2O => OH + OH
+R(187): O(1S) + H2O => H2 + O2
+
+Write sucussefully with 187 reactions and 21 species:
+['E', 'O^+', 'O2^+', 'H^+', 'H2^+', 'H2O^+', 'O', 'O(1D)', 'O(1S)', 'O2', 'O2(a1)', 'O2(b1)', 'O2(c)', 'O3', 'H', 'H2', 'H2O', 'OH', 'OH(v)', 'HO2', 'H2O2']
+
+>>>>>>>> Reading REACTION section ... <<<<<<<<
+Expanding 'E + @A => O + O + E                                ! BOLSIG+ O2 -> O + O' :
+E + O2 => O + O + E                                ! BOLSIG+ O2 -> O + O
+Expanding 'E + @A => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)' :
+E + O2 => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)
+Expanding 'E + @A => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)' :
+E + O2 => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)
+Expanding 'E + @A => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)' :
+E + O2 => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)
+Expanding 'E + @A => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)' :
+E + O2 => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)
+Expanding 'E + @A => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+' :
+E + O2 => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+
+Expanding 'E + @A => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+' :
+E + O2 => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+
+Expanding 'E + @A + ANY_NEUTRAL => @B + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5' :
+E + O^+ + ANY_NEUTRAL => O + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5
+Expanding 'E + @A + E => @B + E                               ! 7.0d-20 * (300.0d0/Te)**4.5' :
+E + O^+ + E => O + E                               ! 7.0d-20 * (300.0d0/Te)**4.5
+Expanding 'E + O2^+ => O + @B                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * @R' :
+E + O2^+ => O + O                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.55d0
+E + O2^+ => O + O(1D)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.40d0
+E + O2^+ => O + O(1S)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.05d0
+
+Variable list defined inline (preprocessed):
+M: 7.33894242685314e+21/Tgas
+ktot: 3.0e-11*Tgas**0.17*exp(-2726.0/Tgas)
+k0: 2.2e-37*Tgas**2.34*exp(-1350.0/Tgas)
+kR1: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+kR2: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+kR3: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+>>>>>>>> Processing reactions ... <<<<<<<<
+Rephrasing 'kR1' to: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+Rephrasing 'kR2' to: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+Rephrasing 'kR3' to: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+Reactions sucessfully parsed! 
+
+Writing reactions to parsedPlasKin.yaml:
+R(1): E + O => O + E
+R(2): E + O2 => O2 + E
+R(3): E + O2(a1) => O2(a1) + E
+R(4): E + O2(b1) => O2(b1) + E
+R(5): E + O3 => O3 + E
+R(6): E + H => H + E
+R(7): E + H2 => H2 + E
+R(8): E + H2O => H2O + E
+R(9): E + H2O => E + H2O
+R(10): E + O2 => E + O2
+R(11): E + O2 => E + O2
+R(12): E + O2 => E + O2
+R(13): E + O2 => E + O2
+R(14): E + H2 => E + H2
+R(15): E + H2 => E + H2
+R(16): E + H2 => E + H2
+R(17): E + H2O => E + H2O
+R(18): E + H2O => E + H2O
+R(19): E + O => E + O(1D)
+R(20): E + O(1D) => E + O
+R(21): E + O => E + O(1S)
+R(22): E + O(1S) => E + O
+R(23): E + O => E + O
+R(24): E + O => E + O
+R(25): E + O => E + O
+R(26): E + O => E + O
+R(27): E + O2 => O + O + E
+R(28): E + O2 => O + O(1D) + E
+R(29): E + O2 => O + O(1S) + E
+R(30): E + O2 => O + O(1S) + E
+R(31): E + O2 => E + O2(a1)
+R(32): E + O2 => E + O2(b1)
+R(33): E + O2 => E + O2(c)
+R(34): E + O2(a1) => O2(b1) + E
+R(35): E + O2(a1) => O2(c) + E
+R(36): E + O2(b1) => O2(c) + E
+R(37): E + O2(a1) => O + O + E
+R(38): E + O2(b1) => O + O + E
+R(39): E + O2(a1) => O + O(1D) + E
+R(40): E + O2(b1) => O + O(1D) + E
+R(41): E + O3 => O2(a1) + O + E
+R(42): E + O3 => O2(a1) + O(1D) + E
+R(43): E + O3 => O2(a1) + O(1S) + E
+R(44): E + O3 => O2(a1) + O(1S) + E
+R(45): E + H2 => E + H2
+R(46): E + H2 => E + H + H
+R(47): E + H2 => E + H + H
+R(48): E + H2 => E + H + H
+R(49): E + H2 => E + H2
+R(50): E + H2 => E + H2
+R(51): E + H2 => E + H + H
+R(52): E + H2 => E + H2
+R(53): E + H2 => E + H2
+R(54): E + H2 => E + H2
+R(55): E + H2 => E + H2
+R(56): E + H2 => E + H + H
+R(57): E + H2 => E + H + H
+R(58): E + H2 => E + H + H
+R(59): E + H2 => E + H + H
+R(60): E + H2 => E + H + H
+R(61): E + H => E + H
+R(62): E + H => E + H
+R(63): E + H => E + H
+R(64): E + H => E + H
+R(65): E + H => E + H
+R(66): E + H2O => E + OH + H
+R(67): E + H2O => E + O(1D) + H2
+R(68): E + O => O^+ + E + E
+R(69): E + O2 => O2^+ + E + E
+R(70): E + O2 => O + O^+ + E + E
+R(71): E + O2(a1) => O2^+ + E + E
+R(72): E + O2(b1) => O2^+ + E + E
+R(73): E + O2(a1) => O + O^+ + E + E
+R(74): E + O2(b1) => O + O^+ + E + E
+R(75): E + H2 => H2^+ + E + E
+R(76): E + H => H^+ + E + E
+R(77): E + H2O => H2O^+ + E + E
+R(78): E + O^+ + M => O + M
+R(79): E + O^+ + E => O + E
+R(80): E + O2^+ + M => O2 + M
+R(81): E + O2^+ => O + O
+R(82): E + O2^+ => O + O(1D)
+R(83): E + O2^+ => O + O(1S)
+R(84): E + H^+ => H
+R(85): E + E + H^+ => E + H
+R(86): E + H2^+ => H + H
+R(87): E + E + H2^+ => E + H2
+R(88): E + H2O^+ => OH + H
+R(89): E + H2O^+ => O + H2
+R(90): E + H2O^+ => O + H + H
+R(91): E + E + H2O^+ => E + H2O
+R(92): O2(a1) => O2
+R(93): O2(b1) => O2(a1)
+R(94): O2(b1) => O2
+R(95): O2(c) => O2
+R(96): O(1D) => O
+R(97): O(1S) => O(1D)
+R(98): O2(a1) + O => O2 + O
+R(99): O2(a1) + O2 => O2 + O2
+R(100): O2(a1) + O3 => O2 + O2 + O(1D)
+R(101): O2(a1) + O2(a1) => O2 + O2(b1)
+R(102): O2(a1) + H2O => O2 + H2O
+R(103): O2(a1) + H2 => OH + OH
+R(104): O2(a1) + H2 => O2 + H2
+R(105): O2(a1) + H => OH + O
+R(106): O2(a1) + H => HO2
+R(107): O2(a1) + H => O2 + H
+R(108): O2(a1) + H2 => H + HO2
+R(109): O2(a1) + H2O => OH + HO2
+R(110): O2(a1) + H2 => H2O + O(1D)
+R(111): O2(a1) + OH => H + O3
+R(112): O2(a1) + OH => O + HO2
+R(113): O2(a1) + OH => O2 + OH
+R(114): O2(a1) + H2O2 => O2 + H2O2
+R(115): O2(a1) + HO2 => O2 + HO2
+R(116): O2(a1) + O2 => O3 + O
+R(117): O2(a1) + O2(a1) => O2 + O2
+R(118): O + O2(a1) + O2 => O + O2 + O2
+R(119): O2(a1) + H2 => O2(b1) + H2
+R(120): O2(a1) + H2O => O + H2O2
+R(121): O2(b1) + O => O2(a1) + O
+R(122): O2(b1) + O => O2 + O(1D)
+R(123): O2(b1) + O2 => O2(a1) + O2
+R(124): O2(b1) + O3 => O2 + O2 + O
+R(125): O2(b1) + O => O2 + O
+R(126): O2(b1) + H => O2(a1) + H
+R(127): O2(b1) + H => O2 + H
+R(128): O2(b1) + O2(b1) => O2(a1) + O2
+R(129): O2(b1) + H2 => O2 + H2
+R(130): O2(b1) + H2O => O2 + H2O
+R(131): O2(b1) + O3 => O2(a1) + O2 + O
+R(132): O2(b1) + O3 => O2 + O3
+R(133): O2(b1) + O3 => O2(a1) + O3
+R(134): O2(b1) + H2 => H + HO2
+R(135): O2(b1) + H => OH + O(1D)
+R(136): O2(b1) + H2O => OH + HO2
+R(137): O2(b1) + H2 => O2(a1) + H2
+R(138): O2(b1) + O2 => O2 + O2
+R(139): O2(b1) + H2O => O2(a1) + H2O
+R(140): O2(b1) + H2O => O + H2O2
+R(141): O2(b1) + HO2 => O2 + HO2
+R(142): O2(b1) + H2O2 => O2 + H2O2
+R(143): O2(b1) + OH => O + HO2
+R(144): O2(c) + O => O2 + O(1S)
+R(145): O2(c) + O2 => O2(b1) + O2(b1)
+R(146): O2(c) + O => O2 + O
+R(147): O2(c) + O => O2(a1) + O(1D)
+R(148): O2(c) + O => O2(b1) + O(1D)
+R(149): O2(c) + O2 => O2(a1) + O2
+R(150): O2(c) + O2 => O2(b1) + O2
+R(151): O2(c) + O2 => O2 + O2
+R(152): O2(c) + H2 => H2 + O2
+R(153): O2(c) + H2 => H2 + O2(a1)
+R(154): O2(c) + H2O => H2O + O2
+R(155): O2(c) + HO2 => HO2 + O2
+R(156): O2(c) + H2O2 => H2O2 + O2
+R(157): O(1D) + O => O + O
+R(158): O(1D) + O2 => O + O2
+R(159): O(1D) + O2 => O + O2(a1)
+R(160): O(1D) + O2 => O + O2(b1)
+R(161): O(1D) + O3 => O2 + O + O
+R(162): O(1D) + O3 => O2 + O2
+R(163): O(1D) + O3 => O + O3
+R(164): O(1D) + H2O2 => HO2 + OH
+R(165): O(1D) + H2O => OH + OH
+R(166): O(1D) + H2O => O + H2O
+R(167): O(1D) + H2 => OH + H
+R(168): O(1D) + H2 => O + H2
+R(169): O(1D) + OH => H + O2
+R(170): O(1D) + HO2 => OH + O2
+R(171): O(1S) + O => O(1D) + O
+R(172): O(1S) + O2 => O(1D) + O2
+R(173): O(1S) + O2 => O + O + O
+R(174): O(1S) + O2(a1) => O + O2(c)
+R(175): O(1S) + O2(a1) => O(1D) + O2(b1)
+R(176): O(1S) + O2(a1) => O + O + O
+R(177): O(1S) + O3 => O2 + O2
+R(178): O(1S) + O3 => O2 + O + O(1D)
+R(179): O(1S) + O => O + O
+R(180): O(1S) + O2 => O + O2
+R(181): O(1S) + H2 => H + OH
+R(182): O(1S) + OH => H + O2
+R(183): O(1S) + HO2 => OH + O2
+R(184): O(1S) + H2O => O(1D) + H2O
+R(185): O(1S) + H2O => O + H2O
+R(186): O(1S) + H2O => OH + OH
+R(187): O(1S) + H2O => H2 + O2
+
+Write sucussefully with 187 reactions and 21 species:
+['E', 'O^+', 'O2^+', 'H^+', 'H2^+', 'H2O^+', 'O', 'O(1D)', 'O(1S)', 'O2', 'O2(a1)', 'O2(b1)', 'O2(c)', 'O3', 'H', 'H2', 'H2O', 'OH', 'OH(v)', 'HO2', 'H2O2']
+
+>>>>>>>> Reading REACTION section ... <<<<<<<<
+Expanding 'E + @A => O + O + E                                ! BOLSIG+ O2 -> O + O' :
+E + O2 => O + O + E                                ! BOLSIG+ O2 -> O + O
+Expanding 'E + @A => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)' :
+E + O2 => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)
+Expanding 'E + @A => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)' :
+E + O2 => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)
+Expanding 'E + @A => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)' :
+E + O2 => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)
+Expanding 'E + @A => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)' :
+E + O2 => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)
+Expanding 'E + @A => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+' :
+E + O2 => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+
+Expanding 'E + @A => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+' :
+E + O2 => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+
+Expanding 'E + @A + ANY_NEUTRAL => @B + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5' :
+E + O^+ + ANY_NEUTRAL => O + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5
+Expanding 'E + @A + E => @B + E                               ! 7.0d-20 * (300.0d0/Te)**4.5' :
+E + O^+ + E => O + E                               ! 7.0d-20 * (300.0d0/Te)**4.5
+Expanding 'E + O2^+ => O + @B                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * @R' :
+E + O2^+ => O + O                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.55d0
+E + O2^+ => O + O(1D)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.40d0
+E + O2^+ => O + O(1S)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.05d0
+
+Variable list defined inline (preprocessed):
+M: 7.33894242685314e+21/Tgas
+ktot: 3.0e-11*Tgas**0.17*exp(-2726.0/Tgas)
+k0: 2.2e-37*Tgas**2.34*exp(-1350.0/Tgas)
+kR1: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+kR2: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+kR3: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+>>>>>>>> Processing reactions ... <<<<<<<<
+Rephrasing 'kR1' to: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+Rephrasing 'kR2' to: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+Rephrasing 'kR3' to: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+Reactions sucessfully parsed! 
+
+Writing reactions to parsedPlasKin.yaml:
+R(1): E + O => O + E
+R(2): E + O2 => O2 + E
+R(3): E + O2(a1) => O2(a1) + E
+R(4): E + O2(b1) => O2(b1) + E
+R(5): E + O3 => O3 + E
+R(6): E + H => H + E
+R(7): E + H2 => H2 + E
+R(8): E + H2O => H2O + E
+R(9): E + H2O => E + H2O
+R(10): E + O2 => E + O2
+R(11): E + O2 => E + O2
+R(12): E + O2 => E + O2
+R(13): E + O2 => E + O2
+R(14): E + H2 => E + H2
+R(15): E + H2 => E + H2
+R(16): E + H2 => E + H2
+R(17): E + H2O => E + H2O
+R(18): E + H2O => E + H2O
+R(19): E + O => E + O(1D)
+R(20): E + O(1D) => E + O
+R(21): E + O => E + O(1S)
+R(22): E + O(1S) => E + O
+R(23): E + O => E + O
+R(24): E + O => E + O
+R(25): E + O => E + O
+R(26): E + O => E + O
+R(27): E + O2 => O + O + E
+R(28): E + O2 => O + O(1D) + E
+R(29): E + O2 => O + O(1S) + E
+R(30): E + O2 => O + O(1S) + E
+R(31): E + O2 => E + O2(a1)
+R(32): E + O2 => E + O2(b1)
+R(33): E + O2 => E + O2(c)
+R(34): E + O2(a1) => O2(b1) + E
+R(35): E + O2(a1) => O2(c) + E
+R(36): E + O2(b1) => O2(c) + E
+R(37): E + O2(a1) => O + O + E
+R(38): E + O2(b1) => O + O + E
+R(39): E + O2(a1) => O + O(1D) + E
+R(40): E + O2(b1) => O + O(1D) + E
+R(41): E + O3 => O2(a1) + O + E
+R(42): E + O3 => O2(a1) + O(1D) + E
+R(43): E + O3 => O2(a1) + O(1S) + E
+R(44): E + O3 => O2(a1) + O(1S) + E
+R(45): E + H2 => E + H2
+R(46): E + H2 => E + H + H
+R(47): E + H2 => E + H + H
+R(48): E + H2 => E + H + H
+R(49): E + H2 => E + H2
+R(50): E + H2 => E + H2
+R(51): E + H2 => E + H + H
+R(52): E + H2 => E + H2
+R(53): E + H2 => E + H2
+R(54): E + H2 => E + H2
+R(55): E + H2 => E + H2
+R(56): E + H2 => E + H + H
+R(57): E + H2 => E + H + H
+R(58): E + H2 => E + H + H
+R(59): E + H2 => E + H + H
+R(60): E + H2 => E + H + H
+R(61): E + H => E + H
+R(62): E + H => E + H
+R(63): E + H => E + H
+R(64): E + H => E + H
+R(65): E + H => E + H
+R(66): E + H2O => E + OH + H
+R(67): E + H2O => E + O(1D) + H2
+R(68): E + O => O^+ + E + E
+R(69): E + O2 => O2^+ + E + E
+R(70): E + O2 => O + O^+ + E + E
+R(71): E + O2(a1) => O2^+ + E + E
+R(72): E + O2(b1) => O2^+ + E + E
+R(73): E + O2(a1) => O + O^+ + E + E
+R(74): E + O2(b1) => O + O^+ + E + E
+R(75): E + H2 => H2^+ + E + E
+R(76): E + H => H^+ + E + E
+R(77): E + H2O => H2O^+ + E + E
+R(78): E + O^+ + M => O + M
+R(79): E + O^+ + E => O + E
+R(80): E + O2^+ + M => O2 + M
+R(81): E + O2^+ => O + O
+R(82): E + O2^+ => O + O(1D)
+R(83): E + O2^+ => O + O(1S)
+R(84): E + H^+ => H
+R(85): E + E + H^+ => E + H
+R(86): E + H2^+ => H + H
+R(87): E + E + H2^+ => E + H2
+R(88): E + H2O^+ => OH + H
+R(89): E + H2O^+ => O + H2
+R(90): E + H2O^+ => O + H + H
+R(91): E + E + H2O^+ => E + H2O
+R(92): O2(a1) => O2
+R(93): O2(b1) => O2(a1)
+R(94): O2(b1) => O2
+R(95): O2(c) => O2
+R(96): O(1D) => O
+R(97): O(1S) => O(1D)
+R(98): O2(a1) + O => O2 + O
+R(99): O2(a1) + O2 => O2 + O2
+R(100): O2(a1) + O3 => O2 + O2 + O(1D)
+R(101): O2(a1) + O2(a1) => O2 + O2(b1)
+R(102): O2(a1) + H2O => O2 + H2O
+R(103): O2(a1) + H2 => OH + OH
+R(104): O2(a1) + H2 => O2 + H2
+R(105): O2(a1) + H => OH + O
+R(106): O2(a1) + H => HO2
+R(107): O2(a1) + H => O2 + H
+R(108): O2(a1) + H2 => H + HO2
+R(109): O2(a1) + H2O => OH + HO2
+R(110): O2(a1) + H2 => H2O + O(1D)
+R(111): O2(a1) + OH => H + O3
+R(112): O2(a1) + OH => O + HO2
+R(113): O2(a1) + OH => O2 + OH
+R(114): O2(a1) + H2O2 => O2 + H2O2
+R(115): O2(a1) + HO2 => O2 + HO2
+R(116): O2(a1) + O2 => O3 + O
+R(117): O2(a1) + O2(a1) => O2 + O2
+R(118): O + O2(a1) + O2 => O + O2 + O2
+R(119): O2(a1) + H2 => O2(b1) + H2
+R(120): O2(a1) + H2O => O + H2O2
+R(121): O2(b1) + O => O2(a1) + O
+R(122): O2(b1) + O => O2 + O(1D)
+R(123): O2(b1) + O2 => O2(a1) + O2
+R(124): O2(b1) + O3 => O2 + O2 + O
+R(125): O2(b1) + O => O2 + O
+R(126): O2(b1) + H => O2(a1) + H
+R(127): O2(b1) + H => O2 + H
+R(128): O2(b1) + O2(b1) => O2(a1) + O2
+R(129): O2(b1) + H2 => O2 + H2
+R(130): O2(b1) + H2O => O2 + H2O
+R(131): O2(b1) + O3 => O2(a1) + O2 + O
+R(132): O2(b1) + O3 => O2 + O3
+R(133): O2(b1) + O3 => O2(a1) + O3
+R(134): O2(b1) + H2 => H + HO2
+R(135): O2(b1) + H => OH + O(1D)
+R(136): O2(b1) + H2O => OH + HO2
+R(137): O2(b1) + H2 => O2(a1) + H2
+R(138): O2(b1) + O2 => O2 + O2
+R(139): O2(b1) + H2O => O2(a1) + H2O
+R(140): O2(b1) + H2O => O + H2O2
+R(141): O2(b1) + HO2 => O2 + HO2
+R(142): O2(b1) + H2O2 => O2 + H2O2
+R(143): O2(b1) + OH => O + HO2
+R(144): O2(c) + O => O2 + O(1S)
+R(145): O2(c) + O2 => O2(b1) + O2(b1)
+R(146): O2(c) + O => O2 + O
+R(147): O2(c) + O => O2(a1) + O(1D)
+R(148): O2(c) + O => O2(b1) + O(1D)
+R(149): O2(c) + O2 => O2(a1) + O2
+R(150): O2(c) + O2 => O2(b1) + O2
+R(151): O2(c) + O2 => O2 + O2
+R(152): O2(c) + H2 => H2 + O2
+R(153): O2(c) + H2 => H2 + O2(a1)
+R(154): O2(c) + H2O => H2O + O2
+R(155): O2(c) + HO2 => HO2 + O2
+R(156): O2(c) + H2O2 => H2O2 + O2
+R(157): O(1D) + O => O + O
+R(158): O(1D) + O2 => O + O2
+R(159): O(1D) + O2 => O + O2(a1)
+R(160): O(1D) + O2 => O + O2(b1)
+R(161): O(1D) + O3 => O2 + O + O
+R(162): O(1D) + O3 => O2 + O2
+R(163): O(1D) + O3 => O + O3
+R(164): O(1D) + H2O2 => HO2 + OH
+R(165): O(1D) + H2O => OH + OH
+R(166): O(1D) + H2O => O + H2O
+R(167): O(1D) + H2 => OH + H
+R(168): O(1D) + H2 => O + H2
+R(169): O(1D) + OH => H + O2
+R(170): O(1D) + HO2 => OH + O2
+R(171): O(1S) + O => O(1D) + O
+R(172): O(1S) + O2 => O(1D) + O2
+R(173): O(1S) + O2 => O + O + O
+R(174): O(1S) + O2(a1) => O + O2(c)
+R(175): O(1S) + O2(a1) => O(1D) + O2(b1)
+R(176): O(1S) + O2(a1) => O + O + O
+R(177): O(1S) + O3 => O2 + O2
+R(178): O(1S) + O3 => O2 + O + O(1D)
+R(179): O(1S) + O => O + O
+R(180): O(1S) + O2 => O + O2
+R(181): O(1S) + H2 => H + OH
+R(182): O(1S) + OH => H + O2
+R(183): O(1S) + HO2 => OH + O2
+R(184): O(1S) + H2O => O(1D) + H2O
+R(185): O(1S) + H2O => O + H2O
+R(186): O(1S) + H2O => OH + OH
+R(187): O(1S) + H2O => H2 + O2
+
+Write sucussefully with 187 reactions and 21 species:
+['E', 'O^+', 'O2^+', 'H^+', 'H2^+', 'H2O^+', 'O', 'O(1D)', 'O(1S)', 'O2', 'O2(a1)', 'O2(b1)', 'O2(c)', 'O3', 'H', 'H2', 'H2O', 'OH', 'OH(v)', 'HO2', 'H2O2']
+
+>>>>>>>> Reading REACTION section ... <<<<<<<<
+Expanding 'E + @A => O + O + E                                ! BOLSIG+ O2 -> O + O' :
+E + O2 => O + O + E                                ! BOLSIG+ O2 -> O + O
+Expanding 'E + @A => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)' :
+E + O2 => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)
+Expanding 'E + @A => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)' :
+E + O2 => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)
+Expanding 'E + @A => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)' :
+E + O2 => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)
+Expanding 'E + @A => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)' :
+E + O2 => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)
+Expanding 'E + @A => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+' :
+E + O2 => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+
+Expanding 'E + @A => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+' :
+E + O2 => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+
+Expanding 'E + @A + ANY_NEUTRAL => @B + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5' :
+E + O^+ + ANY_NEUTRAL => O + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5
+Expanding 'E + @A + E => @B + E                               ! 7.0d-20 * (300.0d0/Te)**4.5' :
+E + O^+ + E => O + E                               ! 7.0d-20 * (300.0d0/Te)**4.5
+Expanding 'E + O2^+ => O + @B                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * @R' :
+E + O2^+ => O + O                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.55d0
+E + O2^+ => O + O(1D)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.40d0
+E + O2^+ => O + O(1S)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.05d0
+
+Variable list defined inline (preprocessed):
+M: 7.33894242685314e+21/Tgas
+ktot: 3.0e-11*Tgas**0.17*exp(-2726.0/Tgas)
+k0: 2.2e-37*Tgas**2.34*exp(-1350.0/Tgas)
+kR1: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+kR2: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+kR3: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+>>>>>>>> Processing reactions ... <<<<<<<<
+Rephrasing 'kR1' to: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+Rephrasing 'kR2' to: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+Rephrasing 'kR3' to: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+Reactions sucessfully parsed! 
+
+Writing reactions to parsedPlasKin.yaml:
+R(1): E + O => O + E
+R(2): E + O2 => O2 + E
+R(3): E + O2(a1) => O2(a1) + E
+R(4): E + O2(b1) => O2(b1) + E
+R(5): E + O3 => O3 + E
+R(6): E + H => H + E
+R(7): E + H2 => H2 + E
+R(8): E + H2O => H2O + E
+R(9): E + H2O => E + H2O
+R(10): E + O2 => E + O2
+R(11): E + O2 => E + O2
+R(12): E + O2 => E + O2
+R(13): E + O2 => E + O2
+R(14): E + H2 => E + H2
+R(15): E + H2 => E + H2
+R(16): E + H2 => E + H2
+R(17): E + H2O => E + H2O
+R(18): E + H2O => E + H2O
+R(19): E + O => E + O(1D)
+R(20): E + O(1D) => E + O
+R(21): E + O => E + O(1S)
+R(22): E + O(1S) => E + O
+R(23): E + O => E + O
+R(24): E + O => E + O
+R(25): E + O => E + O
+R(26): E + O => E + O
+R(27): E + O2 => O + O + E
+R(28): E + O2 => O + O(1D) + E
+R(29): E + O2 => O + O(1S) + E
+R(30): E + O2 => O + O(1S) + E
+R(31): E + O2 => E + O2(a1)
+R(32): E + O2 => E + O2(b1)
+R(33): E + O2 => E + O2(c)
+R(34): E + O2(a1) => O2(b1) + E
+R(35): E + O2(a1) => O2(c) + E
+R(36): E + O2(b1) => O2(c) + E
+R(37): E + O2(a1) => O + O + E
+R(38): E + O2(b1) => O + O + E
+R(39): E + O2(a1) => O + O(1D) + E
+R(40): E + O2(b1) => O + O(1D) + E
+R(41): E + O3 => O2(a1) + O + E
+R(42): E + O3 => O2(a1) + O(1D) + E
+R(43): E + O3 => O2(a1) + O(1S) + E
+R(44): E + O3 => O2(a1) + O(1S) + E
+R(45): E + H2 => E + H2
+R(46): E + H2 => E + H + H
+R(47): E + H2 => E + H + H
+R(48): E + H2 => E + H + H
+R(49): E + H2 => E + H2
+R(50): E + H2 => E + H2
+R(51): E + H2 => E + H + H
+R(52): E + H2 => E + H2
+R(53): E + H2 => E + H2
+R(54): E + H2 => E + H2
+R(55): E + H2 => E + H2
+R(56): E + H2 => E + H + H
+R(57): E + H2 => E + H + H
+R(58): E + H2 => E + H + H
+R(59): E + H2 => E + H + H
+R(60): E + H2 => E + H + H
+R(61): E + H => E + H
+R(62): E + H => E + H
+R(63): E + H => E + H
+R(64): E + H => E + H
+R(65): E + H => E + H
+R(66): E + H2O => E + OH + H
+R(67): E + H2O => E + O(1D) + H2
+R(68): E + O => O^+ + E + E
+R(69): E + O2 => O2^+ + E + E
+R(70): E + O2 => O + O^+ + E + E
+R(71): E + O2(a1) => O2^+ + E + E
+R(72): E + O2(b1) => O2^+ + E + E
+R(73): E + O2(a1) => O + O^+ + E + E
+R(74): E + O2(b1) => O + O^+ + E + E
+R(75): E + H2 => H2^+ + E + E
+R(76): E + H => H^+ + E + E
+R(77): E + H2O => H2O^+ + E + E
+R(78): E + O^+ + M => O + M
+R(79): E + O^+ + E => O + E
+R(80): E + O2^+ + M => O2 + M
+R(81): E + O2^+ => O + O
+R(82): E + O2^+ => O + O(1D)
+R(83): E + O2^+ => O + O(1S)
+R(84): E + H^+ => H
+R(85): E + E + H^+ => E + H
+R(86): E + H2^+ => H + H
+R(87): E + E + H2^+ => E + H2
+R(88): E + H2O^+ => OH + H
+R(89): E + H2O^+ => O + H2
+R(90): E + H2O^+ => O + H + H
+R(91): E + E + H2O^+ => E + H2O
+R(92): O2(a1) => O2
+R(93): O2(b1) => O2(a1)
+R(94): O2(b1) => O2
+R(95): O2(c) => O2
+R(96): O(1D) => O
+R(97): O(1S) => O(1D)
+R(98): O2(a1) + O => O2 + O
+R(99): O2(a1) + O2 => O2 + O2
+R(100): O2(a1) + O3 => O2 + O2 + O(1D)
+R(101): O2(a1) + O2(a1) => O2 + O2(b1)
+R(102): O2(a1) + H2O => O2 + H2O
+R(103): O2(a1) + H2 => OH + OH
+R(104): O2(a1) + H2 => O2 + H2
+R(105): O2(a1) + H => OH + O
+R(106): O2(a1) + H => HO2
+R(107): O2(a1) + H => O2 + H
+R(108): O2(a1) + H2 => H + HO2
+R(109): O2(a1) + H2O => OH + HO2
+R(110): O2(a1) + H2 => H2O + O(1D)
+R(111): O2(a1) + OH => H + O3
+R(112): O2(a1) + OH => O + HO2
+R(113): O2(a1) + OH => O2 + OH
+R(114): O2(a1) + H2O2 => O2 + H2O2
+R(115): O2(a1) + HO2 => O2 + HO2
+R(116): O2(a1) + O2 => O3 + O
+R(117): O2(a1) + O2(a1) => O2 + O2
+R(118): O + O2(a1) + O2 => O + O2 + O2
+R(119): O2(a1) + H2 => O2(b1) + H2
+R(120): O2(a1) + H2O => O + H2O2
+R(121): O2(b1) + O => O2(a1) + O
+R(122): O2(b1) + O => O2 + O(1D)
+R(123): O2(b1) + O2 => O2(a1) + O2
+R(124): O2(b1) + O3 => O2 + O2 + O
+R(125): O2(b1) + O => O2 + O
+R(126): O2(b1) + H => O2(a1) + H
+R(127): O2(b1) + H => O2 + H
+R(128): O2(b1) + O2(b1) => O2(a1) + O2
+R(129): O2(b1) + H2 => O2 + H2
+R(130): O2(b1) + H2O => O2 + H2O
+R(131): O2(b1) + O3 => O2(a1) + O2 + O
+R(132): O2(b1) + O3 => O2 + O3
+R(133): O2(b1) + O3 => O2(a1) + O3
+R(134): O2(b1) + H2 => H + HO2
+R(135): O2(b1) + H => OH + O(1D)
+R(136): O2(b1) + H2O => OH + HO2
+R(137): O2(b1) + H2 => O2(a1) + H2
+R(138): O2(b1) + O2 => O2 + O2
+R(139): O2(b1) + H2O => O2(a1) + H2O
+R(140): O2(b1) + H2O => O + H2O2
+R(141): O2(b1) + HO2 => O2 + HO2
+R(142): O2(b1) + H2O2 => O2 + H2O2
+R(143): O2(b1) + OH => O + HO2
+R(144): O2(c) + O => O2 + O(1S)
+R(145): O2(c) + O2 => O2(b1) + O2(b1)
+R(146): O2(c) + O => O2 + O
+R(147): O2(c) + O => O2(a1) + O(1D)
+R(148): O2(c) + O => O2(b1) + O(1D)
+R(149): O2(c) + O2 => O2(a1) + O2
+R(150): O2(c) + O2 => O2(b1) + O2
+R(151): O2(c) + O2 => O2 + O2
+R(152): O2(c) + H2 => H2 + O2
+R(153): O2(c) + H2 => H2 + O2(a1)
+R(154): O2(c) + H2O => H2O + O2
+R(155): O2(c) + HO2 => HO2 + O2
+R(156): O2(c) + H2O2 => H2O2 + O2
+R(157): O(1D) + O => O + O
+R(158): O(1D) + O2 => O + O2
+R(159): O(1D) + O2 => O + O2(a1)
+R(160): O(1D) + O2 => O + O2(b1)
+R(161): O(1D) + O3 => O2 + O + O
+R(162): O(1D) + O3 => O2 + O2
+R(163): O(1D) + O3 => O + O3
+R(164): O(1D) + H2O2 => HO2 + OH
+R(165): O(1D) + H2O => OH + OH
+R(166): O(1D) + H2O => O + H2O
+R(167): O(1D) + H2 => OH + H
+R(168): O(1D) + H2 => O + H2
+R(169): O(1D) + OH => H + O2
+R(170): O(1D) + HO2 => OH + O2
+R(171): O(1S) + O => O(1D) + O
+R(172): O(1S) + O2 => O(1D) + O2
+R(173): O(1S) + O2 => O + O + O
+R(174): O(1S) + O2(a1) => O + O2(c)
+R(175): O(1S) + O2(a1) => O(1D) + O2(b1)
+R(176): O(1S) + O2(a1) => O + O + O
+R(177): O(1S) + O3 => O2 + O2
+R(178): O(1S) + O3 => O2 + O + O(1D)
+R(179): O(1S) + O => O + O
+R(180): O(1S) + O2 => O + O2
+R(181): O(1S) + H2 => H + OH
+R(182): O(1S) + OH => H + O2
+R(183): O(1S) + HO2 => OH + O2
+R(184): O(1S) + H2O => O(1D) + H2O
+R(185): O(1S) + H2O => O + H2O
+R(186): O(1S) + H2O => OH + OH
+R(187): O(1S) + H2O => H2 + O2
+
+Write successfully with 187 reactions and 21 species:
+['E', 'O^+', 'O2^+', 'H^+', 'H2^+', 'H2O^+', 'O', 'O(1D)', 'O(1S)', 'O2', 'O2(a1)', 'O2(b1)', 'O2(c)', 'O3', 'H', 'H2', 'H2O', 'OH', 'OH(v)', 'HO2', 'H2O2']
+
+>>>>>>>> Reading REACTION section ... <<<<<<<<
+Expanding 'E + @A => O + O + E                                ! BOLSIG+ O2 -> O + O' :
+E + O2 => O + O + E                                ! BOLSIG+ O2 -> O + O
+Expanding 'E + @A => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)' :
+E + O2 => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)
+Expanding 'E + @A => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)' :
+E + O2 => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)
+Expanding 'E + @A => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)' :
+E + O2 => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)
+Expanding 'E + @A => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)' :
+E + O2 => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)
+Expanding 'E + @A => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+' :
+E + O2 => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+
+Expanding 'E + @A => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+' :
+E + O2 => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+
+Expanding 'E + @A + ANY_NEUTRAL => @B + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5' :
+E + O^+ + ANY_NEUTRAL => O + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5
+Expanding 'E + @A + E => @B + E                               ! 7.0d-20 * (300.0d0/Te)**4.5' :
+E + O^+ + E => O + E                               ! 7.0d-20 * (300.0d0/Te)**4.5
+Expanding 'E + O2^+ => O + @B                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * @R' :
+E + O2^+ => O + O                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.55d0
+E + O2^+ => O + O(1D)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.40d0
+E + O2^+ => O + O(1S)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.05d0
+
+Variable list defined inline (preprocessed):
+M: 7.33894242685314e+21/Tgas
+ktot: 3.0e-11*Tgas**0.17*exp(-2726.0/Tgas)
+k0: 2.2e-37*Tgas**2.34*exp(-1350.0/Tgas)
+kR1: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+kR2: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+kR3: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+>>>>>>>> Processing reactions ... <<<<<<<<
+Rephrasing 'kR1' to: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+Rephrasing 'kR2' to: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+Rephrasing 'kR3' to: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+Reactions sucessfully parsed! 
+
+Writing reactions to parsedPlasKin.yaml:
+R(1): E + O => O + E
+R(2): E + O2 => O2 + E
+R(3): E + O2(a1) => O2(a1) + E
+R(4): E + O2(b1) => O2(b1) + E
+R(5): E + O3 => O3 + E
+R(6): E + H => H + E
+R(7): E + H2 => H2 + E
+R(8): E + H2O => H2O + E
+R(9): E + H2O => E + H2O
+R(10): E + O2 => E + O2
+R(11): E + O2 => E + O2
+R(12): E + O2 => E + O2
+R(13): E + O2 => E + O2
+R(14): E + H2 => E + H2
+R(15): E + H2 => E + H2
+R(16): E + H2 => E + H2
+R(17): E + H2O => E + H2O
+R(18): E + H2O => E + H2O
+R(19): E + O => E + O(1D)
+R(20): E + O(1D) => E + O
+R(21): E + O => E + O(1S)
+R(22): E + O(1S) => E + O
+R(23): E + O => E + O
+R(24): E + O => E + O
+R(25): E + O => E + O
+R(26): E + O => E + O
+R(27): E + O2 => O + O + E
+R(28): E + O2 => O + O(1D) + E
+R(29): E + O2 => O + O(1S) + E
+R(30): E + O2 => O + O(1S) + E
+R(31): E + O2 => E + O2(a1)
+R(32): E + O2 => E + O2(b1)
+R(33): E + O2 => E + O2(c)
+R(34): E + O2(a1) => O2(b1) + E
+R(35): E + O2(a1) => O2(c) + E
+R(36): E + O2(b1) => O2(c) + E
+R(37): E + O2(a1) => O + O + E
+R(38): E + O2(b1) => O + O + E
+R(39): E + O2(a1) => O + O(1D) + E
+R(40): E + O2(b1) => O + O(1D) + E
+R(41): E + O3 => O2(a1) + O + E
+R(42): E + O3 => O2(a1) + O(1D) + E
+R(43): E + O3 => O2(a1) + O(1S) + E
+R(44): E + O3 => O2(a1) + O(1S) + E
+R(45): E + H2 => E + H2
+R(46): E + H2 => E + H + H
+R(47): E + H2 => E + H + H
+R(48): E + H2 => E + H + H
+R(49): E + H2 => E + H2
+R(50): E + H2 => E + H2
+R(51): E + H2 => E + H + H
+R(52): E + H2 => E + H2
+R(53): E + H2 => E + H2
+R(54): E + H2 => E + H2
+R(55): E + H2 => E + H2
+R(56): E + H2 => E + H + H
+R(57): E + H2 => E + H + H
+R(58): E + H2 => E + H + H
+R(59): E + H2 => E + H + H
+R(60): E + H2 => E + H + H
+R(61): E + H => E + H
+R(62): E + H => E + H
+R(63): E + H => E + H
+R(64): E + H => E + H
+R(65): E + H => E + H
+R(66): E + H2O => E + OH + H
+R(67): E + H2O => E + O(1D) + H2
+R(68): E + O => O^+ + E + E
+R(69): E + O2 => O2^+ + E + E
+R(70): E + O2 => O + O^+ + E + E
+R(71): E + O2(a1) => O2^+ + E + E
+R(72): E + O2(b1) => O2^+ + E + E
+R(73): E + O2(a1) => O + O^+ + E + E
+R(74): E + O2(b1) => O + O^+ + E + E
+R(75): E + H2 => H2^+ + E + E
+R(76): E + H => H^+ + E + E
+R(77): E + H2O => H2O^+ + E + E
+R(78): E + O^+ + M => O + M
+R(79): E + O^+ + E => O + E
+R(80): E + O2^+ + M => O2 + M
+R(81): E + O2^+ => O + O
+R(82): E + O2^+ => O + O(1D)
+R(83): E + O2^+ => O + O(1S)
+R(84): E + H^+ => H
+R(85): E + E + H^+ => E + H
+R(86): E + H2^+ => H + H
+R(87): E + E + H2^+ => E + H2
+R(88): E + H2O^+ => OH + H
+R(89): E + H2O^+ => O + H2
+R(90): E + H2O^+ => O + H + H
+R(91): E + E + H2O^+ => E + H2O
+R(92): O2(a1) => O2
+R(93): O2(b1) => O2(a1)
+R(94): O2(b1) => O2
+R(95): O2(c) => O2
+R(96): O(1D) => O
+R(97): O(1S) => O(1D)
+R(98): O2(a1) + O => O2 + O
+R(99): O2(a1) + O2 => O2 + O2
+R(100): O2(a1) + O3 => O2 + O2 + O(1D)
+R(101): O2(a1) + O2(a1) => O2 + O2(b1)
+R(102): O2(a1) + H2O => O2 + H2O
+R(103): O2(a1) + H2 => OH + OH
+R(104): O2(a1) + H2 => O2 + H2
+R(105): O2(a1) + H => OH + O
+R(106): O2(a1) + H => HO2
+R(107): O2(a1) + H => O2 + H
+R(108): O2(a1) + H2 => H + HO2
+R(109): O2(a1) + H2O => OH + HO2
+R(110): O2(a1) + H2 => H2O + O(1D)
+R(111): O2(a1) + OH => H + O3
+R(112): O2(a1) + OH => O + HO2
+R(113): O2(a1) + OH => O2 + OH
+R(114): O2(a1) + H2O2 => O2 + H2O2
+R(115): O2(a1) + HO2 => O2 + HO2
+R(116): O2(a1) + O2 => O3 + O
+R(117): O2(a1) + O2(a1) => O2 + O2
+R(118): O + O2(a1) + O2 => O + O2 + O2
+R(119): O2(a1) + H2 => O2(b1) + H2
+R(120): O2(a1) + H2O => O + H2O2
+R(121): O2(b1) + O => O2(a1) + O
+R(122): O2(b1) + O => O2 + O(1D)
+R(123): O2(b1) + O2 => O2(a1) + O2
+R(124): O2(b1) + O3 => O2 + O2 + O
+R(125): O2(b1) + O => O2 + O
+R(126): O2(b1) + H => O2(a1) + H
+R(127): O2(b1) + H => O2 + H
+R(128): O2(b1) + O2(b1) => O2(a1) + O2
+R(129): O2(b1) + H2 => O2 + H2
+R(130): O2(b1) + H2O => O2 + H2O
+R(131): O2(b1) + O3 => O2(a1) + O2 + O
+R(132): O2(b1) + O3 => O2 + O3
+R(133): O2(b1) + O3 => O2(a1) + O3
+R(134): O2(b1) + H2 => H + HO2
+R(135): O2(b1) + H => OH + O(1D)
+R(136): O2(b1) + H2O => OH + HO2
+R(137): O2(b1) + H2 => O2(a1) + H2
+R(138): O2(b1) + O2 => O2 + O2
+R(139): O2(b1) + H2O => O2(a1) + H2O
+R(140): O2(b1) + H2O => O + H2O2
+R(141): O2(b1) + HO2 => O2 + HO2
+R(142): O2(b1) + H2O2 => O2 + H2O2
+R(143): O2(b1) + OH => O + HO2
+R(144): O2(c) + O => O2 + O(1S)
+R(145): O2(c) + O2 => O2(b1) + O2(b1)
+R(146): O2(c) + O => O2 + O
+R(147): O2(c) + O => O2(a1) + O(1D)
+R(148): O2(c) + O => O2(b1) + O(1D)
+R(149): O2(c) + O2 => O2(a1) + O2
+R(150): O2(c) + O2 => O2(b1) + O2
+R(151): O2(c) + O2 => O2 + O2
+R(152): O2(c) + H2 => H2 + O2
+R(153): O2(c) + H2 => H2 + O2(a1)
+R(154): O2(c) + H2O => H2O + O2
+R(155): O2(c) + HO2 => HO2 + O2
+R(156): O2(c) + H2O2 => H2O2 + O2
+R(157): O(1D) + O => O + O
+R(158): O(1D) + O2 => O + O2
+R(159): O(1D) + O2 => O + O2(a1)
+R(160): O(1D) + O2 => O + O2(b1)
+R(161): O(1D) + O3 => O2 + O + O
+R(162): O(1D) + O3 => O2 + O2
+R(163): O(1D) + O3 => O + O3
+R(164): O(1D) + H2O2 => HO2 + OH
+R(165): O(1D) + H2O => OH + OH
+R(166): O(1D) + H2O => O + H2O
+R(167): O(1D) + H2 => OH + H
+R(168): O(1D) + H2 => O + H2
+R(169): O(1D) + OH => H + O2
+R(170): O(1D) + HO2 => OH + O2
+R(171): O(1S) + O => O(1D) + O
+R(172): O(1S) + O2 => O(1D) + O2
+R(173): O(1S) + O2 => O + O + O
+R(174): O(1S) + O2(a1) => O + O2(c)
+R(175): O(1S) + O2(a1) => O(1D) + O2(b1)
+R(176): O(1S) + O2(a1) => O + O + O
+R(177): O(1S) + O3 => O2 + O2
+R(178): O(1S) + O3 => O2 + O + O(1D)
+R(179): O(1S) + O => O + O
+R(180): O(1S) + O2 => O + O2
+R(181): O(1S) + H2 => H + OH
+R(182): O(1S) + OH => H + O2
+R(183): O(1S) + HO2 => OH + O2
+R(184): O(1S) + H2O => O(1D) + H2O
+R(185): O(1S) + H2O => O + H2O
+R(186): O(1S) + H2O => OH + OH
+R(187): O(1S) + H2O => H2 + O2
+
+Write successfully with 187 reactions and 21 species:
+['E', 'O^+', 'O2^+', 'H^+', 'H2^+', 'H2O^+', 'O', 'O(1D)', 'O(1S)', 'O2', 'O2(a1)', 'O2(b1)', 'O2(c)', 'O3', 'H', 'H2', 'H2O', 'OH', 'OH(v)', 'HO2', 'H2O2']
+
+>>>>>>>> Reading REACTION section ... <<<<<<<<
+Expanding 'E + @A => O + O + E                                ! BOLSIG+ O2 -> O + O' :
+E + O2 => O + O + E                                ! BOLSIG+ O2 -> O + O
+Expanding 'E + @A => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)' :
+E + O2 => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)
+Expanding 'E + @A => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)' :
+E + O2 => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)
+Expanding 'E + @A => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)' :
+E + O2 => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)
+Expanding 'E + @A => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)' :
+E + O2 => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)
+Expanding 'E + @A => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+' :
+E + O2 => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+
+Expanding 'E + @A => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+' :
+E + O2 => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+
+Expanding 'E + @A + ANY_NEUTRAL => @B + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5' :
+E + O^+ + ANY_NEUTRAL => O + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5
+Expanding 'E + @A + E => @B + E                               ! 7.0d-20 * (300.0d0/Te)**4.5' :
+E + O^+ + E => O + E                               ! 7.0d-20 * (300.0d0/Te)**4.5
+Expanding 'E + O2^+ => O + @B                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * @R' :
+E + O2^+ => O + O                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.55d0
+E + O2^+ => O + O(1D)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.40d0
+E + O2^+ => O + O(1S)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.05d0
+
+Variable list defined inline (preprocessed):
+M: 7.33894242685314e+21/Tgas
+ktot: 3.0e-11*Tgas**0.17*exp(-2726.0/Tgas)
+k0: 2.2e-37*Tgas**2.34*exp(-1350.0/Tgas)
+kR1: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+kR2: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+kR3: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+>>>>>>>> Processing reactions ... <<<<<<<<
+Rephrasing 'kR1' to: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+Rephrasing 'kR2' to: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+Rephrasing 'kR3' to: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+Reactions sucessfully parsed! 
+
+Writing reactions to parsedPlasKin.yaml:
+R(1): E + H2O => E + H2O
+R(2): E + O2 => E + O2
+R(3): E + O2 => E + O2
+R(4): E + O2 => E + O2
+R(5): E + O2 => E + O2
+R(6): E + H2 => E + H2
+R(7): E + H2 => E + H2
+R(8): E + H2 => E + H2
+R(9): E + H2O => E + H2O
+R(10): E + H2O => E + H2O
+R(11): E + O => E + O(1D)
+R(12): E + O(1D) => E + O
+R(13): E + O => E + O(1S)
+R(14): E + O(1S) => E + O
+R(15): E + O => E + O
+R(16): E + O => E + O
+R(17): E + O => E + O
+R(18): E + O => E + O
+R(19): E + O2 => O + O + E
+R(20): E + O2 => O + O(1D) + E
+R(21): E + O2 => O + O(1S) + E
+R(22): E + O2 => O + O(1S) + E
+R(23): E + O2 => E + O2(a1)
+R(24): E + O2 => E + O2(b1)
+R(25): E + O2 => E + O2(c)
+R(26): E + O2(a1) => O2(b1) + E
+R(27): E + O2(a1) => O2(c) + E
+R(28): E + O2(b1) => O2(c) + E
+R(29): E + O2(a1) => O + O + E
+R(30): E + O2(b1) => O + O + E
+R(31): E + O2(a1) => O + O(1D) + E
+R(32): E + O2(b1) => O + O(1D) + E
+R(33): E + O3 => O2(a1) + O + E
+R(34): E + O3 => O2(a1) + O(1D) + E
+R(35): E + O3 => O2(a1) + O(1S) + E
+R(36): E + O3 => O2(a1) + O(1S) + E
+R(37): E + H2 => E + H2
+R(38): E + H2 => E + H + H
+R(39): E + H2 => E + H + H
+R(40): E + H2 => E + H + H
+R(41): E + H2 => E + H2
+R(42): E + H2 => E + H2
+R(43): E + H2 => E + H + H
+R(44): E + H2 => E + H2
+R(45): E + H2 => E + H2
+R(46): E + H2 => E + H2
+R(47): E + H2 => E + H2
+R(48): E + H2 => E + H + H
+R(49): E + H2 => E + H + H
+R(50): E + H2 => E + H + H
+R(51): E + H2 => E + H + H
+R(52): E + H2 => E + H + H
+R(53): E + H => E + H
+R(54): E + H => E + H
+R(55): E + H => E + H
+R(56): E + H => E + H
+R(57): E + H => E + H
+R(58): E + H2O => E + OH + H
+R(59): E + H2O => E + O(1D) + H2
+R(60): E + O => O^+ + E + E
+R(61): E + O2 => O2^+ + E + E
+R(62): E + O2 => O + O^+ + E + E
+R(63): E + O2(a1) => O2^+ + E + E
+R(64): E + O2(b1) => O2^+ + E + E
+R(65): E + O2(a1) => O + O^+ + E + E
+R(66): E + O2(b1) => O + O^+ + E + E
+R(67): E + H2 => H2^+ + E + E
+R(68): E + H => H^+ + E + E
+R(69): E + H2O => H2O^+ + E + E
+R(70): E + O^+ + M => O + M
+R(71): E + O^+ + E => O + E
+R(72): E + O2^+ + M => O2 + M
+R(73): E + O2^+ => O + O
+R(74): E + O2^+ => O + O(1D)
+R(75): E + O2^+ => O + O(1S)
+R(76): E + H^+ => H
+R(77): E + E + H^+ => E + H
+R(78): E + H2^+ => H + H
+R(79): E + E + H2^+ => E + H2
+R(80): E + H2O^+ => OH + H
+R(81): E + H2O^+ => O + H2
+R(82): E + H2O^+ => O + H + H
+R(83): E + E + H2O^+ => E + H2O
+R(84): O2(a1) => O2
+R(85): O2(b1) => O2(a1)
+R(86): O2(b1) => O2
+R(87): O2(c) => O2
+R(88): O(1D) => O
+R(89): O(1S) => O(1D)
+R(90): O2(a1) + O => O2 + O
+R(91): O2(a1) + O2 => O2 + O2
+R(92): O2(a1) + O3 => O2 + O2 + O(1D)
+R(93): O2(a1) + O2(a1) => O2 + O2(b1)
+R(94): O2(a1) + H2O => O2 + H2O
+R(95): O2(a1) + H2 => OH + OH
+R(96): O2(a1) + H2 => O2 + H2
+R(97): O2(a1) + H => OH + O
+R(98): O2(a1) + H => HO2
+R(99): O2(a1) + H => O2 + H
+R(100): O2(a1) + H2 => H + HO2
+R(101): O2(a1) + H2O => OH + HO2
+R(102): O2(a1) + H2 => H2O + O(1D)
+R(103): O2(a1) + OH => H + O3
+R(104): O2(a1) + OH => O + HO2
+R(105): O2(a1) + OH => O2 + OH
+R(106): O2(a1) + H2O2 => O2 + H2O2
+R(107): O2(a1) + HO2 => O2 + HO2
+R(108): O2(a1) + O2 => O3 + O
+R(109): O2(a1) + O2(a1) => O2 + O2
+R(110): O + O2(a1) + O2 => O + O2 + O2
+R(111): O2(a1) + H2 => O2(b1) + H2
+R(112): O2(a1) + H2O => O + H2O2
+R(113): O2(b1) + O => O2(a1) + O
+R(114): O2(b1) + O => O2 + O(1D)
+R(115): O2(b1) + O2 => O2(a1) + O2
+R(116): O2(b1) + O3 => O2 + O2 + O
+R(117): O2(b1) + O => O2 + O
+R(118): O2(b1) + H => O2(a1) + H
+R(119): O2(b1) + H => O2 + H
+R(120): O2(b1) + O2(b1) => O2(a1) + O2
+R(121): O2(b1) + H2 => O2 + H2
+R(122): O2(b1) + H2O => O2 + H2O
+R(123): O2(b1) + O3 => O2(a1) + O2 + O
+R(124): O2(b1) + O3 => O2 + O3
+R(125): O2(b1) + O3 => O2(a1) + O3
+R(126): O2(b1) + H2 => H + HO2
+R(127): O2(b1) + H => OH + O(1D)
+R(128): O2(b1) + H2O => OH + HO2
+R(129): O2(b1) + H2 => O2(a1) + H2
+R(130): O2(b1) + O2 => O2 + O2
+R(131): O2(b1) + H2O => O2(a1) + H2O
+R(132): O2(b1) + H2O => O + H2O2
+R(133): O2(b1) + HO2 => O2 + HO2
+R(134): O2(b1) + H2O2 => O2 + H2O2
+R(135): O2(b1) + OH => O + HO2
+R(136): O2(c) + O => O2 + O(1S)
+R(137): O2(c) + O2 => O2(b1) + O2(b1)
+R(138): O2(c) + O => O2 + O
+R(139): O2(c) + O => O2(a1) + O(1D)
+R(140): O2(c) + O => O2(b1) + O(1D)
+R(141): O2(c) + O2 => O2(a1) + O2
+R(142): O2(c) + O2 => O2(b1) + O2
+R(143): O2(c) + O2 => O2 + O2
+R(144): O2(c) + H2 => H2 + O2
+R(145): O2(c) + H2 => H2 + O2(a1)
+R(146): O2(c) + H2O => H2O + O2
+R(147): O2(c) + HO2 => HO2 + O2
+R(148): O2(c) + H2O2 => H2O2 + O2
+R(149): O(1D) + O => O + O
+R(150): O(1D) + O2 => O + O2
+R(151): O(1D) + O2 => O + O2(a1)
+R(152): O(1D) + O2 => O + O2(b1)
+R(153): O(1D) + O3 => O2 + O + O
+R(154): O(1D) + O3 => O2 + O2
+R(155): O(1D) + O3 => O + O3
+R(156): O(1D) + H2O2 => HO2 + OH
+R(157): O(1D) + H2O => OH + OH
+R(158): O(1D) + H2O => O + H2O
+R(159): O(1D) + H2 => OH + H
+R(160): O(1D) + H2 => O + H2
+R(161): O(1D) + OH => H + O2
+R(162): O(1D) + HO2 => OH + O2
+R(163): O(1S) + O => O(1D) + O
+R(164): O(1S) + O2 => O(1D) + O2
+R(165): O(1S) + O2 => O + O + O
+R(166): O(1S) + O2(a1) => O + O2(c)
+R(167): O(1S) + O2(a1) => O(1D) + O2(b1)
+R(168): O(1S) + O2(a1) => O + O + O
+R(169): O(1S) + O3 => O2 + O2
+R(170): O(1S) + O3 => O2 + O + O(1D)
+R(171): O(1S) + O => O + O
+R(172): O(1S) + O2 => O + O2
+R(173): O(1S) + H2 => H + OH
+R(174): O(1S) + OH => H + O2
+R(175): O(1S) + HO2 => OH + O2
+R(176): O(1S) + H2O => O(1D) + H2O
+R(177): O(1S) + H2O => O + H2O
+R(178): O(1S) + H2O => OH + OH
+R(179): O(1S) + H2O => H2 + O2
+
+Write successfully with 179 reactions and 21 species:
+['E', 'O^+', 'O2^+', 'H^+', 'H2^+', 'H2O^+', 'O', 'O(1D)', 'O(1S)', 'O2', 'O2(a1)', 'O2(b1)', 'O2(c)', 'O3', 'H', 'H2', 'H2O', 'OH', 'OH(v)', 'HO2', 'H2O2']
+
+>>>>>>>> Reading REACTION section ... <<<<<<<<
+Expanding 'E + @A => O + O + E                                ! BOLSIG+ O2 -> O + O' :
+E + O2 => O + O + E                                ! BOLSIG+ O2 -> O + O
+Expanding 'E + @A => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)' :
+E + O2 => O + O(1D) + E                            ! BOLSIG+ O2 -> O + O(1D)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(9.97eV)
+Expanding 'E + @A => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)' :
+E + O2 => O + O(1S) + E                            ! BOLSIG+ O2 -> O2(14.7eV)
+Expanding 'E + @A => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)' :
+E + O2 => E + O2(a1)                               ! BOLSIG+ O2 -> O2(a1)
+Expanding 'E + @A => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)' :
+E + O2 => E + O2(b1)                               ! BOLSIG+ O2 -> O2(b1)
+Expanding 'E + @A => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)' :
+E + O2 => E + O2(c)                                ! BOLSIG+ O2 -> O2(4.5eV)
+Expanding 'E + @A => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+' :
+E + O2 => O2^+ + E + E                             ! BOLSIG+ O2 -> O2^+
+Expanding 'E + @A => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+' :
+E + O2 => O + O^+ + E + E                          ! BOLSIG+ O2 -> O^+
+Expanding 'E + @A + ANY_NEUTRAL => @B + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5' :
+E + O^+ + ANY_NEUTRAL => O + ANY_NEUTRAL           ! 6.0d-27 * (300.0d0/Te)**1.5
+Expanding 'E + @A + E => @B + E                               ! 7.0d-20 * (300.0d0/Te)**4.5' :
+E + O^+ + E => O + E                               ! 7.0d-20 * (300.0d0/Te)**4.5
+Expanding 'E + O2^+ => O + @B                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * @R' :
+E + O2^+ => O + O                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.55d0
+E + O2^+ => O + O(1D)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.40d0
+E + O2^+ => O + O(1S)                                 ! 2.7d-7 * (300.0d0/Te)**0.7 * 0.05d0
+
+Variable list defined inline (preprocessed):
+M: 7.33894242685314e+21/Tgas
+ktot: 3.0e-11*Tgas**0.17*exp(-2726.0/Tgas)
+k0: 2.2e-37*Tgas**2.34*exp(-1350.0/Tgas)
+kR1: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+kR2: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+kR3: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+>>>>>>>> Processing reactions ... <<<<<<<<
+Rephrasing 'kR1' to: 6.8e-16*Tgas**1.51*exp(-3040.0/Tgas)
+Rephrasing 'kR2' to: 4.84370200172307e-26*Tgas**1.51/(3.0e-11*Tgas**0.17*exp(1350.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(2726.0/Tgas))
+Rephrasing 'kR3' to: (9.0e-22*Tgas**0.34*exp(4390.0/Tgas) - 5.73971850987445e-42*Tgas**1.51*exp(5766.0/Tgas) - 2.04e-26*Tgas**1.68*exp(4076.0/Tgas) - 1.09790578705723e-30*Tgas**2.85*exp(5452.0/Tgas))/(3.0e-11*Tgas**0.17*exp(7116.0/Tgas) + 1.61456733390769e-15*Tgas**1.34*exp(8492.0/Tgas))
+
+Reactions sucessfully parsed! 
+
+Writing reactions to parsedPlasKin.yaml:
+R(1): E + H2O => E + H2O
+R(2): E + O2 => E + O2
+R(3): E + O2 => E + O2
+R(4): E + O2 => E + O2
+R(5): E + O2 => E + O2
+R(6): E + H2 => E + H2
+R(7): E + H2 => E + H2
+R(8): E + H2 => E + H2
+R(9): E + H2O => E + H2O
+R(10): E + H2O => E + H2O
+R(11): E + O => E + O(1D)
+R(12): E + O => E + O(1S)
+R(13): E + O => E + O
+R(14): E + O => E + O
+R(15): E + O => E + O
+R(16): E + O => E + O
+R(17): E + O2 => O + O + E
+R(18): E + O2 => O + O(1D) + E
+R(19): E + O2 => O + O(1S) + E
+R(20): E + O2 => O + O(1S) + E
+R(21): E + O2 => E + O2(a1)
+R(22): E + O2 => E + O2(b1)
+R(23): E + O2 => E + O2(c)
+R(24): E + O2(a1) => O2(b1) + E
+R(25): E + O2(a1) => O2(c) + E
+R(26): E + O2(b1) => O2(c) + E
+R(27): E + O2(a1) => O + O + E
+R(28): E + O2(b1) => O + O + E
+R(29): E + O2(a1) => O + O(1D) + E
+R(30): E + O2(b1) => O + O(1D) + E
+R(31): E + O3 => O2(a1) + O + E
+R(32): E + O3 => O2(a1) + O(1D) + E
+R(33): E + O3 => O2(a1) + O(1S) + E
+R(34): E + O3 => O2(a1) + O(1S) + E
+R(35): E + H2 => E + H2
+R(36): E + H2 => E + H + H
+R(37): E + H2 => E + H + H
+R(38): E + H2 => E + H + H
+R(39): E + H2 => E + H2
+R(40): E + H2 => E + H2
+R(41): E + H2 => E + H + H
+R(42): E + H2 => E + H2
+R(43): E + H2 => E + H2
+R(44): E + H2 => E + H2
+R(45): E + H2 => E + H2
+R(46): E + H2 => E + H + H
+R(47): E + H2 => E + H + H
+R(48): E + H2 => E + H + H
+R(49): E + H2 => E + H + H
+R(50): E + H2 => E + H + H
+R(51): E + H => E + H
+R(52): E + H => E + H
+R(53): E + H => E + H
+R(54): E + H => E + H
+R(55): E + H => E + H
+R(56): E + H2O => E + OH + H
+R(57): E + H2O => E + O(1D) + H2
+R(58): E + O => O^+ + E + E
+R(59): E + O2 => O2^+ + E + E
+R(60): E + O2 => O + O^+ + E + E
+R(61): E + O2(a1) => O2^+ + E + E
+R(62): E + O2(b1) => O2^+ + E + E
+R(63): E + O2(a1) => O + O^+ + E + E
+R(64): E + O2(b1) => O + O^+ + E + E
+R(65): E + H2 => H2^+ + E + E
+R(66): E + H => H^+ + E + E
+R(67): E + H2O => H2O^+ + E + E
+R(68): E + O^+ + M => O + M
+R(69): E + O^+ + E => O + E
+R(70): E + O2^+ + M => O2 + M
+R(71): E + O2^+ => O + O
+R(72): E + O2^+ => O + O(1D)
+R(73): E + O2^+ => O + O(1S)
+R(74): E + H^+ => H
+R(75): E + E + H^+ => E + H
+R(76): E + H2^+ => H + H
+R(77): E + E + H2^+ => E + H2
+R(78): E + H2O^+ => OH + H
+R(79): E + H2O^+ => O + H2
+R(80): E + H2O^+ => O + H + H
+R(81): E + E + H2O^+ => E + H2O
+R(82): O2(a1) => O2
+R(83): O2(b1) => O2(a1)
+R(84): O2(b1) => O2
+R(85): O2(c) => O2
+R(86): O(1D) => O
+R(87): O(1S) => O(1D)
+R(88): O2(a1) + O => O2 + O
+R(89): O2(a1) + O2 => O2 + O2
+R(90): O2(a1) + O3 => O2 + O2 + O(1D)
+R(91): O2(a1) + O2(a1) => O2 + O2(b1)
+R(92): O2(a1) + H2O => O2 + H2O
+R(93): O2(a1) + H2 => OH + OH
+R(94): O2(a1) + H2 => O2 + H2
+R(95): O2(a1) + H => OH + O
+R(96): O2(a1) + H => HO2
+R(97): O2(a1) + H => O2 + H
+R(98): O2(a1) + H2 => H + HO2
+R(99): O2(a1) + H2O => OH + HO2
+R(100): O2(a1) + H2 => H2O + O(1D)
+R(101): O2(a1) + OH => H + O3
+R(102): O2(a1) + OH => O + HO2
+R(103): O2(a1) + OH => O2 + OH
+R(104): O2(a1) + H2O2 => O2 + H2O2
+R(105): O2(a1) + HO2 => O2 + HO2
+R(106): O2(a1) + O2 => O3 + O
+R(107): O2(a1) + O2(a1) => O2 + O2
+R(108): O + O2(a1) + O2 => O + O2 + O2
+R(109): O2(a1) + H2 => O2(b1) + H2
+R(110): O2(a1) + H2O => O + H2O2
+R(111): O2(b1) + O => O2(a1) + O
+R(112): O2(b1) + O => O2 + O(1D)
+R(113): O2(b1) + O2 => O2(a1) + O2
+R(114): O2(b1) + O3 => O2 + O2 + O
+R(115): O2(b1) + O => O2 + O
+R(116): O2(b1) + H => O2(a1) + H
+R(117): O2(b1) + H => O2 + H
+R(118): O2(b1) + O2(b1) => O2(a1) + O2
+R(119): O2(b1) + H2 => O2 + H2
+R(120): O2(b1) + H2O => O2 + H2O
+R(121): O2(b1) + O3 => O2(a1) + O2 + O
+R(122): O2(b1) + O3 => O2 + O3
+R(123): O2(b1) + O3 => O2(a1) + O3
+R(124): O2(b1) + H2 => H + HO2
+R(125): O2(b1) + H => OH + O(1D)
+R(126): O2(b1) + H2O => OH + HO2
+R(127): O2(b1) + H2 => O2(a1) + H2
+R(128): O2(b1) + O2 => O2 + O2
+R(129): O2(b1) + H2O => O2(a1) + H2O
+R(130): O2(b1) + H2O => O + H2O2
+R(131): O2(b1) + HO2 => O2 + HO2
+R(132): O2(b1) + H2O2 => O2 + H2O2
+R(133): O2(b1) + OH => O + HO2
+R(134): O2(c) + O => O2 + O(1S)
+R(135): O2(c) + O2 => O2(b1) + O2(b1)
+R(136): O2(c) + O => O2 + O
+R(137): O2(c) + O => O2(a1) + O(1D)
+R(138): O2(c) + O => O2(b1) + O(1D)
+R(139): O2(c) + O2 => O2(a1) + O2
+R(140): O2(c) + O2 => O2(b1) + O2
+R(141): O2(c) + O2 => O2 + O2
+R(142): O2(c) + H2 => H2 + O2
+R(143): O2(c) + H2 => H2 + O2(a1)
+R(144): O2(c) + H2O => H2O + O2
+R(145): O2(c) + HO2 => HO2 + O2
+R(146): O2(c) + H2O2 => H2O2 + O2
+R(147): O(1D) + O => O + O
+R(148): O(1D) + O2 => O + O2
+R(149): O(1D) + O2 => O + O2(a1)
+R(150): O(1D) + O2 => O + O2(b1)
+R(151): O(1D) + O3 => O2 + O + O
+R(152): O(1D) + O3 => O2 + O2
+R(153): O(1D) + O3 => O + O3
+R(154): O(1D) + H2O2 => HO2 + OH
+R(155): O(1D) + H2O => OH + OH
+R(156): O(1D) + H2O => O + H2O
+R(157): O(1D) + H2 => OH + H
+R(158): O(1D) + H2 => O + H2
+R(159): O(1D) + OH => H + O2
+R(160): O(1D) + HO2 => OH + O2
+R(161): O(1S) + O => O(1D) + O
+R(162): O(1S) + O2 => O(1D) + O2
+R(163): O(1S) + O2 => O + O + O
+R(164): O(1S) + O2(a1) => O + O2(c)
+R(165): O(1S) + O2(a1) => O(1D) + O2(b1)
+R(166): O(1S) + O2(a1) => O + O + O
+R(167): O(1S) + O3 => O2 + O2
+R(168): O(1S) + O3 => O2 + O + O(1D)
+R(169): O(1S) + O => O + O
+R(170): O(1S) + O2 => O + O2
+R(171): O(1S) + H2 => H + OH
+R(172): O(1S) + OH => H + O2
+R(173): O(1S) + HO2 => OH + O2
+R(174): O(1S) + H2O => O(1D) + H2O
+R(175): O(1S) + H2O => O + H2O
+R(176): O(1S) + H2O => OH + OH
+R(177): O(1S) + H2O => H2 + O2
+
+Write successfully with 177 reactions and 21 species:
+['E', 'O^+', 'O2^+', 'H^+', 'H2^+', 'H2O^+', 'O', 'O(1D)', 'O(1S)', 'O2', 'O2(a1)', 'O2(b1)', 'O2(c)', 'O3', 'H', 'H2', 'H2O', 'OH', 'OH(v)', 'HO2', 'H2O2']

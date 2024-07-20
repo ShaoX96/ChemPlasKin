@@ -1,0 +1,278 @@
+description: |-
+  source: nasa_gas.yaml
+
+units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
+
+phases:
+- name: ohmech
+  thermo: ideal-gas
+  elements: [N, E]
+  species: [e, N, N2, N2(A), N2(B), N2(a'), N2(C), N^+, N2^+, N3^+, N4^+]
+  kinetics: gas
+  # transport: mixture-averaged
+  state: {T: 300.0, P: 1 atm}
+
+species:
+- name: e
+  composition: {E: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 6000.0]
+    data:
+    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, -11.7246902]
+    note: gas      L10/92
+- name: N
+  composition: {N: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [2.5, 0.0, 0.0, 0.0, 0.0, 5.61046378e+04, 4.19390932]
+    - [2.41594293, 1.748906e-04, -1.19023667e-07, 3.02262387e-11, -2.0360979e-15,
+      5.61337748e+04, 4.64960986]
+    note: L 6/88
+- name: N^+
+  composition: {N: 1, E: -1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.15, 1000.0, 6000.0]
+    data:
+    - [2.80269445, -1.44758911e-03, 2.7711838e-06, -2.40187352e-09, 7.80839931e-13,
+      2.25575244e+05, 3.57877835]
+    - [2.51112967, 3.46441751e-06, -1.59426938e-08, 7.24865663e-12, -6.44501426e-16,
+      2.2562434e+05, 4.92767661]
+    note: L 7/88
+- name: N2
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660987e-04, -5.02999437e-07, 2.43530612e-09, -1.40881235e-12,
+      -1046.97628, 2.96747468]
+    - [2.95257626, 1.39690057e-03, -4.92631691e-07, 7.86010367e-11, -4.60755321e-15,
+      -923.948645, 5.87189252]
+    note: TPIS78
+- name: N2^+
+  composition: {N: 2, E: -1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.15, 1000.0, 6000.0]
+    data:
+    - [3.77540711, -2.06459157e-03, 4.75752301e-06, -3.15664228e-09, 6.70509973e-13,
+      1.80481115e+05, 2.69322186]
+    - [3.58661363, 2.53071949e-04, 1.84778214e-07, -4.55257223e-11, 3.26818029e-15,
+      1.80390994e+05, 3.0958415]
+    note: TPIS89
+- name: N2(A)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      7.05413015e+04, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      7.06665961e+04, 5.87188762]
+- name: N2(B)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      8.4281052e+04, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      8.4406561e+04, 5.87188762]
+- name: N2(a')
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      9.81600567e+04, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      9.82830843e+04, 5.87188762]
+- name: N2(C)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      1.26974077e+05, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      1.2707704e+05, 5.87188762]
+- name: N3^+
+  composition: {E: -1, N: 3}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.15, 1000.0, 6000.0]
+    data:
+    - [3.67011652, 4.59806506e-03, 1.39108363e-06, -5.02694961e-09, 2.2115576e-12,
+      1.81883765e+05, 3.94467784]
+    - [5.48199577, 2.01665176e-03, -7.78258436e-07, 1.31617313e-10, -8.13320494e-15,
+      1.81240003e+05, -6.06985591]
+- name: N4^+
+  composition: {E: -1, N: 4}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.15, 1000.0, 6000.0]
+    data:
+    - [3.32596515, 0.0143909181, -1.56797253e-05, 9.52287848e-09, -2.53566648e-12,
+      1.65968644e+05, 7.8229064]
+    - [7.05285816, 2.91094469e-03, -1.11573999e-06, 1.87883944e-10, -1.15769013e-14,
+      1.64955461e+05, -11.2429353]
+- name: AR
+  composition: {Ar: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [300.0, 1000.0, 5000.0]
+    data:
+    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 4.366]
+    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 4.366]
+    note: '120186'
+  transport:
+    model: gas
+    geometry: atom
+    well-depth: 136.5
+    diameter: 3.33
+  equation-of-state:
+    model: Redlich-Kwong
+    a: 1.69466E+12
+    b: 22.30627035
+- name: AR*
+  composition: {Ar: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [300.0, 1000.0, 5000.0]
+    data:
+    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 4.366]
+    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 4.366]
+    note: '120186'
+  transport:
+    model: gas
+    geometry: atom
+    well-depth: 136.5
+    diameter: 3.33
+  equation-of-state:
+    model: Redlich-Kwong
+    a: 1.69466E+12
+    b: 22.30627035
+- name: AR^+
+  composition: {Ar: 1, E: -1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [300.0, 1000.0, 5000.0]
+    data:
+    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 4.366]
+    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 4.366]
+    note: '120186'
+  transport:
+    model: gas
+    geometry: atom
+    well-depth: 136.5
+    diameter: 3.33
+  equation-of-state:
+    model: Redlich-Kwong
+    a: 1.69466E+12
+    b: 22.30627035
+
+reactions:
+- equation: e + N2 => e + N2(A)
+  duplicate: true
+  type: Boltzmann
+  process: N2 -> N2(A3,v0-4)
+- equation: e + N2 => e + N2(A)
+  duplicate: true
+  type: Boltzmann
+  process: N2 -> N2(A3,v5-9)
+- equation: e + N2 => e + N2(A)
+  duplicate: true
+  type: Boltzmann
+  process: N2 -> N2(A3,v10-)
+- equation: e + N2 => e + N2(B)
+  type: Boltzmann
+  process: N2 -> N2(B3)
+- equation: e + N2 => e + N2(a')
+  type: Boltzmann
+  process: N2 -> N2(a'1)
+- equation: e + N2 => e + N2(C)
+  type: Boltzmann
+  process: N2 -> N2(C3)
+- equation: e + N2 => N2^+ + e + e
+  type: Boltzmann
+  process: N2 -> N2^+
+
+- equation: N2(A)  + N2(a') => N4^+ + e
+  rate-constant: {A: 4e-12 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: N2(a') + N2(a') => N4^+ + e
+  rate-constant: {A: 4e-11 cm^3/molec/s, b: 0.0, Ea: 0.0}
+
+- equation: N^+  + e + N2 => N + N2
+  type: PlasmaCustomExpr
+  rateExpr: {A: 6e-27 cm^6/molec^2/s, Expr: (300./Te)^1.5}
+- equation: N2^+ + e      => N + N
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.8e-07 cm^3/molec/s, Expr: (300./Te)^0.39}
+- equation: N3^+ + e      => N2 + N
+  type: PlasmaCustomExpr
+  rateExpr: {A: 2e-07 cm^3/molec/s, Expr: (300./Te)^0.5}
+- equation: N4^+ + e      => N2 + N2
+  type: PlasmaCustomExpr
+  rateExpr: {A: 2.3e-06 cm^3/molec/s, Expr: (300./Te)^0.53}
+
+- equation: N^+  + N  + N2 => N2^+ + N2
+  rate-constant: {A: 1e-29 cm^6/molec^2/s, b: 0.0, Ea: 0.0}
+- equation: N^+  + N2 + N2 => N3^+ + N2
+  type: PlasmaCustomExpr
+  rateExpr: {A: 1.7e-29 cm^6/molec^2/s, Expr: (300./(Tgas+0.12*EN^2))^2.1}
+- equation: N2^+ + N       => N^+  + N2
+  type: PlasmaCustomExpr
+  rateExpr: {A: 7.2e-13 cm^3/molec/s, Expr: ((Tgas+0.12*EN^2)/300.)}
+- equation: N2^+ + N2(A)   => N3^+ + N
+  rate-constant: {A: 3e-10 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: N2^+ + N2 + N  => N3^+ + N2
+  type: PlasmaCustomExpr
+  rateExpr: {A: 9e-30 cm^6/molec^2/s, Expr: exp(400./(Tgas+0.12*EN^2))}
+- equation: N2^+ + N2 + N2 => N4^+ + N2
+  type: PlasmaCustomExpr
+  rateExpr: {A: 5.2e-29 cm^6/molec^2/s, Expr: (300./(Tgas+0.12*EN^2))^2.2}
+- equation: N3^+ + N       => N2^+ + N2
+  rate-constant: {A: 6.6e-11 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: N4^+ + N       => N^+  + N2 + N2
+  rate-constant: {A: 1e-11 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: N4^+ + N2      => N2^+ + N2 + N2
+  type: PlasmaCustomExpr
+  rateExpr: {A: 2.1e-16 cm^3/molec/s, Expr: exp((Tgas+0.12*EN^2)/121.)}
+  
+- equation: N2(A)  => N2
+  rate-constant: {A: 0.5 1/s, b: 0.0, Ea: 0.0}
+- equation: N2(B)  => N2(A)
+  rate-constant: {A: 130000.0 1/s, b: 0.0, Ea: 0.0}
+- equation: N2(a') => N2
+  rate-constant: {A: 100.0 1/s, b: 0.0, Ea: 0.0}
+- equation: N2(C)  => N2(B)
+  rate-constant: {A: 25000000.0 1/s, b: 0.0, Ea: 0.0}
+
+- equation: N2(A)  + N     => N2 + N
+  rate-constant: {A: 2e-12 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: N2(A)  + N2    => N2 + N2
+  rate-constant: {A: 3e-16 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: N2(A)  + N2(A) => N2 + N2(B)
+  rate-constant: {A: 3e-10 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: N2(A)  + N2(A) => N2 + N2(C)
+  rate-constant: {A: 1.5e-10 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: N2(B)  + N2    => N2 + N2
+  rate-constant: {A: 2e-12 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: N2(B)  + N2    => N2(A) + N2
+  rate-constant: {A: 3e-11 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: N2(a') + N2    => N2 + N2(B)
+  rate-constant: {A: 1.9e-13 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: N2(C)  + N2    => N2 + N2(a')
+  rate-constant: {A: 1e-11 cm^3/molec/s, b: 0.0, Ea: 0.0}
+- equation: N + N  + N2 => N2(A) + N2
+  rate-constant: {A: 1.7e-33 cm^6/molec^2/s, b: 0.0, Ea: 0.0}
+- equation: N + N  + N2 => N2(B) + N2
+  rate-constant: {A: 2.4e-33 cm^6/molec^2/s, b: 0.0, Ea: 0.0}
