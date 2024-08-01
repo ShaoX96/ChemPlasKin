@@ -90,7 +90,7 @@ public:
 
         updateBoltzmannSolver(maxItr, rtol);
 
-        // Create soution vector [k1, k2, ..., k_N, Te, E/N]
+        // Create solution vector [k1, k2, ..., k_N, Te, E/N]
         cachedSolutions.resize(NumProcess + 2);
         size_t i = 0;
         while (i < ProcessesList.size()) {

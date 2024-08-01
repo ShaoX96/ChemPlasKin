@@ -1,6 +1,21 @@
 # ChemPlasKin
 
+![GitHub Release](https://img.shields.io/github/v/release/ShaoX96/ChemPlasKin)
+
 ChemPlasKin is a free code optimized for zero-dimensional (0D) simulations of neutral gas chemical kinetics coupled with non-equilibrium plasma.
+
+## News
+
+Stay up to date with the latest changes and updates by visiting the [Releases](https://github.com/ShaoX96/ChemPlasKin/releases) page and [watching this repository](https://github.com/ShaoX96/ChemPlasKin/subscription). 
+
+#### Aug 1, 2024
+
+- Update the documentation for clarity.
+- Update `CMakeLists.txt` for portable compilation.
+
+#### July 21, 2024
+
+- **Initial Release**: Version 1.0.0 of ChemPlasKin is now available.
 
 ## Overview
 
@@ -19,6 +34,10 @@ Shao, X., Lacoste, D. A., & Im, H. G. (2024). ChemPlasKin: A general-purpose pro
 - **Compatibility**: Maintains compatibility with Bolsig+ cross-section input format and ZDPlasKin input mechanism.
 - **High Performance**: Written in pure C++, at least 3x faster than ZDPlasKin + Cantera/CHEMKIN method.
 - **Heat Loss model**: Designed for nanosecond pulsed discharges in pin-pin electrode configurations.
+
+### Code architecture
+
+<img src="code_architecture.png" alt="Code Architecture" width="500" />
 
 ## Getting Started
 
@@ -45,42 +64,50 @@ This section provides details on how to modify the Cantera source code and compi
    You should be familiar with [Compiling Cantera from Source](https://cantera.org/install/compiling-install.html#sec-compiling).
    A Conda environment is recommended for [Compilation Requirements](https://cantera.org/compiling/compilation-reqs.html#sec-conda).
    You should be able to compile the original Cantera source before making any modifications to it:
-
-```sh
-cd cantera
-git checkout 3.0
-scons build
-```
+   
+   ```sh
+   cd cantera
+   git checkout 3.0
+   scons build
+   ```
 
 4. **Obtain external libraries for ChemPlasKin**:
-- Create a new branch for Cantera (recommended)
-
-```shell
-git checkout -b for_chemplaskin
-git branch
-```
+- Create a new branch for Cantera and check (recommended)
+  
+  ```sh
+  git checkout -b for_chemplaskin
+  git branch
+  ```
 
 - Fetch the source code of [CppBOLOS](https://github.com/ShaoX96/CppBOLOS) and [muParser](https://beltoforion.de/en/muparser/) and put them under `cantera/ext/bolos/` and `cantera/ext/muparser/`, respectively.
+  
+  ```sh
+  cd cantera/ext
+  git clone https://github.com/ShaoX96/CppBOLOS.git
+  mv CppBOLOS bolos
+  git clone https://github.com/beltoforion/muparser.git
+  ```
 5. **Update `ext/SConscript`**: 
    
-   ```shell
+   ```sh
+   cd cantera
    cp ../ChemPlasKin/ext/Sconscript ext/Sconscript
    ```
 
 6. **Extend Cantera kinetics module**
-
-```shell
-cp ../ChemPlaKin/include/kinetics/*.h include/cantera/kinetics/
-cp ../ChemPlasKin/include/base/Solution.h include/cantera/base/
-cp ../ChemPlaKin/src/kinetics/*.cpp src/kinetics/
-cp ../ChemPlasKin/src/base/Solution.cpp cantera/src/base/
-```
+   
+   ```sh
+   cp ../ChemPlaKin/include/kinetics/*.h include/cantera/kinetics/
+   cp ../ChemPlasKin/include/base/Solution.h include/cantera/base/
+   cp ../ChemPlaKin/src/kinetics/*.cpp src/kinetics/
+   cp ../ChemPlasKin/src/base/Solution.cpp src/base/
+   ```
 
 7. **Stage and Commit Changes (Recommended)**
    
    Make sure you have set your email and name in your Git configuration.
    
-   ```shell
+   ```sh
    git config --global user.email "your.email@example.com"
    git config --global user.name "Your Name"
    ```
@@ -99,11 +126,12 @@ cp ../ChemPlasKin/src/base/Solution.cpp cantera/src/base/
    scons build
    ```
    
-   The compiled Cantera library is under `cantera/build/lib`. It should be linked to ChemPlasKin through `ChemPlasKin/CMakeLists.txt`:
+   The compiled Cantera library is under `cantera/build/lib`. It is linked to ChemPlasKin through `ChemPlasKin/CMakeLists.txt`. 
+   For example on macOS (no action needed):
    
    ```sh
    link_directories("../cantera/build/lib")
-   target_link_libraries(ChemPlasKin cantera_shared ${ACCELERATE_FRAMEWORK} Threads::Threads)
+   target_link_libraries(ChemPlasKin PRIVATE cantera_shared ${ACCELERATE_FRAMEWORK} Threads::Threads)
    ```
 
 9. **Build ChemPlasKin**
@@ -151,14 +179,18 @@ cd data/PAC_kinetics/ZDPlasKin_kinetics/kineticsParser
 python parsePlasKin.py --input "plasmaH2O2.inp" --output "parsedPlasKin.yaml"
 ```
 
+## Donation and support
+
+To support ChemPlasKin and its maintenance, please consider donating via [![Buy Me a Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow)](https://www.buymeacoffee.com/shaox)
+
+For technical support and collaboration inquiries, you may email the code author [Xiao Shao](mailto:xiao.shao@kaust.edu.sa).
+
 ## Acknowledgments
 
 ChemPlasKin uses the Cantera chemical kinetics software, which is developed and maintained by the Cantera Developers. Cantera is an open-source suite of tools for problems involving chemical kinetics, thermodynamics, and transport processes. More information about Cantera can be found at [cantera.org](https://cantera.org).
 
-The [CppBOLOS](https://github.com/ShaoX96/CppBOLOS) solver is build upon [BOLOS](https://github.com/aluque/bolos/tree/master).
-
-ChemPlasKin project is funded by Computational Reacting Flow Laboratory (CRFL) led by Professor [Hong G. Im](https://www.kaust.edu.sa/en/study/faculty/hong-im) at 
-King Abdullah University of Science and Technology ([KAUST](https://www.kaust.edu.sa/en/)), Thuwal, Saudi Arabia.
+ChemPlasKin project is funded by Computational Reacting Flow Laboratory ([CRFL](https://crfl.kaust.edu.sa)) led by Professor [Hong G. Im](https://www.kaust.edu.sa/en/study/faculty/hong-im) at 
+King Abdullah University of Science and Technology ([KAUST](https://www.kaust.edu.sa/en/)), Thuwal 23955-6900, Saudi Arabia.
 
 ## License
 
@@ -172,7 +204,6 @@ Users are advised that Cantera is distributed under its own license terms.
 ## Links
 
 - [ChemPlasKin paper](https://doi.org/10.1016/j.jaecs.2024.100280)
-- [BOLOS GitHub](https://github.com/aluque/bolos/tree/master)
 - [CppBOLOS GitHub](https://github.com/ShaoX96/CppBOLOS)
 - Bolsig+ Reference Paper: [G. J. M. Hagelaar and L. C. Pitchford, "Solving the Boltzmann equation to obtain electron transport coefficients and rate coefficients for fluid models", Plasma Sources Science and Technology, 2005](https://iopscience.iop.org/article/10.1088/0963-0252/14/4/011)
 

@@ -1,6 +1,7 @@
 //
 // Created by Xiao Shao on 2024/4/11.
 //
+#include <optional>
 
 void printHeader() {
     std::cout << "/*--------------------------------*- C++ -*----------------------------------*\\\n";
@@ -12,7 +13,7 @@ void printHeader() {
     std::cout << "|                                                                             |\n";
     std::cout << "|   A Freeware for Unified Chemistry-Plasma Kinetics Simulation               |\n";
     std::cout << "|   License:      GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1              |\n";
-    std::cout << "|   Version:      0.1.0 (February 2024)                                       |\n";
+    std::cout << "|   Version:      1.0.0 (July 2024)                                           |\n";
     std::cout << "|   Author:       Xiao Shao                                                   |\n";
     std::cout << "|   Organization: King Abdullah University of Science and Technology (KAUST)  |\n";
     std::cout << "|   Contact:      xiao.shao@kaust.edu.sa                                      |\n";
