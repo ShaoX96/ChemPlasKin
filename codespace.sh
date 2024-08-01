@@ -1,7 +1,4 @@
 conda env create -f environment.yaml
-conda init
-source /home/codespace/.bashrc
-conda activate ct-build
 
 cd ..
 
@@ -24,10 +21,16 @@ cp ../ChemPlasKin/include/base/Solution.h include/cantera/base/
 cp ../ChemPlasKin/src/kinetics/*.cpp src/kinetics/
 cp ../ChemPlasKin/src/base/Solution.cpp src/base/
 
-scons build
+conda run -n ct-build scons build
 
 cd ../ChemPlasKin
 mkdir build
 cd build
 cmake ..
 make
+
+
+./ChemPlasKin -case ../examples/H2O2He -log DEBUG
+
+pip install numpy matplotlib pandas
+python plot.py

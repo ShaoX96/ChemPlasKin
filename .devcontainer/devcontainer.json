@@ -18,7 +18,8 @@
 		"vscode": {
 			"extensions": [
 				"ms-vscode.cpptools",
-				
+				"twxs.cmake",
+				"ms-python.python"
 			]
 		}
 	},
