@@ -21,7 +21,7 @@ cp ../ChemPlasKin/include/base/Solution.h include/cantera/base/
 cp ../ChemPlasKin/src/kinetics/*.cpp src/kinetics/
 cp ../ChemPlasKin/src/base/Solution.cpp src/base/
 
-conda run -n ct-build scons build
+conda run -n ct-build --no-capture-output scons build
 
 cd ../ChemPlasKin
 mkdir build
