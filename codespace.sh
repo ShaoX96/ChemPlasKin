@@ -29,8 +29,8 @@ cd build
 cmake ..
 make
 
-
 ./ChemPlasKin -case ../examples/H2O2He -log DEBUG
 
 pip install numpy matplotlib pandas
+cd ../examples/H2O2He
 python plot.py
