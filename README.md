@@ -43,6 +43,8 @@ Shao, X., Lacoste, D. A., & Im, H. G. (2024). ChemPlasKin: A general-purpose pro
 
 This section provides details on how to modify the Cantera source code and compile it for the usage of ChemPlasKin. 
 
+If you encountered errors which you don't know how to solve, try pressing the `,` key on this webpage. Github will guide you to create a codespace. When a codespace is created, you will see a terminal. Execute `bash ./codespace.sh` in the terminal and everything will be setup and compiled.
+
 1. **Prepare working directories**: (eg.`~/Destop/`)
    
    ```sh
@@ -87,19 +89,20 @@ This section provides details on how to modify the Cantera source code and compi
   mv CppBOLOS bolos
   git clone https://github.com/beltoforion/muparser.git
   ```
+
 5. **Update `ext/SConscript`**: 
    
    ```sh
    cd cantera
-   cp ../ChemPlasKin/ext/Sconscript ext/Sconscript
+   cp ../ChemPlasKin/ext/SConscript ext/SConscript
    ```
 
 6. **Extend Cantera kinetics module**
    
    ```sh
-   cp ../ChemPlaKin/include/kinetics/*.h include/cantera/kinetics/
+   cp ../ChemPlasKin/include/kinetics/*.h include/cantera/kinetics/
    cp ../ChemPlasKin/include/base/Solution.h include/cantera/base/
-   cp ../ChemPlaKin/src/kinetics/*.cpp src/kinetics/
+   cp ../ChemPlasKin/src/kinetics/*.cpp src/kinetics/
    cp ../ChemPlasKin/src/base/Solution.cpp src/base/
    ```
 
@@ -139,6 +142,7 @@ This section provides details on how to modify the Cantera source code and compi
    ```sh
    cd ChemPlasKin
    mkdir build
+   cd build
    cmake ..
    make
    ```
