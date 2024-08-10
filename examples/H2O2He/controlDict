@@ -6,7 +6,7 @@
 |    \____|_| |_|\___|_| |_| |_|_|   |_|\__,_|___/_|\_\_|_| |_|               |
 |                                                                             |
 |   A Freeware for Unified Gas-Plasma Kinetics Simulation                     |
-|   Version:      0.1.0 (February 2024)                                       |
+|   Version:      1.0.0 (July 2024)                                           |
 |   License:      GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1              |
 |   Author:       Xiao Shao                                                   |
 |   Organization: King Abdullah University of Science and Technology (KAUST)  |

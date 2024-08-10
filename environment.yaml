@@ -1,0 +1,16 @@
+# Compilation environment for Cantera library used by ChemPlasKin. 
+# Here we don not need to build Python package of Cantera
+name: ct-CPK
+channels:
+- conda-forge
+dependencies:
+- python  # Cantera supports Python 3.8 and up
+- scons  # build system
+- boost-cpp  # C++ dependency
+- hdf5  # optional C++ dependency
+- pandas # optional (needed for pandas interface)
+- matplotlib # optional (needed for plots)
+- numpy # needed to build Python package
+- ruamel.yaml  # needed for converter scripts
+# - ipython  # optional (needed for nicer interactive command line)
+

@@ -40,7 +40,7 @@ This section provides details on how to modify the Cantera source code and compi
    
    ```sh
    cd ~/Desktop
-   mkdir ChemPlasProject
+   mkdir ChemPlasKinProject
    cd ChemPlasKinProject
    ```
 
@@ -53,16 +53,25 @@ This section provides details on how to modify the Cantera source code and compi
    
    Now under `ChemPlasKinProject/` you should have `cantera/` and `ChemPlasKin/`.
 
+
 3. **Test [Compiling Cantera from Source](https://cantera.org/install/compiling-install.html#sec-compiling)**:  
    You should be familiar with [Compiling Cantera from Source](https://cantera.org/install/compiling-install.html#sec-compiling).
-   A Conda environment is recommended for [Compilation Requirements](https://cantera.org/compiling/compilation-reqs.html#sec-conda).
-   You should be able to compile the original Cantera source before making any modifications to it:
+   A Conda environment is recommended for [Compilation Requirements](https://cantera.org/compiling/compilation-reqs.html#sec-conda). For self-containedness and simplicity, a conda environment `ct-CPK`
+   can be created and activated by running (make sure you have installed 
+   conda, test by running `conda --version`):
+   ```sh 
+   conda env create -f ChemPlasKin/environment.yaml
+   conda activate ct-CPK
+   ```
+   Now you should be able to compile the original Cantera source before making any modifications to it:
    
    ```sh
    cd cantera
    git checkout 3.0
    scons build
    ```
+   You will see "Compilation completed successfully" message upon successful compilation.
+
 
 4. **Obtain external libraries for ChemPlasKin**:
 - Create a new branch for Cantera and check (recommended)
@@ -97,7 +106,7 @@ This section provides details on how to modify the Cantera source code and compi
    cp ../ChemPlasKin/src/base/Solution.cpp src/base/
    ```
 
-7. **Stage and Commit Changes (Recommended)**
+7. **Stage and Commit Changes (optional)**
    
    Make sure you have set your email and name in your Git configuration.
    
@@ -128,6 +137,9 @@ This section provides details on how to modify the Cantera source code and compi
    ```
 
 9. **Build ChemPlasKin**
+   
+   Ensure CMake and Make are properly installed and configured on your system (by testing `cmake --version
+   `, `make --version`) and compile the code:
 
    ```sh
    cd ../ChemPlasKin
@@ -150,6 +162,9 @@ This section provides details on how to modify the Cantera source code and compi
     cd ../examples/H2O2He
     python plot.py
     ```
+**General Note**:
+If you face difficulties during the compilation process, seek assistance from ChatGPT. It's your best friend.
+
 
 ## Data input
 Two input data files, cross section and reaction mechanism, are needed, as specified in `chemPlasProperties`:
