@@ -68,9 +68,9 @@ public:
 
     static CppBOLOS::BoltzmannSolver bsolver;
 
-    static void updateBoltzmannSolver(const int maxItr = 200, const double rtol = 1e-5){
+    static void updateBoltzmannSolver(const int maxItr=200, const double rtol=1e-5, const double delta0=1E14){
         // bsolver.init();
-        F0 = bsolver.converge(F0, maxItr, rtol); // converge() will update Te
+        F0 = bsolver.converge(F0, maxItr, rtol, delta0); // converge() will update Te
 //        BoltzmannData::electronTemp = bsolver.get_Te();
         BoltzmannData::electronTemp = std::max(bsolver.get_Te(), bsolver.get_kT()); // enforce T_e >= T_gas
         BoltzmannData::reducedEfield = bsolver.get_EN();
@@ -86,11 +86,11 @@ public:
     static std::vector<std::string> ProcessesList;
     static std::vector<double> cachedSolutions;
 
-    static void cacheBoltzmannSolutions(const int maxItr = 200, const double rtol = 1e-5) {
+    static void cacheBoltzmannSolutions(const int maxItr=200, const double rtol=1e-5, const double delta0=1E14)
+    {
+        updateBoltzmannSolver(maxItr, rtol, delta0);
 
-        updateBoltzmannSolver(maxItr, rtol);
-
-        // Create soution vector [k1, k2, ..., k_N, Te, E/N]
+        // Create solution vector [k1, k2, ..., k_N, Te, E/N]
         cachedSolutions.resize(NumProcess + 2);
         size_t i = 0;
         while (i < ProcessesList.size()) {

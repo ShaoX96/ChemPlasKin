@@ -65,7 +65,7 @@ bool PlasmaCustomData::update(const ThermoPhase& phase, const Kinetics& kin)
     double T = phase.temperature();
     // If gas or electron temeprature does not change, no update
     // We may reduce update frequency by setting a tolerence of change
-    if (std::abs(T - temperature) < 0.001 && temp_Te == electronTemp) {
+    if (T == temperature && temp_Te == electronTemp) {
         return false;
     }
     update(T);
