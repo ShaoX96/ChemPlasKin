@@ -7,6 +7,10 @@ ChemPlasKin is a free code optimized for zero-dimensional (0D) simulations of ne
 ## News
 Stay up to date with the latest changes and updates by visiting the [Releases](https://github.com/ShaoX96/ChemPlasKin/releases) page and [watching this repository](https://github.com/ShaoX96/ChemPlasKin/subscription). 
 
+#### Aug 14, 2024
+- Join [Google Group](https://groups.google.com/u/2/g/chemplaskin) for users' discussion.
+- Improve robustness and documentation.
+
 #### Aug 1, 2024
 - Update the documentation for clarity.
 - Update `CMakeLists.txt` for portable compilation.
@@ -34,7 +38,9 @@ Shao, X., Lacoste, D. A., & Im, H. G. (2024). ChemPlasKin: A general-purpose pro
 <img src="code_architecture.png" alt="Code Architecture" width="500" />
 
 ## Getting Started
-This section provides details on how to modify the Cantera source code and compile it for the usage of ChemPlasKin. 
+This section provides details on how to modify the Cantera source code and compile it for the usage of ChemPlasKin on macOS and Linux systems.
+ChemPlasKin has not been tested on Windows. 
+Therefore, it is suggested to use [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) on a Windows machine for quick start ([check note](#note-for-wsl-users)).
 
 1. **Prepare working directories**: (eg.`~/Destop/`)
    
@@ -148,6 +154,8 @@ This section provides details on how to modify the Cantera source code and compi
    cmake ..
    make
    ```
+   It is recommended to clean the `build/` directory if are build errors, significant change of your project structure or CMake configuration.
+   
 
 10. **Run an example**:
     Use `-case` to specify the running case path where `controlDict` and `chemPlasProperties` files are located. Use optional `-log` flag to control log level: `NONE`, `WARNING`, `INFO`(default) , or `DEBUG`. 
@@ -165,6 +173,17 @@ This section provides details on how to modify the Cantera source code and compi
 **General Note**:
 If you face difficulties during the compilation process, seek assistance from ChatGPT. It's your best friend.
 
+### Note for WSL Users
+If you are using Windows Subsystem for Linux (WSL), you may need to ensure GCC and G++ are installed by checking
+   ```sh
+   gcc --version
+   g++ --version
+   ```
+If they are missing, install the `build-essential` package which includes GCC, G++, and other necessary development tools:
+   ```sh
+   sudo apt update
+   sudo apt install build-essential
+   ```
 
 ## Data input
 Two input data files, cross section and reaction mechanism, are needed, as specified in `chemPlasProperties`:

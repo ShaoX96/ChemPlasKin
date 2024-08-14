@@ -288,7 +288,8 @@ int main(int argc, char *argv[]) {
     clock_t t0 = clock(); // save start time
 
     // Main time loop
-    while (runTime < t_end && gas->temperature() < T_eq - 5.0) {
+    const double dTbelowTeq = readParameter<double>(controlDictPath, "dTbelowTeq");
+    while (runTime < t_end && gas->temperature() < (T_eq - dTbelowTeq)) {
         std::ostringstream oss; // Format output digit
         oss << "\nrunTime [s]: " << std::scientific << std::setprecision(9) << runTime;
         std::cout << oss.str() << " | iPulse: " << iPulse << "\n";
