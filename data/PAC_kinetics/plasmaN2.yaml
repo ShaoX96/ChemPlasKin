@@ -1,5 +1,6 @@
 description: |-
-  source: nasa_gas.yaml
+  Pure N2 plasma kinetic mechanism for ChemPlasKin input. Compiled by Xiao Shao @KAUST, 2024.
+  Source: http://www.zdplaskin.laplace.univ-tlse.fr/external-profiles-of-electron-density-and-electric-field/index.html
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -103,7 +104,7 @@ species:
     - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
       1.26974077e+05, 2.96747038]
     - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
-      1.2707704e+05, 5.87188762]
+      1.2709704e+05, 5.87188762]
 - name: N3^+
   composition: {E: -1, N: 3}
   thermo:
@@ -124,86 +125,39 @@ species:
       1.65968644e+05, 7.8229064]
     - [7.05285816, 2.91094469e-03, -1.11573999e-06, 1.87883944e-10, -1.15769013e-14,
       1.64955461e+05, -11.2429353]
-- name: AR
-  composition: {Ar: 1}
-  thermo:
-    model: NASA7
-    temperature-ranges: [300.0, 1000.0, 5000.0]
-    data:
-    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 4.366]
-    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 4.366]
-    note: '120186'
-  transport:
-    model: gas
-    geometry: atom
-    well-depth: 136.5
-    diameter: 3.33
-  equation-of-state:
-    model: Redlich-Kwong
-    a: 1.69466E+12
-    b: 22.30627035
-- name: AR*
-  composition: {Ar: 1}
-  thermo:
-    model: NASA7
-    temperature-ranges: [300.0, 1000.0, 5000.0]
-    data:
-    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 4.366]
-    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 4.366]
-    note: '120186'
-  transport:
-    model: gas
-    geometry: atom
-    well-depth: 136.5
-    diameter: 3.33
-  equation-of-state:
-    model: Redlich-Kwong
-    a: 1.69466E+12
-    b: 22.30627035
-- name: AR^+
-  composition: {Ar: 1, E: -1}
-  thermo:
-    model: NASA7
-    temperature-ranges: [300.0, 1000.0, 5000.0]
-    data:
-    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 4.366]
-    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 4.366]
-    note: '120186'
-  transport:
-    model: gas
-    geometry: atom
-    well-depth: 136.5
-    diameter: 3.33
-  equation-of-state:
-    model: Redlich-Kwong
-    a: 1.69466E+12
-    b: 22.30627035
 
 reactions:
 - equation: e + N2 => e + N2(A)
   duplicate: true
   type: Boltzmann
   process: N2 -> N2(A3,v0-4)
+  energy_transfer: {e_th: 6.17_eV}
 - equation: e + N2 => e + N2(A)
   duplicate: true
   type: Boltzmann
   process: N2 -> N2(A3,v5-9)
+  energy_transfer: {e_th: 7.0_eV}
 - equation: e + N2 => e + N2(A)
   duplicate: true
   type: Boltzmann
   process: N2 -> N2(A3,v10-)
+  energy_transfer: {e_th: 7.8_eV}
 - equation: e + N2 => e + N2(B)
   type: Boltzmann
   process: N2 -> N2(B3)
+  energy_transfer: {e_th: 7.35_eV}
 - equation: e + N2 => e + N2(a')
   type: Boltzmann
   process: N2 -> N2(a'1)
+  energy_transfer: {e_th: 8.4_eV}
 - equation: e + N2 => e + N2(C)
   type: Boltzmann
   process: N2 -> N2(C3)
+  energy_transfer: {e_th: 11.03_eV}
 - equation: e + N2 => N2^+ + e + e
   type: Boltzmann
   process: N2 -> N2^+
+  energy_transfer: {e_th: 15.6_eV}
 
 - equation: N2(A)  + N2(a') => N4^+ + e
   rate-constant: {A: 4e-12 cm^3/molec/s, b: 0.0, Ea: 0.0}
