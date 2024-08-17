@@ -1,7 +1,7 @@
 // ChemPlasReactor class. Generate a unified gas-plasma ODE system
 
-#ifndef PACKIN_PLASMAREACTOR_H
-#define PACKIN_PLASMAREACTOR_H
+#ifndef CHEMPLASKIN_PLASMAREACTOR_H
+#define CHEMPLASKIN_PLASMAREACTOR_H
 
 #include "cantera/numerics/FuncEval.h"
 #include "cantera/base/Solution.h"
@@ -103,7 +103,6 @@ public:
         // Apply external electron number density profile
         if (imposedNe) {
             massFracs[electronIndex] = m_N_e*1e6/Avogadro*m_gas->molecularWeight(electronIndex) / m_density;
-            imposedNe = false;
         }
         // std::cout << "Debug: ne=" << massFracs[electronIndex] << std::endl;
 
@@ -262,6 +261,9 @@ public:
         //     dY(k)/dt = dw(k)/dt * MW(k) / rho
         for (size_t k = 0; k < m_nSpecies; k++) {
             dYdt[k] = m_wdot[k] * m_gas->molecularWeight(k) / rho; // dYdt[k] is equivalent to *(dYdt + k)
+            if(imposedNe) {
+                dYdt[electronIndex] = 0.0;
+            }
         }
     }
 
@@ -640,4 +642,4 @@ private:
 
 }
 
-#endif //PACKIN_PLASMAREACTOR_H
+#endif //CHEMPLASKIN_PLASMAREACTOR_H

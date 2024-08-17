@@ -7,6 +7,11 @@ ChemPlasKin is a free code optimized for zero-dimensional (0D) simulations of ne
 ## News
 Stay up to date with the latest changes and updates by visiting the [Releases](https://github.com/ShaoX96/ChemPlasKin/releases) page and [watching this repository](https://github.com/ShaoX96/ChemPlasKin/subscription). 
 
+#### Aug 17, 2024
+- Two more examples: N2 plasma kinetics and nanosecond discharge in air
+- Add [YouTube video tutorials](https://www.youtube.com/playlist?list=PL-ii1YrLcH70l3tMW55IedNItE4yQ0Y7O)
+
+
 #### Aug 14, 2024
 - Join [Google Group](https://groups.google.com/u/2/g/chemplaskin) for users' discussion.
 - Improve robustness and documentation.
@@ -154,7 +159,7 @@ Therefore, it is suggested to use [Windows Subsystem for Linux (WSL)](https://le
    cmake ..
    make
    ```
-   It is recommended to clean the `build/` directory if are build errors, significant change of your project structure or CMake configuration.
+   It is recommended to clean the `build/` directory if there are build errors, significant changes of your project structure or CMake configuration.
    
 
 10. **Run an example**:

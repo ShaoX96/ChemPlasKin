@@ -229,21 +229,13 @@ int main(int argc, char *argv[]) {
     integrator->setTolerances(Tolerances["reltol"], Tolerances["abstol"]);
 
     // 0D reactor setup in original Cantera
-    IdealGasConstPressureReactor r;
-    r.insert(sol); // 'insert' the gas into the reactor and environment.
-    ReactorNet sim;
-    sim.addReactor(r);
-    sim.initialize();
+    // IdealGasConstPressureReactor r;
+    // r.insert(sol); // 'insert' the gas into the reactor and environment.
+    // ReactorNet sim;
+    // sim.addReactor(r);
+    // sim.initialize();
     // sim.setTolerances(1e-9, 1e-18);
     // sim.setVerbose();
-
-    // Access kinetic information
-    auto kin = sol->kinetics();
-
-    int irxns = kin->nReactions();
-    vector<double> qf(irxns);
-    vector<double> qr(irxns);
-    vector<double> q(irxns);
 
     // Species to be stored and their indices
     std::vector<std::string> species_names;
@@ -410,7 +402,7 @@ int main(int argc, char *argv[]) {
 
         // Print out information and store data in csv
         std::cout << "Writing number density [#/cm^3] of " << gas->speciesName(index_list[0]) << ", "
-                  << gas->speciesName(index_list[1]) << ", " << gas->speciesName(index_list[1]) << "... " << std::endl;
+                  << gas->speciesName(index_list[1]) << ", " << gas->speciesName(index_list[2]) << ", ... " << std::endl;
         moleFraction_row = {};
         outputFile << runTime << ", " << gas->temperature() << ", " << 1e-6*Avogadro*gas->molarDensity();// r.temperature();
         for (const auto &i: index_list) {
