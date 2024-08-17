@@ -31,7 +31,7 @@ NstepInPulse   400;     // Number of time steps in a pulse discharge
 NstepAfPulse   200;     // Number of time steps during pulseExten
 
 dT_max         10.0;    // Maximum temperature increase per step allowed, [K]
-dTbelowTeq     5.0;   // Force simulation ends when T reaches (equilibrium temperate - dTbelowTeq)
+dTbelowTeq     5.0;   // Force simulation ends when T reaches (equilibrium temperature - dTbelowTeq)
 
 // CVODE solver tolerance
 odes
